@@ -1,0 +1,149 @@
+.our-story {
+  @apply bg-[url("/images/sections-bg/section-bg-2.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.our-story::before {
+  @apply overlay
+  !bg-neutral-900
+  !bg-opacity-[0.01];
+}
+
+.our-story-container {
+  @apply section-container;
+}
+
+.our-story-heading {
+  @apply text-2xl 
+  lg:text-3xl 
+  tracking-widest 
+  font-primary
+  font-[900]
+  text-center
+  text-transparent 
+  bg-clip-text 
+  bg-gradient-to-r from-pink-200 to-pink-500
+  relative
+  pb-3
+  lg:pb-3.5
+  mb-7
+  lg:mb-9;
+}
+
+.our-story-heading::after {
+  content: "";
+  @apply absolute 
+  bottom-0 
+  left-1/2
+  w-16
+  lg:w-20 
+  h-1
+  lg:h-[0.3125rem] 
+  bg-gradient-to-r from-pink-500 to-pink-200
+  rounded-full
+  -translate-x-1/2;
+}
+
+.our-story-content {
+  @apply bg-neutral-700/50
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden
+  grid
+  grid-cols-1
+  xl:grid-cols-2
+  justify-center
+  items-center;
+}
+
+.our-story-img-content {
+}
+
+.our-story-img {
+  @apply object-cover
+  mx-auto;
+}
+
+.our-story-text-content {
+  @apply p-6
+  lg:p-8
+  text-center
+  xl:text-start;
+}
+
+.our-story-company-slogan {
+  @apply text-lg
+  lg:text-xl
+  tracking-widest
+  font-[700]
+  font-primary
+  uppercase
+  flex
+  gap-1.5
+  lg:gap-2
+  justify-center
+  xl:justify-start
+  text-gray-50;
+}
+
+.our-story-slogan-quote-left,
+.our-story-slogan-quote-right {
+  @apply text-base
+  lg:text-lg;
+}
+
+.our-story-description {
+  @apply mt-3
+  lg:mt-4
+  mb-7
+  lg:mb-9
+  text-sm
+  lg:text-base
+  tracking-widest
+  font-[400]
+  text-center
+  xl:text-justify
+  text-gray-200;
+}
+
+.our-story-book-a-session-btn {
+  @apply btn
+  btn-primary;
+}
+
+@media (max-width: 355px) {
+  .our-story-heading {
+    @apply text-xl
+    pb-2.5
+    mb-5;
+  }
+
+  .our-story-heading::after {
+    @apply w-14 
+    h-[0.1875rem];
+  }
+
+  .our-story-text-content {
+    @apply p-4;
+  }
+
+  .our-story-company-slogan {
+    @apply text-base
+    gap-1;
+  }
+
+  .our-story-slogan-quote-left,
+  .our-story-slogan-quote-right {
+    @apply text-sm;
+  }
+
+  .our-story-description {
+    @apply mt-2
+    mb-5
+    text-xs;
+  }
+}

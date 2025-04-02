@@ -1,0 +1,49 @@
+.company-logo {
+  @apply tracking-widest
+  uppercase
+  font-primary;
+}
+
+.pawis-crea-logo__header {
+  @apply w-auto
+  h-[40px]
+  lg:h-[48px];
+}
+
+.pawis-crea-logo__footer {
+  @apply w-auto
+  h-[72px]
+  lg:h-[96px];
+}
+
+.pawis {
+  @apply text-indigo-600
+  font-[700]
+  text-3xl
+  lg:text-4xl;
+}
+
+.crea {
+  @apply text-rose-500
+  font-[500]
+  text-xl
+  lg:text-2xl;
+}
+
+@media (max-width: 355px) {
+  .pawis-crea-logo__header {
+    @apply h-[32px];
+  }
+
+  .pawis-crea-logo__footer {
+    @apply h-[64px];
+  }
+
+  .pawis {
+    @apply text-2xl;
+  }
+
+  .crea {
+    @apply text-lg;
+  }
+}

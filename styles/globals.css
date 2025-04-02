@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-primary {
+    font-family: var(--font-primary), Impact, "Arial Narrow", sans-serif;
+  }
+
+  .font-secondary {
+    font-family: var(--font-secondary), Arial, Helvetica, sans-serif;
+  }
+
+  .overlay {
+    content: "";
+    @apply absolute
+    inset-0 
+    bg-gradient-to-b from-neutral-900/70 via-neutral-900/70 to-neutral-900/70;
+  }
+
+  .section-content-width {
+    @apply px-5
+    sm:px-6
+    md:px-8
+    lg:px-10
+    xl:px-12;
+  }
+
+  .section-content-height {
+    @apply py-10
+    sm:py-12
+    md:py-16
+    lg:py-20
+    xl:py-24;
+  }
+
+  .section-container {
+    @apply relative
+    max-w-7xl
+    mx-auto
+    section-content-height
+    section-content-width
+    text-center
+    lg:text-start;
+  }
+
+  .btn {
+    @apply text-sm
+    lg:text-base
+    tracking-widest
+    whitespace-nowrap
+    font-primary
+    font-[700]
+    text-center
+    px-4
+    lg:px-[1.125rem]
+    py-2
+    lg:py-2.5
+    border-2
+    rounded-lg
+    shadow-lg
+    active:scale-95
+    active:shadow-lg
+    transition;
+  }
+
+  .btn-primary {
+    @apply bg-indigo-600
+    text-gray-50
+    border-indigo-600
+    hover:bg-teal-400
+    hover:border-teal-400
+    hover:text-gray-900;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent
+    text-gray-50
+    border-gray-50
+    hover:bg-teal-400
+    hover:border-teal-400
+    hover:text-gray-900;
+  }
+
+  @media (max-width: 355px) {
+    .section-content-width {
+      @apply px-2.5;
+    }
+
+    .section-content-height {
+      @apply py-5;
+    }
+
+    .btn {
+      @apply text-xs
+      font-[600]
+      px-3
+      py-1.5;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply mx-auto
+  antialiased
+  font-secondary
+  text-gray-50;
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leftToRIghtBackAndForthLoop {
+  0% {
+    transform: translateX(-15%);
+  }
+  50% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(-15%);
+  }
+}

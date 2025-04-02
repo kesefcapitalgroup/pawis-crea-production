@@ -1,0 +1,194 @@
+.header {
+  @apply fixed
+  z-40
+  top-0
+  w-full
+  bg-neutral-900/50
+  backdrop-blur-md
+  shadow-lg;
+}
+
+.header-container {
+  @apply section-container
+
+  grid
+  grid-cols-[auto,1fr]
+  xl:grid-cols-[auto,1fr,auto]
+  items-center
+  justify-center
+
+  !py-3
+  lg:!py-4;
+}
+
+.company-logo-container {
+}
+
+.nav {
+  @apply hidden
+  xl:block;
+}
+
+.nav-links {
+  @apply flex
+  flex-row
+  items-center
+  justify-center
+  xl:gap-6;
+}
+
+.nav-link {
+  @apply block
+  xl:w-24
+  text-gray-50
+  tracking-widest
+  font-[700]
+  font-primary
+  whitespace-nowrap
+  text-center
+  lg:text-base
+  transition
+  relative;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute 
+  left-1/2 
+  -bottom-0.5 
+  h-[2px] 
+  w-0 
+  bg-gray-50
+  transition-all 
+  duration-300;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  @apply w-1/2
+  active:w-0;
+}
+
+.header-btns {
+  @apply justify-self-end
+  flex
+  items-center
+  gap-3
+  lg:gap-4
+  xl:gap-5;
+}
+
+.switch-lang-mobile-btn {
+  @apply btn
+  btn-secondary
+  w-14
+  sm:hidden;
+}
+
+.mobile-nav-toggle-btn {
+  @apply text-gray-50
+  text-4xl
+  lg:text-5xl
+  xl:hidden;
+}
+
+.switch-lang-btn {
+  @apply btn
+  btn-secondary
+  hidden
+  sm:block
+  w-24
+  lg:w-28;
+}
+
+.book-a-session-header-btn {
+  @apply btn
+  btn-primary
+  hidden
+  md:block
+  md:w-40
+  lg:w-48;
+}
+
+.mobile-nav {
+  @apply col-span-2
+  min-h-screen;
+}
+
+.mobile-nav-divider {
+  @apply border-t
+  border-2
+  border-gray-600
+  my-5
+  lg:my-6;
+}
+
+.mobile-nav-links {
+  @apply flex
+  flex-col
+  items-center
+  justify-center
+  gap-8
+  lg:gap-10
+  mt-8
+  lg:mt-10;
+}
+
+.mobile-nav-link {
+  @apply block
+  text-gray-50
+  font-primary
+  text-base
+  lg:text-lg
+  font-[700]
+  tracking-widest;
+}
+
+.book-a-session-header-mobile-nav-btn {
+  @apply block
+  md:hidden
+  btn
+  btn-primary
+  mt-1
+  lg:mt-2
+  w-40
+  lg:w-48;
+}
+
+@media (max-width: 355px) {
+  .header-container {
+    @apply !py-2.5;
+  }
+
+  .header-btns {
+    @apply gap-2.5;
+  }
+
+  .switch-lang-mobile-btn {
+    @apply w-12;
+  }
+
+  .mobile-nav-toggle-btn {
+    @apply text-3xl;
+  }
+
+  .mobile-nav-divider {
+    @apply border
+    my-4;
+  }
+
+  .mobile-nav-links {
+    @apply gap-6
+    mt-6;
+  }
+
+  .mobile-nav-link {
+    @apply text-sm
+    font-[600];
+  }
+
+  .book-a-session-header-mobile-nav-btn {
+    @apply mt-0.5
+    w-36;
+  }
+}

@@ -1,0 +1,285 @@
+.footer {
+  @apply bg-neutral-900;
+}
+
+.footer-container {
+  @apply section-container;
+}
+
+.footer-top {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  lg:grid-cols-3
+  gap-10
+  lg:gap-12;
+}
+
+.footer-company-seal {
+  @apply md:col-span-2
+  lg:col-span-3
+  lg:justify-self-center
+  md:order-1
+  mx-auto;
+}
+
+.footer-company-slogan {
+  @apply font-primary
+  text-sm
+  lg:text-base
+  font-[300]
+  text-gray-400
+  uppercase
+  italic
+  tracking-widest
+  mt-2
+  text-center;
+}
+
+.footer-nav-links {
+  @apply lg:justify-self-start
+  md:order-2;
+}
+
+.footer-contact-details {
+  @apply not-italic
+  lg:justify-self-center
+  lg:text-center
+  md:order-4
+  lg:order-3
+  md:col-span-2
+  lg:col-span-1;
+}
+
+.footer-contact-email,
+.footer-contact-phone,
+.footer-contact-address-ny,
+.footer-contact-address-panama {
+  @apply lg:w-full;
+}
+
+.footer-contact-email {
+}
+
+.footer-contact-phone {
+}
+
+.footer-contact-address-ny {
+}
+
+.footer-contact-address-panama {
+}
+
+.footer-contact-email-address,
+.footer-contact-phone-number {
+  @apply lg:w-full;
+}
+
+.footer-contact-email-icon,
+.footer-contact-phone-icon,
+.footer-contact-address-icon {
+  @apply text-gray-50
+  text-lg
+  lg:text-xl
+  lg:w-full;
+}
+
+.footer-social-links {
+  @apply lg:justify-self-end
+  md:order-3
+  lg:order-4;
+}
+
+.footer-nav-links-list,
+.footer-contact-details-list,
+.footer-social-links-list {
+  @apply flex
+  flex-col
+  items-center
+  lg:items-start
+  justify-center
+  gap-6
+  lg:gap-7;
+}
+
+.footer-nav-links-heading,
+.footer-contact-details-heading,
+.footer-social-links-heading {
+  @apply font-primary
+  text-sm
+  lg:text-base
+  tracking-widest
+  font-[500]
+  whitespace-nowrap
+  text-gray-400
+  mb-6
+  lg:mb-7;
+}
+
+.footer-contact-email-link,
+.footer-contact-phone-link,
+.footer-contact-address-ny-link,
+.footer-contact-address-panama-link {
+  @apply flex
+  flex-col
+  items-center
+  lg:items-start
+  justify-center
+  gap-2
+  lg:gap-3;
+}
+
+.footer-nav-link,
+.footer-contact-email-address,
+.footer-contact-phone-number,
+.footer-contact-address-ny-details,
+.footer-contact-address-panama-details,
+.footer-social-link,
+.footer-privacy-policy,
+.footer-terms-of-service {
+  @apply text-gray-50
+  text-sm
+  lg:text-base
+  font-primary
+  font-[700]
+  tracking-widest
+  hover:text-teal-500
+  transition;
+}
+
+.footer-bottom {
+  @apply border-t
+  lg:border-t-2
+  border-gray-500
+  mt-12
+  lg:mt-14
+  pt-12
+  lg:pt-14
+  grid
+  grid-cols-1
+  md:grid-cols-2
+  lg:grid-cols-2
+  xl:grid-cols-3
+  items-center
+  justify-center
+  gap-10
+  lg:gap-12;
+}
+
+.footer-copyright {
+  @apply lg:justify-self-start
+  order-3
+  md:order-2
+  xl:order-1
+  text-gray-400
+  text-sm
+  lg:text-base
+  font-primary
+  font-[300]
+  tracking-widest;
+}
+
+.footer-switch-lang {
+  @apply lg:justify-self-center
+  order-1
+  md:order-1
+  xl:order-2
+  md:col-span-2
+  xl:col-span-1;
+}
+
+.footer-switch-lang-btn {
+  @apply btn
+  btn-secondary
+  w-24
+  lg:w-28;
+}
+
+.footer-legal-links {
+  @apply justify-self-center
+  lg:justify-self-end
+  order-2
+  md:order-3
+  flex
+  flex-col
+  items-center
+  justify-center
+  md:flex-row
+  gap-6
+  lg:gap-7
+  text-nowrap;
+}
+
+.footer-terms-of-service {
+  @apply md:border-l
+  lg:border-l-2
+  border-gray-400
+  md:pl-6
+  lg:pl-7;
+}
+
+@media (max-width: 355px) {
+  .footer-top {
+    @apply gap-8;
+  }
+
+  .footer-company-slogan {
+    @apply text-xs
+    mt-1;
+  }
+
+  .footer-contact-email-icon,
+  .footer-contact-phone-icon,
+  .footer-contact-address-icon {
+    @apply text-base;
+  }
+
+  .footer-nav-links-list,
+  .footer-contact-details-list,
+  .footer-social-links-list {
+    @apply gap-4;
+  }
+
+  .footer-nav-links-heading,
+  .footer-contact-details-heading,
+  .footer-social-links-heading {
+    @apply text-xs
+    mb-4;
+  }
+
+  .footer-contact-email-link,
+  .footer-contact-phone-link,
+  .footer-contact-address-ny-link,
+  .footer-contact-address-panama-link {
+    @apply gap-1;
+  }
+
+  .footer-nav-link,
+  .footer-contact-email-address,
+  .footer-contact-phone-number,
+  .footer-contact-address-ny-details,
+  .footer-contact-address-panama-details,
+  .footer-social-link,
+  .footer-privacy-policy,
+  .footer-terms-of-service {
+    @apply text-xs;
+  }
+
+  .footer-bottom {
+    @apply mt-10
+    pt-10
+    gap-8;
+  }
+
+  .footer-copyright {
+    @apply text-xs;
+  }
+
+  .footer-switch-lang-btn {
+    @apply w-20;
+  }
+
+  .footer-legal-links {
+    @apply gap-5;
+  }
+}

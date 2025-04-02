@@ -1,0 +1,114 @@
+{
+  "Common": {
+    "bookASessionBtn": "Reservar Una Sesión",
+    "videoFallbackTxt": "¡Ups! Parece que tu navegador no soporta la reproducción de video. ¡No te preocupes, aún puedes explorar nuestras impresionantes fotos!",
+    "CompanyLogo": {
+      "companyLogoAriaLabel": "Logotipo de la empresa que enlaza a la página de inicio",
+      "companyLogoAltText": "Logotipo de la empresa Pawis Crea"
+    },
+    "companySlogan": "Atrévete a Soñar"
+  },
+  "Header": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre",
+      "portfolio": "Portafolio",
+      "contact": "Contacto",
+      "book_a_session": "Reservar Sesión"
+    },
+    "lang": {
+      "en_long": "English",
+      "es_long": "Español",
+      "en_short": "EN",
+      "es_short": "ES"
+    }
+  },
+  "Home": {
+    "HomeHero": {
+      "headline": "Captura Tus Momentos, Enmarca Tu Historia",
+      "subheadline": "Servicios Profesionales de Fotografía y Videografía Que Cuentan Tu Historia",
+      "exploreOurServicesBtn": "Explora Nuestros Servicios",
+      "videoSRTxt": "Una muestra de nuestras mejores escenas de fotografía y videografía"
+    },
+    "aboutPawisCrea": {
+      "sectionHeading": "Nuestra Historia - A Través de Nuestro Lente",
+      "imgAltText": "El fundador de Pawis Crea capturando un momento con su cámara",
+      "imgCaption": "Capturando momentos, creando historias - un cuadro a la vez",
+      "slogan": "Atrévete a Soñar",
+      "description": "En Pawis Crea, creamos historias a través de la fotografía y la videografía, convirtiendo momentos fugaces en tesoros eternos. Nuestro apasionado equipo colabora con clientes—artistas, parejas, empresas—para dar vida a sus visiones con retratos expresivos, cobertura dinámica de eventos y visuales de marca impactantes. Capturamos la belleza y la emoción de cada momento, creando recuerdos que resuenan mucho después de que se dispara el obturador",
+      "uspAriaLabel": "Nuestros Puntos de Venta Únicos",
+      "usps": {
+        "expertise": {
+          "heading": "Más de 4 Años de Experiencia",
+          "description": "Con más de cuatro años de fotografía y videografía profesional, aportamos un historial comprobado de excelencia a cada proyecto"
+        },
+        "collaboration": {
+          "heading": "Tu Historia, Nuestra Artesanía",
+          "description": "Escuchamos atentamente y colaboramos contigo, convirtiendo tu visión en visuales auténticos que resuenan con emoción"
+        },
+        "moments": {
+          "heading": "Maestros del Momento",
+          "description": "Desde tomas espontáneas hasta videos cinematográficos, nos especializamos en capturar los detalles que cuentan tu historia única"
+        },
+        "versatility": {
+          "heading": "Versatilidad Creativa",
+          "description": "Ya sea el portafolio de un artista, un día de boda o una marca corporativa, nuestra visión artística y excelencia técnica entregan resultados atemporales"
+        }
+      },
+      "bookSessionBtn": "Reservar Sesión"
+    }
+  },
+  "AboutUs": {
+    "AboutUsHero": {
+      "headline": "Detrás de la Lente: la Pasión se Encuentra con la Creatividad",
+      "subheadline": "Conoce al Equipo Que Convierte Momentos en Recuerdos Duraderos",
+      "exploreOurStoryBtn": "Explora Nuestra Historia",
+      "videoSRTxt": "El equipo de Pawis Crea en acción, capturando momentos con pasión y creatividad"
+    },
+    "OurStory": {
+      "sectionHeading": "Nuestra Historia - A Través de Nuestro Lente",
+      "imgAltText": "El fundador de Pawis Crea capturando un momento con su cámara",
+      "description": "En Pawis Crea, creamos historias a través de la fotografía y la videografía, convirtiendo momentos fugaces en tesoros eternos. Nuestro apasionado equipo colabora con clientes—artistas, parejas, empresas—para dar vida a sus visiones con retratos expresivos, cobertura dinámica de eventos y visuales de marca impactantes. Capturamos la belleza y la emoción de cada momento, creando recuerdos que resuenan mucho después de que se dispara el obturador"
+    }
+  },
+  "Portfolio": {
+    "PortfolioHero": {
+      "headline": "Un Vistazo a Nuestras Historias Visuales",
+      "subheadline": "Descubre Nuestra Colección de Fotos Impresionantes y Videos Cinematográficos",
+      "exploreOurWorksBtn": "Explora Nuestros Trabajos",
+      "videoSRTxt": "Una selección exclusiva de nuestros momentos más electrizantes en eventos de DJ"
+    }
+  },
+  "ContactUs": {
+    "ContactUsHero": {
+      "headline": "Creemos Algo Increíble Juntos",
+      "subheadline": "Contáctanos para Comenzar Tu Viaje en Fotografía o Videografía con Nosotros",
+      "callUsBtn": "Llámanos",
+      "leaveUsAMsgBtn": "Déjanos Un Mensaje",
+      "videoSRTxt": "Imágenes detrás de escena de una sesión fotográfica al aire libre con un artista musical"
+    }
+  },
+  "Footer": {
+    "slogan": "Atrévete a Soñar",
+    "quick_links": "Enlaces Rápidos",
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre",
+      "portfolio": "Portafolio",
+      "services": "Servicios",
+      "contact": "Contacto",
+      "book_a_session": "Reservar Sesión"
+    },
+    "contact": "Contáctanos",
+    "follow_us": "Síguenos",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "vimeo": "Vimeo",
+      "youtube": "YouTube"
+    },
+    "rights_reserved": "Todos los Derechos Reservados",
+    "privacy_policy": "Política de Privacidad",
+    "terms_of_service": "Términos de Servicio"
+  }
+}

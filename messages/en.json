@@ -1,0 +1,114 @@
+{
+  "Common": {
+    "bookASessionBtn": "Book a Session",
+    "videoFallbackTxt": "Oops! It looks like your browser doesn't support video playback. Don't worry - you can still explore our stunning photos!",
+    "CompanyLogo": {
+      "companyLogoAriaLabel": "Company logo linking to homepage",
+      "companyLogoAltText": "Pawis Crea Company Logo"
+    },
+    "companySlogan": "Dare to Dream"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "contact": "Contact",
+      "book_a_session": "Book a Session"
+    },
+    "lang": {
+      "en_long": "English",
+      "es_long": "Español",
+      "en_short": "EN",
+      "es_short": "ES"
+    }
+  },
+  "Home": {
+    "HomeHero": {
+      "headline": "Capture Your Moments, Frame Your Story",
+      "subheadline": "Professional Photography & Videography Services That Tell Your Story",
+      "exploreOurServicesBtn": "Explore Our Services",
+      "videoSRTxt": "A showcase of our best photography and videography scenes"
+    },
+    "aboutPawisCrea": {
+      "sectionHeading": "Our Story - Through Our Lens",
+      "imgAltText": "The founder of Pawis Crea capturing a moment with their camera",
+      "imgCaption": "Capturing moments, creating stories - one frame at a time",
+      "slogan": "Dare to Dream",
+      "description": "At Pawis Crea, we craft stories through photography and videography, turning fleeting moments into timeless treasures. Our passionate team collaborates with clients—artists, couples, businesses—to bring their visions to life with expressive portraits, dynamic event coverage, and impactful brand visuals. We capture the beauty and emotion of each moment, creating memories that resonate long after the shutter clicks",
+      "uspAriaLabel": "Our Unique Selling Points",
+      "usps": {
+        "expertise": {
+          "heading": "Over 4 Years of Expertise",
+          "description": "With more than four years of professional photography and videography, we bring a proven track record of excellence to every project"
+        },
+        "collaboration": {
+          "heading": "Your Story, Our Craft",
+          "description": "We listen closely and collaborate with you, turning your vision into authentic visuals that resonate with emotion"
+        },
+        "moments": {
+          "heading": "Masters of the Moment",
+          "description": "From candid shots to cinematic videos, we specialize in capturing the details that tell your unique story"
+        },
+        "versatility": {
+          "heading": "Creative Versatility",
+          "description": "Whether it’s an artist’s portfolio, a wedding day, or a corporate brand, our artistic vision and technical excellence deliver timeless results"
+        }
+      },
+      "bookSessionBtn": "Book a Session"
+    }
+  },
+  "AboutUs": {
+    "AboutUsHero": {
+      "headline": "Behind the Lens: Passion Meets Creativity",
+      "subheadline": "Get to Know the Team That Turns Moments into Lasting Memories",
+      "exploreOurStoryBtn": "Explore Our Story",
+      "videoSRTxt": "Pawis Crea team in action, capturing moments with passion and creativity"
+    },
+    "OurStory": {
+      "sectionHeading": "Our Story - Through Our Lens",
+      "imgAltText": "The founder of Pawis Crea capturing a moment with their camera",
+      "description": "At Pawis Crea, we craft stories through photography and videography, turning fleeting moments into timeless treasures. Our passionate team collaborates with clients—artists, couples, businesses—to bring their visions to life with expressive portraits, dynamic event coverage, and impactful brand visuals. We capture the beauty and emotion of each moment, creating memories that resonate long after the shutter clicks"
+    }
+  },
+  "Portfolio": {
+    "PortfolioHero": {
+      "headline": "A Glimpse of Our Visual Stories",
+      "subheadline": "Discover Our Collection of Breathtaking Photos and Cinematic Videos",
+      "exploreOurWorksBtn": "Explore Our Works",
+      "videoSRTxt": "A handpicked showcase of our most electrifying DJ event moments"
+    }
+  },
+  "ContactUs": {
+    "ContactUsHero": {
+      "headline": "Let’s Create Something Amazing Together",
+      "subheadline": "Reach out to Start Your Photography or Videography Journey with Us",
+      "callUsBtn": "Call Us",
+      "leaveUsAMsgBtn": "Leave Us A Message",
+      "videoSRTxt": "Behind-the-scenes footage of an outdoor music artist photo shoot"
+    }
+  },
+  "Footer": {
+    "slogan": "Dare to Dream",
+    "quick_links": "Quick Links",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "services": "Services",
+      "contact": "Contact",
+      "book_a_session": "Book a Session"
+    },
+    "contact": "Contact Us",
+    "follow_us": "Follow Us",
+    "social": {
+      "instagram": "Instagram",
+      "facebook": "Facebook",
+      "vimeo": "Vimeo",
+      "youtube": "YouTube"
+    },
+    "rights_reserved": "All Rights Reserved",
+    "privacy_policy": "Privacy Policy",
+    "terms_of_service": "Terms of Service"
+  }
+}
