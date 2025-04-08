@@ -6,7 +6,23 @@
       "companyLogoAriaLabel": "Company logo linking to homepage",
       "companyLogoAltText": "Pawis Crea Company Logo"
     },
-    "companySlogan": "Dare to Dream"
+    "companySlogan": "Dare to Dream",
+    "portfolioCategories": {
+      "children": "Children",
+      "djCoverage": "DJ Coverage",
+      "eventCoverage": "Event Coverage",
+      "fashion": "Fashion",
+      "gastronomy": "Gastronomy",
+      "marriage": "Marriage",
+      "musicVideosBts": "Music Videos BTS",
+      "personal": "Personal",
+      "photoStudio": "Photo Studio",
+      "quinceañera": "Quinceañera"
+    },
+    "filterCategories": {
+      "featured": "Featured",
+      "all": "All"
+    }
   },
   "Header": {
     "nav": {
@@ -77,6 +93,10 @@
       "subheadline": "Discover Our Collection of Breathtaking Photos and Cinematic Videos",
       "exploreOurWorksBtn": "Explore Our Works",
       "videoSRTxt": "A handpicked showcase of our most electrifying DJ event moments"
+    },
+    "OurPhotographyCollection": {
+      "sectionHeading": "Our Photography Collection - Moments in Focus",
+      "photographyCollectionNotLoaded": "No images are available at the moment! Please check back later"
     }
   },
   "ContactUs": {

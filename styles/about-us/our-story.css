@@ -1,5 +1,5 @@
 .our-story {
-  @apply bg-[url("/images/sections-bg/section-bg-2.svg")]
+  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
   bg-cover
   bg-center
   bg-no-repeat
@@ -8,8 +8,7 @@
 
 .our-story::before {
   @apply overlay
-  !bg-neutral-900
-  !bg-opacity-[0.01];
+  !bg-gradient-to-br from-neutral-900/[0.01] to-neutral-900/0;
 }
 
 .our-story-container {
@@ -25,7 +24,7 @@
   text-center
   text-transparent 
   bg-clip-text 
-  bg-gradient-to-r from-pink-200 to-pink-500
+  bg-gradient-to-r from-pink-100 to-pink-300
   relative
   pb-3
   lg:pb-3.5
@@ -42,7 +41,7 @@
   lg:w-20 
   h-1
   lg:h-[0.3125rem] 
-  bg-gradient-to-r from-pink-500 to-pink-200
+  bg-gradient-to-r from-pink-300 to-pink-100
   rounded-full
   -translate-x-1/2;
 }

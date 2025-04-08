@@ -6,7 +6,23 @@
       "companyLogoAriaLabel": "Logotipo de la empresa que enlaza a la página de inicio",
       "companyLogoAltText": "Logotipo de la empresa Pawis Crea"
     },
-    "companySlogan": "Atrévete a Soñar"
+    "companySlogan": "Atrévete a Soñar",
+    "portfolioCategories": {
+      "children": "Niños",
+      "djCoverage": "Cobertura de DJ",
+      "eventCoverage": "Cobertura de Eventos",
+      "fashion": "Moda",
+      "gastronomy": "Gastronomía",
+      "marriage": "Matrimonio",
+      "musicVideosBts": "Videos Musicales BTS",
+      "personal": "Personal",
+      "photoStudio": "Estudio Fotográfico",
+      "quinceañera": "Quinceañera"
+    },
+    "filterCategories": {
+      "featured": "Destacado",
+      "all": "Todo"
+    }
   },
   "Header": {
     "nav": {
@@ -77,6 +93,10 @@
       "subheadline": "Descubre Nuestra Colección de Fotos Impresionantes y Videos Cinematográficos",
       "exploreOurWorksBtn": "Explora Nuestros Trabajos",
       "videoSRTxt": "Una selección exclusiva de nuestros momentos más electrizantes en eventos de DJ"
+    },
+    "OurPhotographyCollection": {
+      "sectionHeading": "Nuestra Colección de Fotografía - Momentos en Foco",
+      "photographyCollectionNotLoaded": "¡No hay imágenes disponibles en este momento! Por favor, vuelve a revisar más tarde"
     }
   },
   "ContactUs": {
