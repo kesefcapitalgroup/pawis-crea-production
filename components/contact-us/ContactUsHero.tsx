@@ -60,7 +60,7 @@ const ContactUsHero: FC = () => {
           <h2 className="contact-us-hero-subheadline">{subheadline}</h2>
           <div className="contact-us-hero-cta">
             <Link
-              href="tel:+15551234567"
+              href="tel:+50768560871"
               className="call-us-btn"
               aria-label={callUsBtn}
             >

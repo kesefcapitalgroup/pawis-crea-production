@@ -46,6 +46,7 @@ const OurStory: FC = () => {
               aria-describedby="our-story-description"
               priority
               placeholder="blur"
+              layout="responsive"
             />
           </div>
 

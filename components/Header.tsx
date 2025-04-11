@@ -62,7 +62,7 @@ const Header: FC = () => {
           >
             {tLang(`${otherLocale}_long`)}
           </button>
-          <Link href="/book-session" className="book-a-session-header-btn">
+          <Link href="tel:+50768560871" className="book-a-session-header-btn">
             {t("book_a_session")}
           </Link>
 
@@ -102,7 +102,7 @@ const Header: FC = () => {
               ))}
               <li onClick={toggleMobileMenu}>
                 <Link
-                  href="/book-session"
+                  href="tel:+50768560871"
                   className="book-a-session-header-mobile-nav-btn"
                 >
                   {t("book_a_session")}

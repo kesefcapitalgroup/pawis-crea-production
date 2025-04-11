@@ -24,9 +24,7 @@ const Footer: FC = () => {
     { key: "home", href: "/" },
     { key: "about", href: "/about" },
     { key: "portfolio", href: "/portfolio" },
-    { key: "services", href: "/services" },
     { key: "contact", href: "/contact" },
-    { key: "book_a_session", href: "/book-session" },
   ];
 
   const socialLinks = [
@@ -88,17 +86,17 @@ const Footer: FC = () => {
               <p className="footer-contact-phone">
                 <a
                   className="footer-contact-phone-link"
-                  href="tel:+15551234567"
+                  href="tel:+50768560871"
                 >
                   <RiPhoneFill className="footer-contact-phone-icon" />
 
                   <span className="footer-contact-phone-number">
-                    +1 (555) 123-4567
+                    +507 6856-0871
                   </span>
                 </a>
               </p>
 
-              <p className="footer-contact-address-ny">
+              {/* <p className="footer-contact-address-ny">
                 <a
                   className="footer-contact-address-ny-link"
                   href="https://www.google.com/maps/search/?api=1&query=15th+floor,+800+Third+Ave,+New+York,+NY+10022,+USA"
@@ -111,7 +109,7 @@ const Footer: FC = () => {
                     15th floor, 800 Third Ave, New York, NY 10022, USA
                   </span>
                 </a>
-              </p>
+              </p> */}
 
               <p className="footer-contact-address-panama">
                 <a
@@ -123,8 +121,7 @@ const Footer: FC = () => {
                   <RiMapPinFill className="footer-contact-address-icon" />
 
                   <span className="footer-contact-address-panama-details">
-                    Avenida Ricardo Arango, entre Calle 57 y 58, Obarrio, Panama
-                    City, Panama
+                    Panama City, Panama
                   </span>
                 </a>
               </p>

@@ -8,7 +8,7 @@
 
 .our-photography-collection::before {
   @apply overlay
-  !bg-gradient-to-br from-neutral-900/[0.01] to-neutral-900/0;
+  !bg-gradient-to-b from-neutral-900/[0.01] to-neutral-900/0;
 }
 
 .our-photography-collection-container {
@@ -17,34 +17,7 @@
 }
 
 .our-photography-collection-heading {
-  @apply text-2xl 
-  lg:text-3xl 
-  tracking-widest 
-  font-primary
-  font-[900]
-  text-center
-  text-transparent 
-  bg-clip-text 
-  bg-gradient-to-r from-pink-100 to-pink-300
-  relative
-  pb-3
-  lg:pb-3.5
-  mb-7
-  lg:mb-9;
-}
-
-.our-photography-collection-heading::after {
-  content: "";
-  @apply absolute 
-  bottom-0 
-  left-1/2
-  w-16
-  lg:w-20 
-  h-1
-  lg:h-[0.3125rem] 
-  bg-gradient-to-r from-pink-300 to-pink-100
-  rounded-full
-  -translate-x-1/2;
+  @apply section-heading;
 }
 
 .our-photography-collection-filter-bar {
@@ -64,22 +37,8 @@
   shadow-lg
   
   flex
-  items-center;
-}
-
-.scroll-right {
-  @apply w-8
-  lg:w-10
-  ml-1
-  lg:ml-2;
-}
-
-.scroll-right-icon {
-  @apply text-gray-50
-  text-3xl
-  lg:text-4xl
-  flex-shrink-0;
-  animation: leftToRIghtBackAndForthLoop 2s ease-in-out infinite;
+  items-center
+  justify-center;
 }
 
 .our-photography-collection-filter-categories {
@@ -88,9 +47,8 @@
   overflow-x-auto
   gap-2
   lg:gap-3
-  xl:gap-4
-  justify-start
-  whitespace-nowrap;
+  items-center
+  justify-start;
 
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -103,8 +61,7 @@
 
 .filter-category-btn {
   @apply btn
-  btn-secondary
-  flex-shrink-0;
+  btn-secondary;
 }
 
 .active-filter-category {
@@ -142,7 +99,14 @@
 .our-photography-collection-img {
   @apply block
   w-full
-  relative;
+  relative
+  border-2
+  border-pink-400/25
+  hover:border-pink-400
+  transition
+  rounded-lg
+  shadow-lg
+  overflow-hidden;
 }
 
 .lg-outer .lg-sub-html {
@@ -150,12 +114,12 @@
 }
 
 .lg-outer .lg-progress-bar .lg-progress {
-  @apply bg-pink-500;
+  @apply bg-pink-400;
 }
 
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
-  @apply !border-pink-500;
+  @apply !border-pink-400;
 }
 
 .our-photography-collection-img-loading-skeleton {
@@ -173,14 +137,9 @@
   @apply w-full
   h-auto
   block
-  rounded-lg
-  shadow-lg
   relative
-  hover:scale-[1.025]
-  hover:brightness-125
+  hover:scale-[1.05]
   transition;
-
-  image-rendering: -webkit-optimize-contrast;
 }
 
 .our-photography-collection-img-loading {
@@ -192,27 +151,21 @@
 }
 
 @media (max-width: 355px) {
-  .our-photography-collection-heading {
-    @apply text-xl
-    mb-8;
-  }
-
   .our-photography-collection-filter-bar {
     @apply p-2.5
     mb-4;
   }
 
-  .scroll-right {
-    @apply w-8
-    ml-0.5;
-  }
-
-  .scroll-right-icon {
-    @apply text-2xl;
-  }
-
   .our-photography-collection-filter-categories {
     @apply gap-1.5;
+  }
+
+  .my-masonry-grid {
+    @apply -ml-5;
+  }
+
+  .my-masonry-grid_column {
+    @apply pl-5;
   }
 
   .my-masonry-grid_column > a {

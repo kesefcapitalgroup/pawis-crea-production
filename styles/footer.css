@@ -70,6 +70,11 @@
 .footer-contact-address-panama {
 }
 
+.footer-contact-address-ny-details,
+.footer-contact-address-panama-details {
+  @apply w-full;
+}
+
 .footer-contact-email-address,
 .footer-contact-phone-number {
   @apply lg:w-full;
@@ -143,7 +148,7 @@
   font-primary
   font-[700]
   tracking-widest
-  hover:text-teal-500
+  hover:text-pink-200
   transition;
 }
 

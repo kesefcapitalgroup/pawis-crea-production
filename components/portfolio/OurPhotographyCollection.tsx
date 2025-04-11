@@ -125,7 +125,9 @@ const OurPhotographyCollectionImage: FC<OurPhotographyCollectionImageProps> =
       href={`/images/portfolio-img/${img.src}`}
       className="our-photography-collection-img"
     >
-      {!isLoaded && <Skeleton width={img.width} height={img.height} />}
+      {!isLoaded && (
+        <Skeleton width={img.width / 10} height={img.height / 10} />
+      )}
       <Image
         alt={img.alt}
         src={`/images/portfolio-img/${img.src}`}
