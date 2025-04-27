@@ -1,5 +1,9 @@
 {
   "Common": {
+    "metadata": {
+      "title": "Pawis Crea | Professional Photography & Videography",
+      "description": "Pawis Crea offers professional photography and videography services that bring your vision to life. From weddings and fashion to corporate branding and personal projects, we craft timeless stories through the lens"
+    },
     "bookASessionBtn": "Book a Session",
     "videoFallbackTxt": "Oops! It looks like your browser doesn't support video playback. Don't worry - you can still explore our stunning photos!",
     "CompanyLogo": {
@@ -105,7 +109,29 @@
       "subheadline": "Reach out to Start Your Photography or Videography Journey with Us",
       "callUsBtn": "Call Us",
       "leaveUsAMsgBtn": "Leave Us A Message",
-      "videoSRTxt": "Behind-the-scenes footage of an outdoor music artist photo shoot"
+      "videoSRTxt": "Behind-the-scenes footage of a music artist outdoor photo shoot"
+    },
+    "ContactUsForm": {
+      "sectionHeading": "Reach Out - Connect with Us",
+      "companyIntroMessage": "At Pawis Crea, we turn your dreams into timeless stories. Let's make your dreams unforgettable—reach out today!",
+      "form": {
+        "fields": {
+          "fullNameLabel": "Full Name",
+          "emailAdressLabel": "Email Address",
+          "phoneNumberLabel": "Phone Number",
+          "messageLabel": "Message",
+          "messagePlaceholder": "Whether it’s a question, feedback, or just a hello — we’re all ears!"
+        },
+        "msgToUser": {
+          "missingFullName": "Hey, we need your full name to keep things personal!",
+          "missingMessage": "Oops, you forgot to add a message. Tell us what's up!",
+          "incorrectEmailFormat": "That email seems off. Please enter a valid email address (e.g., john.doe@gmail.com)!",
+          "incorrectPhoneNumberFormat": "Hmm, that phone number doesn't look right. Please use a valid format (e.g., +507 6208-2646 for Panama)!",
+          "bothEmailAndPhoneMissing": "Yo! Drop us your email or phone, your pick!",
+          "formSubmitted": "Got it! Thanks for sharing your story — we're thrilled to connect! Expect a reply within 24 hours to keep your dreams rolling. ✨"
+        }
+      },
+      "submitBtn": "Submit"
     }
   },
   "Footer": {

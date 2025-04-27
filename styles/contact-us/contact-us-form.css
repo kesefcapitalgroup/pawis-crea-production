@@ -1,0 +1,331 @@
+.contact-us-form {
+  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.contact-us-form::before {
+  @apply overlay
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+}
+
+.contact-us-form-container {
+  @apply section-container;
+}
+
+.contact-us-form-heading {
+  @apply section-heading;
+}
+
+.contact-us-form-content {
+  @apply grid
+  grid-cols-1
+  lg:grid-cols-[3fr_5fr]
+  gap-5
+  lg:gap-6;
+}
+
+.company-intro {
+  @apply flex
+  flex-col
+  items-center
+  justify-center
+  bg-gradient-to-tl from-pink-200/15 to-pink-300/15
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden
+  p-5
+  lg:p-6;
+}
+
+.company-intro-img {
+  @apply object-cover
+  sm:!max-w-80
+  lg:!max-w-[17rem]
+  rounded-full
+  border-2
+  border-pink-400
+  mb-4
+  lg:mb-5;
+}
+
+.company-intro-message {
+  @apply text-center
+  text-sm
+  lg:text-base
+  tracking-widest
+  italic
+  text-gray-100
+  font-[300];
+}
+
+.contact-form {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  gap-0 
+  md:gap-5
+  bg-neutral-100/15
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden
+  p-5
+  lg:p-6
+  relative;
+}
+
+.contact-form-user-info {
+  @apply flex
+  flex-col
+  gap-1
+  lg:gap-2;
+}
+
+.contact-form-group-full-name,
+.contact-form-group-email-address,
+.contact-form-group-phone-number,
+.contact-form-group-message {
+  @apply flex
+  flex-col
+  items-center
+  lg:items-start
+  justify-items-center
+  gap-2
+  lg:gap-3
+  mb-4
+  lg:mb-5;
+}
+
+.contact-form-label-full-name,
+.contact-form-label-email-address,
+.contact-form-label-phone-number,
+.contact-form-label-message {
+  @apply text-center
+  lg:text-left
+  text-sm
+  lg:text-base
+  text-gray-50
+  font-[700]
+  uppercase
+  tracking-widest;
+}
+
+.contact-form-input-full-name,
+.contact-form-input-email-address,
+.contact-form-input-phone-number,
+.contact-form-textarea-message {
+  @apply w-full
+  text-center
+  lg:text-left
+  text-sm
+  lg:text-base
+  font-[400]
+  font-primary
+  px-2.5
+  lg:px-3
+  py-1.5
+  lg:py-2.5
+  rounded-lg
+  border-2
+  bg-neutral-100
+  border-pink-400
+  hover:border-pink-500
+  text-gray-900
+  tracking-widest
+  shadow-inner
+  focus:outline-none
+  focus:ring-2
+  focus:ring-pink-600
+  transition;
+}
+
+.contact-form-input-phone-number .PhoneInputInput {
+  @apply bg-transparent
+  text-gray-900
+  border-none
+  outline-none
+  focus:ring-0
+  focus:border-none
+  focus:outline-none;
+}
+
+.contact-form-input-phone-number:has(.PhoneInputInput:focus) {
+  @apply ring-2 
+  ring-pink-600;
+}
+
+.contact-form-input-full-name::placeholder,
+.contact-form-input-email-address::placeholder,
+.contact-form-input-phone-number::placeholder,
+.contact-form-textarea-message::placeholder {
+  @apply text-gray-500;
+}
+
+.contact-form-textarea-message {
+  @apply h-32
+  md:h-full
+  resize-none;
+}
+
+.contact-form-textarea-message::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+.contact-form-textarea-message::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.contact-form-textarea-message::-webkit-scrollbar-thumb {
+  @apply bg-pink-400
+  rounded-full
+  border-2
+  border-transparent
+  bg-clip-content;
+}
+
+.contact-form-textarea-message {
+  scrollbar-width: thin;
+  scrollbar-color: #ec4899 transparent;
+}
+
+.contact-form-submit-btn {
+  @apply mt-1
+  md:mt-0
+  col-span-2
+  btn
+  btn-primary
+  w-min
+  mx-auto;
+}
+
+.contact-form-msg-to-user-modal {
+  @apply absolute
+  inset-0
+  z-50
+  flex
+  items-center
+  justify-center
+  bg-neutral-800/75
+  backdrop-blur-sm
+  shadow-lg
+  rounded-lg;
+}
+
+.contact-form-msg-to-user-modal-content {
+  @apply bg-neutral-200
+  backdrop-blur-md
+  rounded-lg
+  shadow-lg
+  p-5
+  lg:p-6
+  max-w-xl
+  w-full
+  flex
+  flex-col
+  items-center
+  gap-4
+  lg:gap-5
+  border-2
+  border-red-600;
+}
+
+.contact-form-msg-to-user {
+  @apply text-center
+  font-primary
+  text-sm
+  lg:text-base
+  text-red-600
+  font-[700]
+  tracking-widest;
+}
+
+.contact-form-msg-to-user-modal-close-btn {
+  @apply btn
+    btn-primary;
+}
+
+@media (max-width: 355px) {
+  .contact-us-form-content {
+    @apply gap-4;
+  }
+
+  .company-intro {
+    @apply p-4;
+  }
+
+  .company-intro-img {
+    @apply mb-3;
+  }
+
+  .company-intro-message {
+    @apply text-xs;
+  }
+
+  .contact-form {
+    @apply p-4;
+  }
+
+  .contact-form-user-info {
+    @apply gap-0.5;
+  }
+
+  .contact-form-group-full-name,
+  .contact-form-group-email-address,
+  .contact-form-group-phone-number,
+  .contact-form-group-message {
+    @apply gap-1
+    mb-3;
+  }
+
+  .contact-form-label-full-name,
+  .contact-form-label-email-address,
+  .contact-form-label-phone-number,
+  .contact-form-label-message {
+    @apply text-xs
+    font-[600];
+  }
+
+  .contact-form-input-full-name,
+  .contact-form-input-email-address,
+  .contact-form-input-phone-number,
+  .contact-form-textarea-message {
+    @apply text-xs
+    px-2
+    py-1
+    border
+    focus:ring-1
+    focus:ring-pink-600
+    transition;
+  }
+
+  .contact-form-input-phone-number:has(.PhoneInputInput:focus) {
+    @apply ring-1;
+  }
+
+  .contact-form-textarea-message {
+    @apply h-28;
+  }
+
+  .contact-form-textarea-message::-webkit-scrollbar-thumb {
+    @apply border;
+  }
+
+  .contact-form-submit-btn {
+    @apply mt-1;
+  }
+
+  .contact-form-msg-to-user-modal-content {
+    @apply p-4
+    gap-3
+    border;
+  }
+
+  .contact-form-msg-to-user {
+    @apply text-xs
+    font-[600];
+  }
+}

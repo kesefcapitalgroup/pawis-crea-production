@@ -1,5 +1,9 @@
 {
   "Common": {
+    "metadata": {
+      "title": "Pawis Crea | Fotografía y Videografía Profesional",
+      "description": "Pawis Crea ofrece servicios profesionales de fotografía y videografía que dan vida a tu visión. Desde bodas y moda hasta branding corporativo y proyectos personales, creamos historias atemporales a través del lente"
+    },
     "bookASessionBtn": "Reservar Una Sesión",
     "videoFallbackTxt": "¡Ups! Parece que tu navegador no soporta la reproducción de video. ¡No te preocupes, aún puedes explorar nuestras impresionantes fotos!",
     "CompanyLogo": {
@@ -105,7 +109,29 @@
       "subheadline": "Contáctanos para Comenzar Tu Viaje en Fotografía o Videografía con Nosotros",
       "callUsBtn": "Llámanos",
       "leaveUsAMsgBtn": "Déjanos Un Mensaje",
-      "videoSRTxt": "Imágenes detrás de escena de una sesión fotográfica al aire libre con un artista musical"
+      "videoSRTxt": "Imágenes detrás de escena de una sesión de fotos al aire libre de un artista musical"
+    },
+    "ContactUsForm": {
+      "sectionHeading": "Contáctanos - Conecta con Nosotros",
+      "companyIntroMessage": "En Pawis Crea, convertimos tus sueños en historias atemporales. ¡Hagamos que tus sueños sean inolvidables, contáctanos hoy!",
+      "form": {
+        "fields": {
+          "fullNameLabel": "Nombre Completo",
+          "emailAdressLabel": "Dirección de Correo Electrónico",
+          "phoneNumberLabel": "Número de Teléfono",
+          "messageLabel": "Mensaje",
+          "messagePlaceholder": "Ya sea una pregunta, comentario o simplemente un saludo, ¡estamos todo oídos!"
+        },
+        "msgToUser": {
+          "missingFullName": "¡Oye, necesitamos tu nombre completo para mantener las cosas personales!",
+          "missingMessage": "¡Ups, olvidaste agregar un mensaje! ¡Cuéntanos qué pasa!",
+          "incorrectEmailFormat": "Ese correo parece incorrecto. ¡Por favor, introduce una dirección de correo válida (por ejemplo, john.doe@gmail.com)!",
+          "incorrectPhoneNumberFormat": "Hmm, ese número de teléfono no parece correcto. ¡Por favor, usa un formato válido (por ejemplo, +507 6208-2646 para Panamá)!",
+          "bothEmailAndPhoneMissing": "¡Ey! ¡Déjanos tu correo o teléfono, tú eliges!",
+          "formSubmitted": "¡Recibido! Gracias por compartir tu historia, ¡estamos emocionados de conectar! Espera nuestra respuesta en 24 horas para seguir haciendo realidad tus sueños. ✨"
+        }
+      },
+      "submitBtn": "Enviar"
     }
   },
   "Footer": {

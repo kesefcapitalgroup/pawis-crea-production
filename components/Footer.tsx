@@ -73,12 +73,12 @@ const Footer: FC = () => {
               <p className="footer-contact-email">
                 <a
                   className="footer-contact-email-link"
-                  href="mailto:info@pawiscrea.com"
+                  href="mailto:pawiscrea@gmail.com"
                 >
                   <RiMailFill className="footer-contact-email-icon" />
 
                   <span className="footer-contact-email-address">
-                    info@pawiscrea.com
+                    pawiscrea@gmail.com
                   </span>
                 </a>
               </p>

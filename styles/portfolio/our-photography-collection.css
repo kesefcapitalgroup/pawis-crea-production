@@ -8,7 +8,7 @@
 
 .our-photography-collection::before {
   @apply overlay
-  !bg-gradient-to-b from-neutral-900/[0.01] to-neutral-900/0;
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
 }
 
 .our-photography-collection-container {
@@ -23,7 +23,7 @@
 .our-photography-collection-filter-bar {
   @apply sticky
   top-0
-  z-50
+  z-40
 
   p-3
   lg:p-4

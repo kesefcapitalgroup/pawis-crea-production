@@ -8,7 +8,7 @@
 
 .our-story::before {
   @apply overlay
-  !bg-gradient-to-br from-neutral-900/[0.01] to-neutral-900/0;
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
 }
 
 .our-story-container {
@@ -20,29 +20,31 @@
 }
 
 .our-story-content {
-  @apply bg-neutral-700/50
+  @apply bg-neutral-100/15
   backdrop-blur-sm
   rounded-lg
   shadow-lg
   overflow-hidden
   grid
   grid-cols-1
-  xl:grid-cols-2
+  lg:grid-cols-2
   justify-center
   items-center;
 }
 
 .our-story-img-content {
+  @apply overflow-hidden
+  sm:h-96
+  lg:h-[26rem];
 }
 
 .our-story-img {
-  @apply object-cover
-  mx-auto;
+  @apply object-cover;
 }
 
 .our-story-text-content {
-  @apply p-6
-  lg:p-8
+  @apply p-5
+  lg:p-6
   text-center
   xl:text-start;
 }

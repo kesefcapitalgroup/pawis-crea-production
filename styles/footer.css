@@ -1,5 +1,7 @@
 .footer {
-  @apply bg-neutral-900;
+  @apply bg-neutral-900
+  border-t
+  border-neutral-700;
 }
 
 .footer-container {

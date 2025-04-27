@@ -1,8 +1,7 @@
-- Review OurPhotographyCollection tsx
-- Restyle OurPhotographyCollection styles
-- Review OurPhotographyCollection
+- Create ContactUsForm Section
 - Fix OurPhotographyCollection error on language switching
 - Improve filtering images in OurPhotographyCollection
 - Improve language switching
 - Improve Header
 - Improve Footer
+- Add Vercel Analytics

@@ -38,8 +38,8 @@ const OurStory: FC = () => {
           <div className="our-story-img-content">
             <Image
               src={ourStoryImgSrc}
-              width={1280}
-              height={853}
+              width={1440}
+              height={1440}
               alt={imgAltText}
               className="our-story-img"
               sizes="(max-width: 768px) 100vw, 50vw"

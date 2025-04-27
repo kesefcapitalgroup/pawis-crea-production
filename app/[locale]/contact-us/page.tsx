@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 
 // Sections
 import ContactUsHero from "@/components/contact-us/ContactUsHero";
+import ContactUsForm from "@/components/contact-us/ContactUsForm";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -20,6 +21,7 @@ const ContactUsPage: FC<ContactUsPageProps> = ({ params }) => {
   return (
     <main className="contact-us-page">
       <ContactUsHero />
+      <ContactUsForm />
     </main>
   );
 };
