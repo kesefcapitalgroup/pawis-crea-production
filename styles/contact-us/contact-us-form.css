@@ -195,7 +195,7 @@
 .contact-form-submit-btn {
   @apply mt-1
   md:mt-0
-  col-span-2
+  md:col-span-2
   btn
   btn-primary
   w-min
