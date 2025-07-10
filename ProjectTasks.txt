@@ -1,7 +1,13 @@
-- Create ContactUsForm Section
+- Create Services Overview Section
+- Fix objectPosition sequence of slide images
+
+- Change Marriage to Wedding in OurPhotographyCollection
+- Recheck spanish translations
+- Improve ContactUsForm Section
 - Fix OurPhotographyCollection error on language switching
 - Improve filtering images in OurPhotographyCollection
 - Improve language switching
 - Improve Header
 - Improve Footer
 - Add Vercel Analytics
+- Add Page Loading Progress bar with website primary colors

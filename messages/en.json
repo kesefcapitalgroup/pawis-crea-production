@@ -50,32 +50,78 @@
       "exploreOurServicesBtn": "Explore Our Services",
       "videoSRTxt": "A showcase of our best photography and videography scenes"
     },
-    "aboutPawisCrea": {
-      "sectionHeading": "Our Story - Through Our Lens",
-      "imgAltText": "The founder of Pawis Crea capturing a moment with their camera",
-      "imgCaption": "Capturing moments, creating stories - one frame at a time",
-      "slogan": "Dare to Dream",
-      "description": "At Pawis Crea, we craft stories through photography and videography, turning fleeting moments into timeless treasures. Our passionate team collaborates with clients—artists, couples, businesses—to bring their visions to life with expressive portraits, dynamic event coverage, and impactful brand visuals. We capture the beauty and emotion of each moment, creating memories that resonate long after the shutter clicks",
-      "uspAriaLabel": "Our Unique Selling Points",
-      "usps": {
-        "expertise": {
-          "heading": "Over 4 Years of Expertise",
-          "description": "With more than four years of professional photography and videography, we bring a proven track record of excellence to every project"
+    "ServicesOverview": {
+      "sectionHeading": "Our Services – Framing Dreams Into Reality",
+      "sectionDescription": "From artists and music creators to couples and corporate teams, we capture every story with heart—turning your moments into lasting visual art",
+      "services": {
+        "weddingsQuinceañeras": {
+          "heading": "Weddings & Quinceañeras",
+          "subheading": "Unforgettable Celebrations",
+          "description": "We beautifully document the emotions, details, and joy of weddings and quinceañeras, blending cinematic visuals with authentic moments to preserve your most unforgettable celebrations",
+          "images": {
+            "img1Description": "A newlywed couple embracing on the dance floor",
+            "img2Description": "A 15-year-old princess, crowned and glowing, holding her drink at her quinceañera celebration",
+            "img3Description": "Newlyweds sharing a kiss after exchanging vows",
+            "img4Description": "A crowned princess in an elegant dress at her quinceañera celebration"
+          }
         },
-        "collaboration": {
-          "heading": "Your Story, Our Craft",
-          "description": "We listen closely and collaborate with you, turning your vision into authentic visuals that resonate with emotion"
+        "musicArtistsBTS": {
+          "heading": "Music Artists & BTS",
+          "subheading": "Your Sound, In Focus",
+          "description": "We team up with music artists to craft energetic behind-the-scenes visuals that spotlight your process, passion, and personality—putting your sound and story in full focus",
+          "images": {
+            "img1Description": "A candid collage capturing music artists enjoying a card game outside their garage",
+            "img2Description": "A vibrant behind-the-scenes shot of music artists and their crew striking poses before filming their music video",
+            "img3Description": "A captivating collage of a music artist performing on a music video set",
+            "img4Description": "A behind-the-scenes photo of music artists and their partners posing during a break from music video filming"
+          }
         },
-        "moments": {
-          "heading": "Masters of the Moment",
-          "description": "From candid shots to cinematic videos, we specialize in capturing the details that tell your unique story"
+        "eventsCorporateCoverage": {
+          "heading": "Events & Corporate Coverage",
+          "subheading": "Capture the Energy",
+          "description": "From energetic parties to formal corporate galas, we capture your event's atmosphere and key moments with dynamic photography and video that brings the entire experience to life",
+          "images": {
+            "img1Description": "A DJ performing at a daytime DJ event",
+            "img2Description": "An employee confidently holding her drink at a corporate event",
+            "img3Description": "A DJ, passionately spinning tracks at a lively nightclub party",
+            "img4Description": "Group photo of all women employees at a corporate event"
+          }
         },
-        "versatility": {
-          "heading": "Creative Versatility",
-          "description": "Whether it’s an artist’s portfolio, a wedding day, or a corporate brand, our artistic vision and technical excellence deliver timeless results"
+        "personalFashionPortraits": {
+          "heading": "Personal & Fashion Shoots",
+          "subheading": "Bold. Stylish. You.",
+          "description": "Whether it’s bold fashion or an intimate portrait, our shoots empower you to express your unique style and story through visually striking and emotionally rich imagery",
+          "images": {
+            "img1Description": "A woman enjoying an outdoor fashion photo shoot with her morning latte",
+            "img2Description": "A woman strikes a confident pose in a wonderful woolen jacket at a fashion show",
+            "img3Description": "A woman posing for a cover during a personal photoshoot at a car wash",
+            "img4Description": "A man modeling the back of his custom-designed t-shirt at a fashion fest"
+          }
+        },
+        "brandStoryGastronomy": {
+          "heading": "Brand Story & Gastronomy",
+          "subheading": "Crafted to Connect",
+          "description": "We craft striking content that highlights your brand’s identity or culinary artistry—transforming products into icons and food into captivating, mouthwatering experiences",
+          "images": {
+            "img1Description": "A golden lucky cat statue beside a vibrant sesame chicken dish, set against a scenic ocean view at a chic rooftop restaurant",
+            "img2Description": "A refreshing orange cocktail with lemon slice, elegantly presented on a sleek table with a scenic backdrop",
+            "img3Description": "An assortment of gourmet dishes, including crispy pork, savory tacos, and mini sliders, artfully arranged on a sophisticated marble table",
+            "img4Description": "A rich espresso martini with creamy foam and coffee beans, served on a stylish glass table"
+          }
+        },
+        "childrenStudioPortraits": {
+          "heading": "Children & Studio Portraits",
+          "subheading": "Joy in Every Smile",
+          "description": "With warmth and creativity, we create timeless portraits—whether playful childhood moments or elegant studio shots—that showcase authentic personalities and lasting memories",
+          "images": {
+            "img1Description": "A 3-month-old sleeps serenely on her hand, wrapped in a little fairy outfit for a tranquil childhood portrait",
+            "img2Description": "A portrait of a woman in a black top and jeans poses confidently with wavy hair and sunglasses against a clean backdrop",
+            "img3Description": "A joyful toddler in a yellow dress claps beside balloons and playful frog toy on her 1st birthday",
+            "img4Description": "A portrait of a man in a black shirt and gold chain stands confidently against a minimalist backdrop"
+          }
         }
       },
-      "bookSessionBtn": "Book a Session"
+      "exploreOurPortfolioBtn": "Explore Our Portfolio"
     }
   },
   "AboutUs": {

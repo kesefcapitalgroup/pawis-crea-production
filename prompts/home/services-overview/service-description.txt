@@ -1,0 +1,1827 @@
+I need a list of styles suggestions for service-description 
+p tag
+
+import React, { FC } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+
+// CSS
+import "@/styles/home/services-overview.css";
+
+// Components
+import EmblaCarousel from "./EmblaCarousel";
+
+const ServicesOverview: FC = () => {
+  const t_Section = useTranslations("Home.ServicesOverview");
+  const t_Common = useTranslations("Common");
+
+  const sectionHeading = t_Section("sectionHeading");
+  const sectionDescription = t_Section("sectionDescription");
+  const services = [
+    {
+      key: "weddingsQuinceañeras",
+      heading: t_Section("services.weddingsQuinceañeras.heading"),
+      subheading: t_Section("services.weddingsQuinceañeras.subheading"),
+      description: t_Section("services.weddingsQuinceañeras.description"),
+      images: [
+        {
+          src: "/images/sections-img/services-overview/weddings-quinceañeras/weddings-quinceañeras-1.jpg",
+          alt: t_Section(
+            "services.weddingsQuinceañeras.images.img1Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/weddings-quinceañeras/weddings-quinceañeras-2.jpg",
+          alt: t_Section(
+            "services.weddingsQuinceañeras.images.img2Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/weddings-quinceañeras/weddings-quinceañeras-3.jpg",
+          alt: t_Section(
+            "services.weddingsQuinceañeras.images.img3Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/weddings-quinceañeras/weddings-quinceañeras-4.jpg",
+          alt: t_Section(
+            "services.weddingsQuinceañeras.images.img4Description"
+          ),
+        },
+      ],
+    },
+    {
+      key: "musicArtistsBTS",
+      heading: t_Section("services.musicArtistsBTS.heading"),
+      subheading: t_Section("services.musicArtistsBTS.subheading"),
+      description: t_Section("services.musicArtistsBTS.description"),
+      images: [
+        {
+          src: "/images/sections-img/services-overview/music-artists-bts/music-artists-bts-1.png",
+          alt: t_Section("services.musicArtistsBTS.images.img1Description"),
+        },
+        {
+          src: "/images/sections-img/services-overview/music-artists-bts/music-artists-bts-2.jpg",
+          alt: t_Section("services.musicArtistsBTS.images.img2Description"),
+        },
+        {
+          src: "/images/sections-img/services-overview/music-artists-bts/music-artists-bts-3.png",
+          alt: t_Section("services.musicArtistsBTS.images.img3Description"),
+        },
+        {
+          src: "/images/sections-img/services-overview/music-artists-bts/music-artists-bts-4.jpg",
+          alt: t_Section("services.musicArtistsBTS.images.img4Description"),
+        },
+      ],
+    },
+    {
+      key: "eventsCorporateCoverage",
+      heading: t_Section("services.eventsCorporateCoverage.heading"),
+      subheading: t_Section("services.eventsCorporateCoverage.subheading"),
+      description: t_Section("services.eventsCorporateCoverage.description"),
+      images: [
+        {
+          src: "/images/sections-img/services-overview/events-corporate-coverage/events-corporate-coverage-1.jpg",
+          alt: t_Section(
+            "services.eventsCorporateCoverage.images.img1Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/events-corporate-coverage/events-corporate-coverage-2.jpg",
+          alt: t_Section(
+            "services.eventsCorporateCoverage.images.img2Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/events-corporate-coverage/events-corporate-coverage-3.jpg",
+          alt: t_Section(
+            "services.eventsCorporateCoverage.images.img3Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/events-corporate-coverage/events-corporate-coverage-4.jpg",
+          alt: t_Section(
+            "services.eventsCorporateCoverage.images.img4Description"
+          ),
+        },
+      ],
+    },
+    {
+      key: "personalFashionPortraits",
+      heading: t_Section("services.personalFashionPortraits.heading"),
+      subheading: t_Section("services.personalFashionPortraits.subheading"),
+      description: t_Section("services.personalFashionPortraits.description"),
+      images: [
+        {
+          src: "/images/sections-img/services-overview/personal-fashion-portraits/personal-fashion-portraits-1.jpg",
+          alt: t_Section(
+            "services.personalFashionPortraits.images.img1Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/personal-fashion-portraits/personal-fashion-portraits-2.jpg",
+          alt: t_Section(
+            "services.personalFashionPortraits.images.img2Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/personal-fashion-portraits/personal-fashion-portraits-3.jpg",
+          alt: t_Section(
+            "services.personalFashionPortraits.images.img3Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/personal-fashion-portraits/personal-fashion-portraits-4.jpg",
+          alt: t_Section(
+            "services.personalFashionPortraits.images.img4Description"
+          ),
+        },
+      ],
+    },
+    {
+      key: "brandStoryGastronomy",
+      heading: t_Section("services.brandStoryGastronomy.heading"),
+      subheading: t_Section("services.brandStoryGastronomy.subheading"),
+      description: t_Section("services.brandStoryGastronomy.description"),
+      images: [
+        {
+          src: "/images/sections-img/services-overview/brand-story-gastronomy/brand-story-gastronomy-1.jpg",
+          alt: t_Section(
+            "services.brandStoryGastronomy.images.img1Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/brand-story-gastronomy/brand-story-gastronomy-2.jpg",
+          alt: t_Section(
+            "services.brandStoryGastronomy.images.img2Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/brand-story-gastronomy/brand-story-gastronomy-3.jpg",
+          alt: t_Section(
+            "services.brandStoryGastronomy.images.img3Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/brand-story-gastronomy/brand-story-gastronomy-4.jpg",
+          alt: t_Section(
+            "services.brandStoryGastronomy.images.img4Description"
+          ),
+        },
+      ],
+    },
+    {
+      key: "childrenStudioPortraits",
+      heading: t_Section("services.childrenStudioPortraits.heading"),
+      subheading: t_Section("services.childrenStudioPortraits.subheading"),
+      description: t_Section("services.childrenStudioPortraits.description"),
+      images: [
+        {
+          src: "/images/sections-img/services-overview/children-studio-portraits/children-studio-portraits-1.jpg",
+          alt: t_Section(
+            "services.childrenStudioPortraits.images.img1Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/children-studio-portraits/children-studio-portraits-2.jpg",
+          alt: t_Section(
+            "services.childrenStudioPortraits.images.img2Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/children-studio-portraits/children-studio-portraits-3.jpg",
+          alt: t_Section(
+            "services.childrenStudioPortraits.images.img3Description"
+          ),
+        },
+        {
+          src: "/images/sections-img/services-overview/children-studio-portraits/children-studio-portraits-4.jpg",
+          alt: t_Section(
+            "services.childrenStudioPortraits.images.img4Description"
+          ),
+        },
+      ],
+    },
+  ];
+  const exploreOurPortfolioBtn = t_Section("exploreOurPortfolioBtn");
+  const bookASessionBtn = t_Common("bookASessionBtn");
+
+  return (
+    <section
+      className="services-overview"
+      aria-labelledby="services-overview-heading"
+    >
+      <div className="services-overview-container">
+        <h2
+          id="services-overview-heading"
+          className="services-overview-heading"
+        >
+          {sectionHeading}
+        </h2>
+        <p className="services-overview-description">{sectionDescription}</p>
+        <div className="services-overview-services">
+          {services.map((service) => (
+            <div
+              key={service.key}
+              className="service-item"
+              aria-labelledby={`${service.key}-heading`}
+            >
+              <EmblaCarousel
+                slides={[0, 1, 2, 3]}
+                options={{ loop: true, containScroll: false }}
+                images={service.images}
+              />
+              <div className="service-text">
+                <h3 id={`${service.key}-heading`} className="service-heading">
+                  {service.heading}
+                </h3>
+                <p className="service-subheading">{service.subheading}</p>
+                <p className="service-description">{service.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesOverview;
+
+
+.services-overview {
+  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.services-overview::before {
+  @apply overlay
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+}
+
+.services-overview-container {
+  @apply section-container;
+}
+
+.services-overview-heading {
+  @apply section-heading;
+}
+
+.services-overview-description {
+  @apply text-sm
+  lg:text-base
+  text-center
+  tracking-widest
+  italic
+  font-[300]
+  text-gray-50
+  max-w-2xl
+  mx-auto
+  mb-7
+  lg:mb-9;
+}
+
+.services-overview-services {
+  @apply grid 
+  grid-cols-1 
+  sm:grid-cols-2 
+  lg:grid-cols-3 
+  gap-5
+  lg:gap-6;
+}
+
+.service-item {
+  @apply bg-neutral-100/15
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden 
+  flex 
+  flex-col;
+}
+
+.service-text {
+  @apply p-5
+  lg:p-6
+  flex 
+  flex-col;
+}
+
+.service-heading {
+  @apply text-base 
+  lg:text-lg
+  tracking-wider 
+  font-[600] 
+  text-gray-50
+  border-l-4 
+  border-pink-500 
+  pl-3;
+}
+
+.service-subheading {
+  @apply mt-2 
+  lg:mt-3 
+  text-sm 
+  sm:text-base 
+  tracking-wider 
+  font-[300] 
+  text-pink-200;
+  text-shadow: 0 0 4px rgba(244, 114, 182, 0.3);
+}
+
+/* Service description */
+/* .service-description {
+  @apply text-sm sm:text-base text-gray-300 leading-relaxed;
+} */
+
+/* Embla Carousel */
+.embla {
+  @apply w-full;
+}
+
+.embla__viewport {
+  @apply overflow-hidden;
+}
+
+.embla__controls {
+  @apply mt-3
+  px-5
+  lg:px-6
+  relative;
+}
+
+.embla__container {
+  @apply flex;
+}
+
+.embla__slide {
+  @apply flex-shrink-0 w-full;
+}
+
+.embla__slide__img {
+  @apply w-full 
+  h-64 
+  sm:h-72 
+  lg:h-80 
+  object-cover
+  rounded-t-lg;
+}
+
+/* Navigation buttons */
+.embla__buttons {
+  @apply flex
+  items-center
+  justify-between;
+}
+
+.embla__button {
+  @apply bg-white/20 backdrop-blur-sm rounded-full p-2 flex items-center justify-center w-10 h-10;
+  transition: background-color 0.3s ease;
+}
+
+.embla__button:hover:not(:disabled) {
+  @apply bg-pink-500/50;
+}
+
+.embla__button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.embla__button__svg {
+  @apply w-5 h-5 text-gray-50;
+}
+
+/* Dots */
+.embla__dots {
+  @apply flex 
+  gap-2
+  absolute
+  top-1/2
+  -translate-y-1/2
+  left-1/2
+  -translate-x-1/2;
+}
+
+.embla__dot {
+  @apply bg-gray-400 rounded-full w-2.5 h-2.5 cursor-pointer;
+  transition: background-color 0.3s ease;
+}
+
+.embla__dot--selected {
+  @apply bg-pink-500 scale-125;
+}
+
+.embla__dot:hover:not(.embla__dot--selected) {
+  @apply bg-pink-300;
+}
+
+/* Focus states for accessibility */
+.embla__button:focus,
+.embla__dot:focus {
+  @apply outline-none ring-2 ring-pink-500 ring-offset-2 ring-offset-transparent;
+}
+
+@media (max-width: 355px) {
+  .services-overview-description {
+    @apply text-xs;
+  }
+}
+
+The below codes are of other sections and parts of the 
+website and are there for your reference. Don't copy 
+them but take inspiration and find out the best way that
+your suggestions would go seamlessly with the other styles 
+of the section component and other sections but I would also
+like you to suggest me something fresh to see if it strikes
+out so that I can change styles on other sections aligning
+with your new suggestions of other elements of other 
+sections but remember only suggest styles for 
+service-description only
+
+
+ABOUT US HERO
+.about-us-hero {
+  @apply relative
+  min-h-screen;
+}
+
+.about-us-hero-bg-video {
+  @apply absolute
+  z-10
+  w-full
+  h-full
+  object-cover;
+}
+
+.about-us-hero-content {
+  @apply relative
+  z-20
+  w-full
+  min-h-screen
+  flex
+  items-center
+  justify-items-center;
+}
+
+.about-us-hero-content::before {
+  @apply overlay;
+}
+
+.about-us-hero-container {
+  @apply relative
+  section-container;
+
+  animation: slide-up-fade-in 1s ease-out forwards;
+}
+
+.about-us-hero-headline {
+  @apply text-3xl
+  lg:text-4xl
+  tracking-widest
+  font-primary
+  font-[900]
+  uppercase
+  text-center
+  text-gray-50
+  mb-4
+  lg:mb-5;
+
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.about-us-hero-subheadline {
+  @apply text-lg
+  lg:text-xl
+  tracking-wider
+  font-primary
+  font-[700]
+  text-center
+  text-gray-50;
+
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.about-us-hero-cta {
+  @apply mt-8
+  lg:mt-9
+  flex
+  flex-col
+  sm:flex-row
+  items-center
+  justify-center
+  gap-4
+  lg:gap-5;
+}
+
+.explore-our-story-btn {
+  @apply btn
+  btn-primary;
+}
+
+.book-a-session-btn {
+  @apply btn
+  btn-secondary;
+}
+
+@media (max-width: 355px) {
+  .about-us-hero-headline {
+    @apply text-2xl
+    mb-3;
+  }
+
+  .about-us-hero-subheadline {
+    @apply text-base;
+  }
+
+  .about-us-hero-cta {
+    @apply mt-7
+    gap-3;
+  }
+}
+
+OUR STORY
+.our-story {
+  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.our-story::before {
+  @apply overlay
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+}
+
+.our-story-container {
+  @apply section-container;
+}
+
+.our-story-heading {
+  @apply section-heading;
+}
+
+.our-story-content {
+  @apply bg-neutral-100/15
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden
+  grid
+  grid-cols-1
+  lg:grid-cols-2
+  justify-center
+  items-center;
+}
+
+.our-story-img-content {
+  @apply overflow-hidden
+  sm:h-96
+  lg:h-[26rem];
+}
+
+.our-story-img {
+  @apply object-cover;
+}
+
+.our-story-text-content {
+  @apply p-5
+  lg:p-6
+  text-center
+  xl:text-start;
+}
+
+.our-story-company-slogan {
+  @apply text-lg
+  lg:text-xl
+  tracking-widest
+  font-[700]
+  font-primary
+  uppercase
+  flex
+  gap-1.5
+  lg:gap-2
+  justify-center
+  xl:justify-start
+  text-gray-50;
+}
+
+.our-story-slogan-quote-left,
+.our-story-slogan-quote-right {
+  @apply text-base
+  lg:text-lg;
+}
+
+.our-story-description {
+  @apply mt-3
+  lg:mt-4
+  mb-7
+  lg:mb-9
+  text-sm
+  lg:text-base
+  tracking-widest
+  font-[400]
+  text-center
+  xl:text-justify
+  text-gray-200;
+}
+
+.our-story-book-a-session-btn {
+  @apply btn
+  btn-primary;
+}
+
+@media (max-width: 355px) {
+  .our-story-text-content {
+    @apply p-4;
+  }
+
+  .our-story-company-slogan {
+    @apply text-base
+    gap-1;
+  }
+
+  .our-story-slogan-quote-left,
+  .our-story-slogan-quote-right {
+    @apply text-sm;
+  }
+
+  .our-story-description {
+    @apply mt-2
+    mb-5
+    text-xs;
+  }
+}
+
+
+CONTACT US FORM
+.contact-us-form {
+  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.contact-us-form::before {
+  @apply overlay
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+}
+
+.contact-us-form-container {
+  @apply section-container;
+}
+
+.contact-us-form-heading {
+  @apply section-heading;
+}
+
+.contact-us-form-content {
+  @apply grid
+  grid-cols-1
+  lg:grid-cols-[3fr_5fr]
+  gap-5
+  lg:gap-6;
+}
+
+.company-intro {
+  @apply flex
+  flex-col
+  items-center
+  justify-center
+  bg-gradient-to-tl from-pink-200/15 to-pink-300/15
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden
+  p-5
+  lg:p-6;
+}
+
+.company-intro-img {
+  @apply object-cover
+  sm:!max-w-80
+  lg:!max-w-[17rem]
+  rounded-full
+  border-2
+  border-pink-400
+  mb-4
+  lg:mb-5;
+}
+
+.company-intro-message {
+  @apply text-center
+  text-sm
+  lg:text-base
+  tracking-widest
+  italic
+  text-gray-100
+  font-[300];
+}
+
+.contact-form {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  gap-0 
+  md:gap-5
+  bg-neutral-100/15
+  backdrop-blur-sm
+  rounded-lg
+  shadow-lg
+  overflow-hidden
+  p-5
+  lg:p-6
+  relative;
+}
+
+.contact-form-user-info {
+  @apply flex
+  flex-col
+  gap-1
+  lg:gap-2;
+}
+
+.contact-form-group-full-name,
+.contact-form-group-email-address,
+.contact-form-group-phone-number,
+.contact-form-group-message {
+  @apply flex
+  flex-col
+  items-center
+  lg:items-start
+  justify-items-center
+  gap-2
+  lg:gap-3
+  mb-4
+  lg:mb-5;
+}
+
+.contact-form-label-full-name,
+.contact-form-label-email-address,
+.contact-form-label-phone-number,
+.contact-form-label-message {
+  @apply text-center
+  lg:text-left
+  text-sm
+  lg:text-base
+  text-gray-50
+  font-[700]
+  uppercase
+  tracking-widest;
+}
+
+.contact-form-input-full-name,
+.contact-form-input-email-address,
+.contact-form-input-phone-number,
+.contact-form-textarea-message {
+  @apply w-full
+  text-center
+  lg:text-left
+  text-sm
+  lg:text-base
+  font-[400]
+  font-primary
+  px-2.5
+  lg:px-3
+  py-1.5
+  lg:py-2.5
+  rounded-lg
+  border-2
+  bg-neutral-100
+  border-pink-400
+  hover:border-pink-500
+  text-gray-900
+  tracking-widest
+  shadow-inner
+  focus:outline-none
+  focus:ring-2
+  focus:ring-pink-600
+  transition;
+}
+
+.contact-form-input-phone-number .PhoneInputInput {
+  @apply bg-transparent
+  text-gray-900
+  border-none
+  outline-none
+  focus:ring-0
+  focus:border-none
+  focus:outline-none;
+}
+
+.contact-form-input-phone-number:has(.PhoneInputInput:focus) {
+  @apply ring-2 
+  ring-pink-600;
+}
+
+.contact-form-input-full-name::placeholder,
+.contact-form-input-email-address::placeholder,
+.contact-form-input-phone-number::placeholder,
+.contact-form-textarea-message::placeholder {
+  @apply text-gray-500;
+}
+
+.contact-form-textarea-message {
+  @apply h-32
+  md:h-full
+  resize-none;
+}
+
+.contact-form-textarea-message::-webkit-scrollbar {
+  @apply w-[8px];
+}
+
+.contact-form-textarea-message::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+.contact-form-textarea-message::-webkit-scrollbar-thumb {
+  @apply bg-pink-400
+  rounded-full
+  border-2
+  border-transparent
+  bg-clip-content;
+}
+
+.contact-form-textarea-message {
+  scrollbar-width: thin;
+  scrollbar-color: #ec4899 transparent;
+}
+
+.contact-form-submit-btn {
+  @apply mt-1
+  md:mt-0
+  md:col-span-2
+  btn
+  btn-primary
+  w-min
+  mx-auto;
+}
+
+.contact-form-msg-to-user-modal {
+  @apply absolute
+  inset-0
+  z-50
+  flex
+  items-center
+  justify-center
+  bg-neutral-800/75
+  backdrop-blur-sm
+  shadow-lg
+  rounded-lg;
+}
+
+.contact-form-msg-to-user-modal-content {
+  @apply bg-neutral-200
+  backdrop-blur-md
+  rounded-lg
+  shadow-lg
+  p-5
+  lg:p-6
+  max-w-xl
+  w-full
+  flex
+  flex-col
+  items-center
+  gap-4
+  lg:gap-5
+  border-2
+  border-red-600;
+}
+
+.contact-form-msg-to-user {
+  @apply text-center
+  font-primary
+  text-sm
+  lg:text-base
+  text-red-600
+  font-[700]
+  tracking-widest;
+}
+
+.contact-form-msg-to-user-modal-close-btn {
+  @apply btn
+    btn-primary;
+}
+
+@media (max-width: 355px) {
+  .contact-us-form-content {
+    @apply gap-4;
+  }
+
+  .company-intro {
+    @apply p-4;
+  }
+
+  .company-intro-img {
+    @apply mb-3;
+  }
+
+  .company-intro-message {
+    @apply text-xs;
+  }
+
+  .contact-form {
+    @apply p-4;
+  }
+
+  .contact-form-user-info {
+    @apply gap-0.5;
+  }
+
+  .contact-form-group-full-name,
+  .contact-form-group-email-address,
+  .contact-form-group-phone-number,
+  .contact-form-group-message {
+    @apply gap-1
+    mb-3;
+  }
+
+  .contact-form-label-full-name,
+  .contact-form-label-email-address,
+  .contact-form-label-phone-number,
+  .contact-form-label-message {
+    @apply text-xs
+    font-[600];
+  }
+
+  .contact-form-input-full-name,
+  .contact-form-input-email-address,
+  .contact-form-input-phone-number,
+  .contact-form-textarea-message {
+    @apply text-xs
+    px-2
+    py-1
+    border
+    focus:ring-1
+    focus:ring-pink-600
+    transition;
+  }
+
+  .contact-form-input-phone-number:has(.PhoneInputInput:focus) {
+    @apply ring-1;
+  }
+
+  .contact-form-textarea-message {
+    @apply h-28;
+  }
+
+  .contact-form-textarea-message::-webkit-scrollbar-thumb {
+    @apply border;
+  }
+
+  .contact-form-submit-btn {
+    @apply mt-1;
+  }
+
+  .contact-form-msg-to-user-modal-content {
+    @apply p-4
+    gap-3
+    border;
+  }
+
+  .contact-form-msg-to-user {
+    @apply text-xs
+    font-[600];
+  }
+}
+
+
+OUR PHOTOGRAPHY COLLECTION
+.our-photography-collection {
+  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.our-photography-collection::before {
+  @apply overlay
+  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+}
+
+.our-photography-collection-container {
+  @apply section-container
+  relative;
+}
+
+.our-photography-collection-heading {
+  @apply section-heading;
+}
+
+.our-photography-collection-filter-bar {
+  @apply sticky
+  top-0
+  z-40
+
+  p-3
+  lg:p-4
+  mb-5
+  lg:mb-6
+  
+  bg-neutral-200/15
+  backdrop-blur-md
+  
+  rounded-lg
+  shadow-lg
+  
+  flex
+  items-center
+  justify-center;
+}
+
+.our-photography-collection-filter-categories {
+  @apply flex
+  flex-nowrap
+  overflow-x-auto
+  gap-2
+  lg:gap-3
+  items-center
+  justify-start;
+
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.our-photography-collection-filter-categories::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.filter-category-btn {
+  @apply btn
+  btn-secondary;
+}
+
+.active-filter-category {
+  @apply bg-gray-50
+  border-gray-50
+  text-gray-950;
+}
+
+.our-photography-collection-content {
+}
+
+.my-masonry-grid {
+  @apply flex
+  -ml-6
+  lg:-ml-7
+  w-auto;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+}
+
+.my-masonry-grid_column {
+  @apply pl-6
+  lg:pl-7
+  bg-clip-padding;
+}
+
+.my-masonry-grid_column > a {
+  @apply block
+  mb-6
+  lg:mb-7
+  bg-none;
+}
+
+.our-photography-collection-img {
+  @apply block
+  w-full
+  relative
+  border-2
+  border-pink-400/25
+  hover:border-pink-400
+  transition
+  rounded-lg
+  shadow-lg
+  overflow-hidden;
+}
+
+.lg-outer .lg-sub-html {
+  @apply !hidden;
+}
+
+.lg-outer .lg-progress-bar .lg-progress {
+  @apply bg-pink-400;
+}
+
+.lg-outer .lg-thumb-item.active,
+.lg-outer .lg-thumb-item:hover {
+  @apply !border-pink-400;
+}
+
+.our-photography-collection-img-loading-skeleton {
+  @apply bg-gray-700
+  animate-pulse
+  rounded-lg
+  shadow-lg
+  w-full
+  absolute
+  top-0
+  left-0;
+}
+
+.our-photography-collection-img-thumbnail {
+  @apply w-full
+  h-auto
+  block
+  relative
+  hover:scale-[1.05]
+  transition;
+}
+
+.our-photography-collection-img-loading {
+  @apply opacity-0;
+}
+
+.our-photography-collection-img-loaded {
+  @apply opacity-100;
+}
+
+@media (max-width: 355px) {
+  .our-photography-collection-filter-bar {
+    @apply p-2.5
+    mb-4;
+  }
+
+  .our-photography-collection-filter-categories {
+    @apply gap-1.5;
+  }
+
+  .my-masonry-grid {
+    @apply -ml-5;
+  }
+
+  .my-masonry-grid_column {
+    @apply pl-5;
+  }
+
+  .my-masonry-grid_column > a {
+    @apply mb-5;
+  }
+}
+
+GLOBALS
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-primary {
+    font-family: var(--font-primary), Impact, "Arial Narrow", sans-serif;
+  }
+
+  .font-secondary {
+    font-family: var(--font-secondary), Arial, Helvetica, sans-serif;
+  }
+
+  .overlay {
+    content: "";
+    @apply absolute
+    inset-0 
+    bg-neutral-900/70;
+  }
+
+  .section-content-width {
+    @apply px-5
+    sm:px-6
+    md:px-8
+    lg:px-10
+    xl:px-12;
+  }
+
+  .section-content-height {
+    @apply py-10
+    sm:py-12
+    md:py-16
+    lg:py-20
+    xl:py-24;
+  }
+
+  .section-container {
+    @apply relative
+    max-w-7xl
+    mx-auto
+    section-content-height
+    section-content-width
+    text-center
+    lg:text-start;
+  }
+
+  .section-heading {
+    @apply text-2xl 
+    lg:text-3xl 
+    tracking-widest 
+    font-primary
+    font-[900]
+    text-center
+    text-transparent 
+    bg-clip-text 
+    bg-gradient-to-r from-pink-300 to-pink-500
+    relative
+    pb-3
+    lg:pb-3.5
+    mb-7
+    lg:mb-9;
+  }
+
+  .section-heading::after {
+    content: "";
+    @apply absolute 
+    bottom-0 
+    left-1/2
+    w-16
+    lg:w-20 
+    h-1
+    lg:h-[0.3125rem] 
+    bg-gradient-to-r from-pink-500 to-pink-300
+    rounded-full
+    -translate-x-1/2;
+  }
+
+  .btn {
+    @apply text-sm
+    lg:text-base
+    tracking-widest
+    whitespace-nowrap
+    font-primary
+    font-[700]
+    text-center
+    px-4
+    lg:px-[1.125rem]
+    py-2
+    lg:py-2.5
+    border-2
+    rounded-lg
+    shadow-lg
+    active:scale-95
+    active:shadow-lg
+    transition;
+  }
+
+  .btn-primary {
+    @apply bg-pink-600
+    text-gray-50
+    border-pink-600
+    hover:bg-pink-200
+    hover:border-pink-200
+    hover:text-gray-900;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent
+    text-gray-50
+    border-gray-50
+    hover:bg-pink-200
+    hover:border-pink-200
+    hover:text-gray-900;
+  }
+
+  @media (max-width: 355px) {
+    .section-content-width {
+      @apply px-2.5;
+    }
+
+    .section-content-height {
+      @apply py-5;
+    }
+
+    .section-heading {
+      @apply text-xl
+      pb-2.5
+      mb-5;
+    }
+
+    .section-heading::after {
+      @apply w-14 
+      h-[0.1875rem];
+    }
+
+    .btn {
+      @apply text-xs
+      font-[600]
+      px-3
+      py-1.5;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply mx-auto
+  antialiased
+  font-secondary
+  text-gray-50;
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+HEADER
+.header {
+  @apply fixed
+  z-30
+  top-0
+  w-full
+  bg-neutral-900/50
+  backdrop-blur-md
+  shadow-lg;
+}
+
+.header-container {
+  @apply section-container
+
+  grid
+  grid-cols-[auto,1fr]
+  xl:grid-cols-[auto,1fr,auto]
+  items-center
+  justify-center
+
+  !py-3
+  lg:!py-4;
+}
+
+.company-logo-container {
+}
+
+.nav {
+  @apply hidden
+  xl:block;
+}
+
+.nav-links {
+  @apply flex
+  flex-row
+  items-center
+  justify-center
+  xl:gap-6;
+}
+
+.nav-link {
+  @apply block
+  xl:w-24
+  text-gray-50
+  tracking-widest
+  font-[700]
+  font-primary
+  whitespace-nowrap
+  text-center
+  lg:text-base
+  transition
+  relative;
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute 
+  left-1/2 
+  -bottom-0.5 
+  h-[2px] 
+  w-0 
+  bg-gray-50
+  transition-all 
+  duration-300;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  @apply w-1/2
+  active:w-0;
+}
+
+.header-btns {
+  @apply justify-self-end
+  flex
+  items-center
+  gap-3
+  lg:gap-4
+  xl:gap-5;
+}
+
+.switch-lang-mobile-btn {
+  @apply btn
+  btn-secondary
+  w-14
+  sm:hidden;
+}
+
+.mobile-nav-toggle-btn {
+  @apply text-gray-50
+  text-4xl
+  lg:text-5xl
+  xl:hidden;
+}
+
+.switch-lang-btn {
+  @apply btn
+  btn-secondary
+  hidden
+  sm:block
+  w-24
+  lg:w-28;
+}
+
+.book-a-session-header-btn {
+  @apply btn
+  btn-primary
+  hidden
+  md:block
+  md:w-40
+  lg:w-48;
+}
+
+.mobile-nav {
+  @apply col-span-2
+  min-h-screen;
+}
+
+.mobile-nav-divider {
+  @apply border-t
+  border-2
+  border-gray-600
+  my-5
+  lg:my-6;
+}
+
+.mobile-nav-links {
+  @apply flex
+  flex-col
+  items-center
+  justify-center
+  gap-8
+  lg:gap-10
+  mt-8
+  lg:mt-10;
+}
+
+.mobile-nav-link {
+  @apply block
+  text-gray-50
+  font-primary
+  text-base
+  lg:text-lg
+  font-[700]
+  tracking-widest;
+}
+
+.book-a-session-header-mobile-nav-btn {
+  @apply block
+  md:hidden
+  btn
+  btn-primary
+  mt-1
+  lg:mt-2
+  w-40
+  lg:w-48;
+}
+
+@media (max-width: 355px) {
+  .header-container {
+    @apply !py-2.5;
+  }
+
+  .header-btns {
+    @apply gap-2.5;
+  }
+
+  .switch-lang-mobile-btn {
+    @apply w-12;
+  }
+
+  .mobile-nav-toggle-btn {
+    @apply text-3xl;
+  }
+
+  .mobile-nav-divider {
+    @apply border
+    my-4;
+  }
+
+  .mobile-nav-links {
+    @apply gap-6
+    mt-6;
+  }
+
+  .mobile-nav-link {
+    @apply text-sm
+    font-[600];
+  }
+
+  .book-a-session-header-mobile-nav-btn {
+    @apply mt-0.5
+    w-36;
+  }
+}
+
+FOOTER
+.footer {
+  @apply bg-neutral-900
+  border-t
+  border-neutral-700;
+}
+
+.footer-container {
+  @apply section-container;
+}
+
+.footer-top {
+  @apply grid
+  grid-cols-1
+  md:grid-cols-2
+  lg:grid-cols-3
+  gap-10
+  lg:gap-12;
+}
+
+.footer-company-seal {
+  @apply md:col-span-2
+  lg:col-span-3
+  lg:justify-self-center
+  md:order-1
+  mx-auto;
+}
+
+.footer-company-slogan {
+  @apply font-primary
+  text-sm
+  lg:text-base
+  font-[300]
+  text-gray-400
+  uppercase
+  italic
+  tracking-widest
+  mt-2
+  text-center;
+}
+
+.footer-nav-links {
+  @apply lg:justify-self-start
+  md:order-2;
+}
+
+.footer-contact-details {
+  @apply not-italic
+  lg:justify-self-center
+  lg:text-center
+  md:order-4
+  lg:order-3
+  md:col-span-2
+  lg:col-span-1;
+}
+
+.footer-contact-email,
+.footer-contact-phone,
+.footer-contact-address-ny,
+.footer-contact-address-panama {
+  @apply lg:w-full;
+}
+
+.footer-contact-email {
+}
+
+.footer-contact-phone {
+}
+
+.footer-contact-address-ny {
+}
+
+.footer-contact-address-panama {
+}
+
+.footer-contact-address-ny-details,
+.footer-contact-address-panama-details {
+  @apply w-full;
+}
+
+.footer-contact-email-address,
+.footer-contact-phone-number {
+  @apply lg:w-full;
+}
+
+.footer-contact-email-icon,
+.footer-contact-phone-icon,
+.footer-contact-address-icon {
+  @apply text-gray-50
+  text-lg
+  lg:text-xl
+  lg:w-full;
+}
+
+.footer-social-links {
+  @apply lg:justify-self-end
+  md:order-3
+  lg:order-4;
+}
+
+.footer-nav-links-list,
+.footer-contact-details-list,
+.footer-social-links-list {
+  @apply flex
+  flex-col
+  items-center
+  lg:items-start
+  justify-center
+  gap-6
+  lg:gap-7;
+}
+
+.footer-nav-links-heading,
+.footer-contact-details-heading,
+.footer-social-links-heading {
+  @apply font-primary
+  text-sm
+  lg:text-base
+  tracking-widest
+  font-[500]
+  whitespace-nowrap
+  text-gray-400
+  mb-6
+  lg:mb-7;
+}
+
+.footer-contact-email-link,
+.footer-contact-phone-link,
+.footer-contact-address-ny-link,
+.footer-contact-address-panama-link {
+  @apply flex
+  flex-col
+  items-center
+  lg:items-start
+  justify-center
+  gap-2
+  lg:gap-3;
+}
+
+.footer-nav-link,
+.footer-contact-email-address,
+.footer-contact-phone-number,
+.footer-contact-address-ny-details,
+.footer-contact-address-panama-details,
+.footer-social-link,
+.footer-privacy-policy,
+.footer-terms-of-service {
+  @apply text-gray-50
+  text-sm
+  lg:text-base
+  font-primary
+  font-[700]
+  tracking-widest
+  hover:text-pink-200
+  transition;
+}
+
+.footer-bottom {
+  @apply border-t
+  lg:border-t-2
+  border-gray-500
+  mt-12
+  lg:mt-14
+  pt-12
+  lg:pt-14
+  grid
+  grid-cols-1
+  md:grid-cols-2
+  lg:grid-cols-2
+  xl:grid-cols-3
+  items-center
+  justify-center
+  gap-10
+  lg:gap-12;
+}
+
+.footer-copyright {
+  @apply lg:justify-self-start
+  order-3
+  md:order-2
+  xl:order-1
+  text-gray-400
+  text-sm
+  lg:text-base
+  font-primary
+  font-[300]
+  tracking-widest;
+}
+
+.footer-switch-lang {
+  @apply lg:justify-self-center
+  order-1
+  md:order-1
+  xl:order-2
+  md:col-span-2
+  xl:col-span-1;
+}
+
+.footer-switch-lang-btn {
+  @apply btn
+  btn-secondary
+  w-24
+  lg:w-28;
+}
+
+.footer-legal-links {
+  @apply justify-self-center
+  lg:justify-self-end
+  order-2
+  md:order-3
+  flex
+  flex-col
+  items-center
+  justify-center
+  md:flex-row
+  gap-6
+  lg:gap-7
+  text-nowrap;
+}
+
+.footer-terms-of-service {
+  @apply md:border-l
+  lg:border-l-2
+  border-gray-400
+  md:pl-6
+  lg:pl-7;
+}
+
+@media (max-width: 355px) {
+  .footer-top {
+    @apply gap-8;
+  }
+
+  .footer-company-slogan {
+    @apply text-xs
+    mt-1;
+  }
+
+  .footer-contact-email-icon,
+  .footer-contact-phone-icon,
+  .footer-contact-address-icon {
+    @apply text-base;
+  }
+
+  .footer-nav-links-list,
+  .footer-contact-details-list,
+  .footer-social-links-list {
+    @apply gap-4;
+  }
+
+  .footer-nav-links-heading,
+  .footer-contact-details-heading,
+  .footer-social-links-heading {
+    @apply text-xs
+    mb-4;
+  }
+
+  .footer-contact-email-link,
+  .footer-contact-phone-link,
+  .footer-contact-address-ny-link,
+  .footer-contact-address-panama-link {
+    @apply gap-1;
+  }
+
+  .footer-nav-link,
+  .footer-contact-email-address,
+  .footer-contact-phone-number,
+  .footer-contact-address-ny-details,
+  .footer-contact-address-panama-details,
+  .footer-social-link,
+  .footer-privacy-policy,
+  .footer-terms-of-service {
+    @apply text-xs;
+  }
+
+  .footer-bottom {
+    @apply mt-10
+    pt-10
+    gap-8;
+  }
+
+  .footer-copyright {
+    @apply text-xs;
+  }
+
+  .footer-switch-lang-btn {
+    @apply w-20;
+  }
+
+  .footer-legal-links {
+    @apply gap-5;
+  }
+}
+
+

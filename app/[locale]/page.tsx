@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 
 // Sections
 import HomeHero from "@/components/home/HomeHero";
+import ServicesOverview from "@/components/home/ServicesOverview/ServicesOverview";
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -20,6 +21,7 @@ const HomePage: FC<HomePageProps> = ({ params }) => {
   return (
     <main className="home-page">
       <HomeHero />
+      <ServicesOverview />
     </main>
   );
 };
