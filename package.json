@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-fade": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "libphonenumber-js": "^1.12.7",

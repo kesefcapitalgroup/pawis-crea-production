@@ -1,0 +1,1003 @@
+  Pawis is a photography and videography services providing company.
+
+  Website Pages:
+  1. Home
+  2. About Us
+  3. Portfolio
+  4. Contact Us
+  5. Privacy Policy
+  6. Terms of Use
+
+  Pages Sections:
+  1. Home Page
+  1.1. Home Hero Section
+  1.2. ServicesShowcase Section
+  1.3. Featured Portfolio Section
+  1.4. Testimonials Section
+  1.5. Home Call to Action Section
+
+  2. About Us Page
+  2.1. About Us Hero Section
+  2.2. Our Story Section
+  2.3. Why Choose Us Section
+  2.4. Meet the Team Section
+  2.5. About Us Call to Action Section
+
+  3. Portfolio Page
+  3.1. Portfolio Hero Section
+  3.2. Portfolio Categories Section
+  3.3. Photo Gallery Section
+  3.4. Video Gallery Section
+  3.5. Portfolio Call to Action Section
+
+  4. Contact Us Page
+  4.1. Contact Us Hero Section
+  4.2. Contact Us Form Section
+  4.3. Contact Info Section
+  4.4. Social Media Links Section
+  4.5. Map Location Section
+
+  This is the ServicesShowcase section of the HomePage.
+
+  How can we improve it in any way possible?
+
+  import React, { FC } from "react";
+  import { useTranslations } from "next-intl";
+  import { Link } from "@/i18n/navigation";
+
+  // CSS
+  import "@/styles/home/services-showcase.css";
+
+  // Components
+  import EmblaCarousel from "./EmblaCarousel";
+
+  const ServicesShowcase: FC = () => {
+    const t_Section = useTranslations("Home.ServicesShowcase");
+    const t_Common = useTranslations("Common");
+
+    const sectionTitle = t_Section("sectionTitle");
+    const sectionIntro = t_Section("sectionIntro");
+    const services = [
+      {
+        key: "weddingsQuinceañeras",
+        name: t_Section("services.weddingsQuinceañeras.name"),
+        tagline: t_Section("services.weddingsQuinceañeras.tagline"),
+        summary: t_Section("services.weddingsQuinceañeras.summary"),
+        images: [
+          {
+            src: "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-1.jpg",
+            alt: t_Section(
+              "services.weddingsQuinceañeras.images.img1Description"
+            ),
+            objectPosition: {
+              default: "50% 27.5%",
+              xs: "50% 32.5%",
+              sm: "50% 38.5%",
+              md: "50% 30%",
+              lg: "50% 55%",
+              xl: "50% 60%",
+              xxl: "50% 75%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-2.jpg",
+            alt: t_Section(
+              "services.weddingsQuinceañeras.images.img2Description"
+            ),
+            objectPosition: {
+              default: "50% 10%",
+              xs: "50% 10%",
+              sm: "50% 15%",
+              md: "50% 12.5%",
+              lg: "50% 25%",
+              xl: "50% 30%",
+              xxl: "50% 35%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-3.jpg",
+            alt: t_Section(
+              "services.weddingsQuinceañeras.images.img3Description"
+            ),
+            objectPosition: {
+              default: "50% 15%",
+              xs: "50% 15%",
+              sm: "50% 22.5%",
+              md: "50% 20%",
+              lg: "50% 35%",
+              xl: "50% 37.5%",
+              xxl: "50% 40%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-4.jpg",
+            alt: t_Section(
+              "services.weddingsQuinceañeras.images.img4Description"
+            ),
+            objectPosition: {
+              default: "50% 20%",
+              xs: "50% 27.5%",
+              sm: "50% 27.5%",
+              md: "50% 25%",
+              lg: "50% 40%",
+              xl: "50% 45%",
+              xxl: "50% 50%",
+            },
+          },
+        ],
+      },
+      {
+        key: "musicArtistsBTS",
+        name: t_Section("services.musicArtistsBTS.name"),
+        tagline: t_Section("services.musicArtistsBTS.tagline"),
+        summary: t_Section("services.musicArtistsBTS.summary"),
+        images: [
+          {
+            src: "/images/sections-img/services-showcase/music-artists-bts/music-artists-bts-1.png",
+            alt: t_Section("services.musicArtistsBTS.images.img1Description"),
+            objectPosition: {
+              default: "50% 47.5%",
+              xs: "50% 50%",
+              sm: "50% 50%",
+              md: "50% 50%",
+              lg: "50% 50%",
+              xl: "50% 50%",
+              xxl: "50% 50%",
+            },
+          },
+
+          {
+            src: "/images/sections-img/services-showcase/music-artists-bts/music-artists-bts-2.jpg",
+            alt: t_Section("services.musicArtistsBTS.images.img2Description"),
+            objectPosition: {
+              default: "50% 20%",
+              xs: "50% 25%",
+              sm: "50% 30%",
+              md: "50% 25%",
+              lg: "50% 40%",
+              xl: "50% 40%",
+              xxl: "50% 45%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/music-artists-bts/music-artists-bts-3.png",
+            alt: t_Section("services.musicArtistsBTS.images.img3Description"),
+            objectPosition: {
+              default: "50% 50%",
+              xs: "50% 50%",
+              sm: "50% 50%",
+              md: "50% 50%",
+              lg: "50% 50%",
+              xl: "50% 50%",
+              xxl: "50% 50%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/music-artists-bts/music-artists-bts-4.jpg",
+            alt: t_Section("services.musicArtistsBTS.images.img4Description"),
+            objectPosition: {
+              default: "65% 20%",
+              xs: "60% 50%",
+              sm: "50% 50%",
+              md: "50% 50%",
+              lg: "55% 50%",
+              xl: "60% 50%",
+              xxl: "60% 50%",
+            },
+          },
+        ],
+      },
+      {
+        key: "eventsCorporateCoverage",
+        name: t_Section("services.eventsCorporateCoverage.name"),
+        tagline: t_Section("services.eventsCorporateCoverage.tagline"),
+        summary: t_Section("services.eventsCorporateCoverage.summary"),
+        images: [
+          {
+            src: "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-1.jpg",
+            alt: t_Section(
+              "services.eventsCorporateCoverage.images.img1Description"
+            ),
+            objectPosition: {
+              default: "50% 7.5%",
+              xs: "50% 10%",
+              sm: "50% 12.5%",
+              md: "50% 10%",
+              lg: "50% 12.5%",
+              xl: "50% 15%",
+              xxl: "50% 20%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-2.jpg",
+            alt: t_Section(
+              "services.eventsCorporateCoverage.images.img2Description"
+            ),
+            objectPosition: {
+              default: "50% 10%",
+              xs: "50% 12.5%",
+              sm: "50% 12.5%",
+              md: "50% 12.5%",
+              lg: "50% 20%",
+              xl: "50% 22.5%",
+              xxl: "50% 25%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-3.jpg",
+            alt: t_Section(
+              "services.eventsCorporateCoverage.images.img3Description"
+            ),
+            objectPosition: {
+              default: "50% 70%",
+              xs: "50% 70%",
+              sm: "50% 72.5%",
+              md: "50% 75%",
+              lg: "50% 50%",
+              xl: "50% 50%",
+              xxl: "50% 50%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-4.jpg",
+            alt: t_Section(
+              "services.eventsCorporateCoverage.images.img4Description"
+            ),
+            objectPosition: {
+              default: "50% 50%",
+              xs: "25% 50%",
+              sm: "40% 50%",
+              md: "50% 50%",
+              lg: "50% 50%",
+              xl: "50% 50%",
+              xxl: "40% 50%",
+            },
+          },
+        ],
+      },
+      {
+        key: "personalFashionPortraits",
+        name: t_Section("services.personalFashionPortraits.name"),
+        tagline: t_Section("services.personalFashionPortraits.tagline"),
+        summary: t_Section("services.personalFashionPortraits.summary"),
+        images: [
+          {
+            src: "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-1.jpg",
+            alt: t_Section(
+              "services.personalFashionPortraits.images.img1Description"
+            ),
+            objectPosition: {
+              default: "50% 40%",
+              xs: "50% 40%",
+              sm: "50% 45%",
+              md: "50% 37.5%",
+              lg: "50% 65%",
+              xl: "50% 62.5%",
+              xxl: "50% 55%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-2.jpg",
+            alt: t_Section(
+              "services.personalFashionPortraits.images.img2Description"
+            ),
+            objectPosition: {
+              default: "50% 8.75%",
+              xs: "50% 10%",
+              sm: "50% 12.5%",
+              md: "50% 11.25%",
+              lg: "50% 20%",
+              xl: "50% 20%",
+              xxl: "50% 22.5%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-3.jpg",
+            alt: t_Section(
+              "services.personalFashionPortraits.images.img3Description"
+            ),
+            objectPosition: {
+              default: "50% 35%",
+              xs: "50% 45%",
+              sm: "50% 52.5%",
+              md: "50% 45%",
+              lg: "50% 80%",
+              xl: "50% 85%",
+              xxl: "50% 90%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-4.jpg",
+            alt: t_Section(
+              "services.personalFashionPortraits.images.img4Description"
+            ),
+            objectPosition: {
+              default: "50% 2.5%",
+              xs: "50% 5%",
+              sm: "50% 10%",
+              md: "50% 5%",
+              lg: "50% 50%",
+              xl: "50% 50%",
+              xxl: "50% 50%",
+            },
+          },
+        ],
+      },
+      {
+        key: "brandStoryGastronomy",
+        name: t_Section("services.brandStoryGastronomy.name"),
+        tagline: t_Section("services.brandStoryGastronomy.tagline"),
+        summary: t_Section("services.brandStoryGastronomy.summary"),
+        images: [
+          {
+            src: "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-1.jpg",
+            alt: t_Section(
+              "services.brandStoryGastronomy.images.img1Description"
+            ),
+            objectPosition: {
+              default: "50% 97.5%",
+              xs: "50% 95%",
+              sm: "50% 95%",
+              md: "50% 95%",
+              lg: "50% 100%",
+              xl: "50% 100%",
+              xxl: "50% 100%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-2.jpg",
+            alt: t_Section(
+              "services.brandStoryGastronomy.images.img2Description"
+            ),
+            objectPosition: {
+              default: "50% 27.5%",
+              xs: "50% 27.5%",
+              sm: "50% 30%",
+              md: "50% 32.5%",
+              lg: "50% 45%",
+              xl: "50% 50%",
+              xxl: "50% 50%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-3.jpg",
+            alt: t_Section(
+              "services.brandStoryGastronomy.images.img3Description"
+            ),
+            objectPosition: {
+              default: "50% 50%",
+              xs: "30% 50%",
+              sm: "40% 50%",
+              md: "40% 50%",
+              lg: "50% 50%",
+              xl: "50% 30%",
+              xxl: "50% 50%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-4.jpg",
+            alt: t_Section(
+              "services.brandStoryGastronomy.images.img4Description"
+            ),
+            objectPosition: {
+              default: "50% 37.5%",
+              xs: "50% 52.5%",
+              sm: "50% 60%",
+              md: "50% 50%",
+              lg: "50% 75%",
+              xl: "50% 80%",
+              xxl: "50% 80%",
+            },
+          },
+        ],
+      },
+      {
+        key: "childrenStudioPortraits",
+        name: t_Section("services.childrenStudioPortraits.name"),
+        tagline: t_Section("services.childrenStudioPortraits.tagline"),
+        summary: t_Section("services.childrenStudioPortraits.summary"),
+        images: [
+          {
+            src: "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-1.jpg",
+            alt: t_Section(
+              "services.childrenStudioPortraits.images.img1Description"
+            ),
+            objectPosition: {
+              default: "50% 50%",
+              xs: "67.5% 50%",
+              sm: "72.5% 50%",
+              md: "72.5% 50%",
+              lg: "80% 50%",
+              xl: "80% 50%",
+              xxl: "80% 50%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-2.jpg",
+            alt: t_Section(
+              "services.childrenStudioPortraits.images.img2Description"
+            ),
+            objectPosition: {
+              default: "50% 2.5%",
+              xs: "50% 5%",
+              sm: "50% 5%",
+              md: "50% 5%",
+              lg: "50% 5%",
+              xl: "50% 5%",
+              xxl: "50% 5%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-3.jpg",
+            alt: t_Section(
+              "services.childrenStudioPortraits.images.img3Description"
+            ),
+            objectPosition: {
+              default: "50% 35%",
+              xs: "50% 35%",
+              sm: "50% 40%",
+              md: "50% 32.5%",
+              lg: "50% 60%",
+              xl: "50% 65%",
+              xxl: "50% 67.5%",
+            },
+          },
+          {
+            src: "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-4.jpg",
+            alt: t_Section(
+              "services.childrenStudioPortraits.images.img4Description"
+            ),
+            objectPosition: {
+              default: "50% 5%",
+              xs: "50% 5%",
+              sm: "30% 5%",
+              md: "50% 5%",
+              lg: "50% 5%",
+              xl: "50% 5%",
+              xxl: "50% 5%",
+            },
+          },
+        ],
+      },
+    ];
+    const exploreOurPortfolioBtn = t_Section("exploreOurPortfolioBtn");
+    const bookASessionBtn = t_Common("bookASessionBtn");
+
+    return (
+      <section
+        id="services-showcase"
+        className="services-showcase"
+        aria-labelledby="services-showcase__title"
+      >
+        <div className="services-showcase__wrapper">
+          <h2 id="services-showcase__title" className="services-showcase__title">
+            {sectionTitle}
+          </h2>
+          <p className="services-showcase__intro">{sectionIntro}</p>
+          <div className="services-showcase__services">
+            {services.map((service) => (
+              <div
+                key={service.key}
+                className="services-showcase__service"
+                aria-labelledby={`${service.key}-name`}
+              >
+                <EmblaCarousel
+                  slides={[0, 1, 2, 3]}
+                  options={{ loop: true, containScroll: false }}
+                  images={service.images}
+                />
+                <div className="services-showcase__service-details">
+                  <h3
+                    id={`${service.key}-name`}
+                    className="services-showcase__service-name"
+                  >
+                    {service.name}
+                  </h3>
+                  <p className="services-showcase__service-tagline">
+                    {service.tagline}
+                  </p>
+                  <p className="services-showcase__service-summary">
+                    {service.summary}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="services-showcase__actions">
+            <Link
+              href="/portfolio"
+              className="services-showcase__actions--explore-portfolio-btn"
+              aria-label={exploreOurPortfolioBtn}
+              prefetch
+            >
+              {exploreOurPortfolioBtn}
+            </Link>
+
+            <Link
+              href="/contact-us"
+              className="services-showcase__actions--book-session-btn"
+              aria-label={bookASessionBtn}
+              prefetch
+            >
+              {bookASessionBtn}
+            </Link>
+          </div>
+        </div>
+      </section>
+    );
+  };
+
+  export default ServicesShowcase;
+
+
+  .services-showcase {
+    @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+    bg-cover
+    bg-center
+    bg-no-repeat
+    relative;
+  }
+
+  .services-showcase::before {
+    @apply overlay
+    !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+  }
+
+  .services-showcase__wrapper {
+    @apply section-container;
+  }
+
+  .services-showcase__title {
+    @apply section-heading;
+  }
+
+  .services-showcase__intro {
+    @apply text-sm
+    lg:text-base
+    text-center
+    tracking-widest
+    italic
+    font-[300]
+    text-gray-50
+    max-w-2xl
+    mx-auto
+    mb-8
+    lg:mb-10
+    rounded-lg
+    border-t
+    border-b
+    border-pink-200/15
+    py-2;
+  }
+
+  .services-showcase__services {
+    @apply grid 
+    grid-cols-1 
+    sm:grid-cols-2 
+    lg:grid-cols-3 
+    gap-5
+    lg:gap-6;
+  }
+
+  .services-showcase__service {
+    @apply bg-neutral-50/5
+    backdrop-blur-xl
+    rounded-lg
+    shadow-lg
+    overflow-hidden 
+    flex 
+    flex-col
+    border
+    border-neutral-50/10
+    transition-all 
+    duration-700 
+    ease-out
+    hover:bg-neutral-50/10
+    hover:border-neutral-50/20
+    hover:shadow-neutral-50/10
+    hover:shadow-xl;
+  }
+
+  .services-showcase__service::before {
+    content: "";
+    @apply absolute 
+    top-0 
+    left-0 
+    right-0 
+    h-px
+    bg-gradient-to-r from-transparent via-neutral-50/30 to-transparent;
+  }
+
+  .services-showcase__service::after {
+    content: "";
+    @apply absolute 
+    bottom-0 
+    left-0 
+    right-0 
+    h-px
+    bg-gradient-to-r from-transparent via-pink-400/30 to-transparent;
+  }
+
+  .carousel {
+    @apply w-full;
+  }
+
+  .carousel__viewport {
+    @apply overflow-hidden;
+  }
+
+  .carousel__track {
+    @apply flex;
+  }
+
+  .carousel__slide {
+    @apply flex-shrink-0 
+    w-full;
+  }
+
+  .carousel__slide-img {
+    @apply w-full 
+    h-64 
+    sm:h-72
+    md:h-80
+    lg:h-96
+    xl:h-[26rem]
+    2xl:h-[28rem] 
+    object-cover
+    rounded-t-lg;
+    object-position: var(--object-position-default, 50% 50%);
+  }
+
+  @screen sm {
+    .carousel__slide-img {
+      object-position: var(
+        --object-position-sm,
+        var(--object-position-xs, var(--object-position-default, 50% 50%))
+      );
+    }
+  }
+
+  @screen md {
+    .carousel__slide-img {
+      object-position: var(
+        --object-position-md,
+        var(
+          --object-position-sm,
+          var(--object-position-xs, var(--object-position-default, 50% 50%))
+        )
+      );
+    }
+  }
+
+  @screen lg {
+    .carousel__slide-img {
+      object-position: var(
+        --object-position-lg,
+        var(
+          --object-position-md,
+          var(
+            --object-position-sm,
+            var(--object-position-xs, var(--object-position-default, 50% 50%))
+          )
+        )
+      );
+    }
+  }
+
+  @screen xl {
+    .carousel__slide-img {
+      object-position: var(
+        --object-position-xl,
+        var(
+          --object-position-lg,
+          var(
+            --object-position-md,
+            var(
+              --object-position-sm,
+              var(--object-position-xs, var(--object-position-default, 50% 50%))
+            )
+          )
+        )
+      );
+    }
+  }
+
+  @screen 2xl {
+    .carousel__slide-img {
+      object-position: var(
+        --object-position-xxl,
+        var(
+          --object-position-xl,
+          var(
+            --object-position-lg,
+            var(
+              --object-position-md,
+              var(
+                --object-position-sm,
+                var(--object-position-xs, var(--object-position-default, 50% 50%))
+              )
+            )
+          )
+        )
+      );
+    }
+  }
+
+  .carousel__controls {
+    @apply mt-3.5
+    lg:mt-4
+    px-5
+    lg:px-6
+    relative;
+  }
+
+  .carousel__arrow-btns {
+    @apply flex
+    items-center
+    justify-between;
+  }
+
+  .carousel__arrow-btn {
+    @apply bg-neutral-50/10 
+    backdrop-blur-xl 
+    rounded-lg 
+    p-2
+    lg:p-2.5 
+    flex 
+    items-center 
+    justify-center 
+    w-9
+    lg:w-10 
+    h-9
+    lg:h-10
+    border 
+    border-neutral-50/20
+    relative
+    overflow-hidden;
+    transition: all 0.3s ease-out;
+  }
+
+  .carousel__arrow-btn::before {
+    content: "";
+    @apply absolute
+    top-0
+    left-0
+    w-full
+    h-full
+    bg-gradient-to-br from-pink-400/20 to-transparent
+    opacity-0
+    transition-opacity
+    duration-300;
+  }
+
+  .carousel__arrow-btn:hover:not(:disabled)::before {
+    @apply opacity-100;
+  }
+
+  .carousel__arrow-btn:hover:not(:disabled) {
+    @apply bg-pink-400/30 
+    border-pink-400/50;
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.4);
+  }
+
+  .carousel__arrow-btn:disabled {
+    @apply opacity-40 
+    cursor-not-allowed;
+  }
+
+  .carousel__arrow-btn__svg {
+    @apply w-3.5
+    lg:w-4
+    h-3.5
+    lg:h-4
+    text-gray-50
+    relative 
+    z-10;
+  }
+
+  .carousel__dot-btns {
+    @apply flex 
+    gap-2.5
+    lg:gap-3
+    absolute
+    top-1/2
+    -translate-y-1/2
+    left-1/2
+    -translate-x-1/2;
+  }
+
+  .carousel__dot-btn {
+    @apply bg-gray-400/70
+    rounded-none
+    w-7
+    lg:w-8
+    h-1
+    lg:h-1.5
+    cursor-pointer
+    relative
+    overflow-hidden;
+    transition: all 0.3s ease-out;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  }
+
+  .carousel__dot-btn::before {
+    content: "";
+    @apply absolute
+    top-0
+    left-0
+    w-full
+    h-full
+    bg-gradient-to-r from-pink-400 to-pink-500
+    transform
+    -translate-x-full
+    transition-transform
+    duration-300;
+  }
+
+  .carousel__dot-btn--selected::before {
+    @apply transform 
+    translate-x-0;
+  }
+
+  .carousel__dot-btn--selected {
+    @apply bg-pink-400;
+    box-shadow: 0 0 10px rgba(236, 72, 153, 0.6);
+  }
+
+  .carousel__dot-btn:hover:not(.carousel__dot-btn--selected) {
+    @apply bg-pink-300/80;
+  }
+
+  .carousel__arrow-btn:focus,
+  .carousel__dot-btn:focus {
+    @apply outline-none 
+    ring-1 
+    ring-pink-400/50 
+    ring-offset-1 
+    ring-offset-transparent;
+  }
+
+  .services-showcase__service-details {
+    @apply p-5
+    lg:p-6
+    flex 
+    flex-col;
+  }
+
+  .services-showcase__service-name {
+    @apply text-base 
+    lg:text-lg
+    tracking-wider 
+    font-[600] 
+    text-gray-50;
+    text-shadow: 0 0 6px rgba(236, 72, 153, 0.4), 0 0 15px rgba(236, 72, 153, 0.2);
+  }
+
+  .services-showcase__service-tagline {
+    @apply mt-2 
+    lg:mt-3 
+    text-sm 
+    lg:text-base 
+    tracking-widest
+    font-[300] 
+    text-gray-100
+    uppercase
+    relative;
+    text-shadow: 0 0 3px rgba(156, 163, 175, 0.4);
+  }
+
+  .services-showcase__service-tagline::after {
+    content: "";
+    @apply absolute 
+    -bottom-1 
+    left-0  
+    w-full 
+    h-px 
+    bg-gradient-to-r from-pink-400/50 via-pink-400/20 to-transparent;
+  }
+
+  .services-showcase__service-summary {
+    @apply mt-3 
+    lg:mt-4 
+    text-sm 
+    lg:text-base
+    tracking-wider
+    font-[300]
+    text-gray-300
+    relative
+    pl-5;
+  }
+
+  .services-showcase__service-summary::before {
+    content: "»";
+    @apply absolute 
+    left-0 
+    text-pink-400/70;
+  }
+
+  .services-showcase__actions {
+    @apply mt-8
+    lg:mt-9
+    flex
+    flex-col
+    sm:flex-row
+    items-center
+    justify-center
+    gap-4
+    lg:gap-5;
+  }
+
+  .services-showcase__actions--explore-portfolio-btn {
+    @apply btn
+    btn-primary;
+  }
+
+  .services-showcase__actions--book-session-btn {
+    @apply btn
+    btn-secondary;
+  }
+
+  @media (max-width: 355px) {
+    .carousel__controls {
+      @apply mt-3
+      px-4;
+    }
+
+    .carousel__arrow-btn {
+      @apply h-8
+      w-8
+      p-1.5;
+    }
+
+    .carousel__arrow-btn__svg {
+      @apply w-3
+      h-3;
+    }
+
+    .carousel__dot-btns {
+      @apply gap-2;
+    }
+
+    .carousel__dot-btn {
+      @apply w-6
+      h-0.5;
+    }
+
+    .services-showcase__intro {
+      @apply text-xs
+      mb-7
+      py-1.5;
+    }
+
+    .services-showcase__service-details {
+      @apply p-4;
+    }
+
+    .services-showcase__service-name {
+      @apply text-sm;
+    }
+
+    .services-showcase__service-tagline {
+      @apply mt-1.5
+      text-xs;
+    }
+
+    .services-showcase__service-summary {
+      @apply mt-2.5
+      text-xs;
+    }
+
+    .carousel__slide-img {
+      @apply h-60;
+
+      object-position: var(
+        --object-position-xs,
+        var(--object-position-default, 50% 50%)
+      );
+    }
+
+    .services-showcase__actions {
+      @apply mt-7
+      gap-3.5;
+    }
+  }

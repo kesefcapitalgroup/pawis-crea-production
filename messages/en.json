@@ -50,14 +50,14 @@
       "exploreOurServicesBtn": "Explore Our Services",
       "videoSRTxt": "A showcase of our best photography and videography scenes"
     },
-    "ServicesOverview": {
-      "sectionHeading": "Our Services – Framing Dreams Into Reality",
-      "sectionDescription": "From artists and music creators to couples and corporate teams, we capture every story with heart—turning your moments into lasting visual art",
+    "ServicesShowcase": {
+      "sectionTitle": "Our Services – Framing Dreams Into Reality",
+      "sectionIntro": "From artists and music creators to couples and corporate teams, we capture every story with heart—turning your moments into lasting visual art",
       "services": {
         "weddingsQuinceañeras": {
-          "heading": "Weddings & Quinceañeras",
-          "subheading": "Unforgettable Celebrations",
-          "description": "We beautifully document the emotions, details, and joy of weddings and quinceañeras, blending cinematic visuals with authentic moments to preserve your most unforgettable celebrations",
+          "name": "Weddings & Quinceañeras",
+          "tagline": "Unforgettable Celebrations",
+          "summary": "We beautifully document the emotions, details, and joy of weddings and quinceañeras, blending cinematic visuals with authentic moments to preserve your most unforgettable celebrations",
           "images": {
             "img1Description": "A newlywed couple embracing on the dance floor",
             "img2Description": "A 15-year-old princess, crowned and glowing, holding her drink at her quinceañera celebration",
@@ -66,9 +66,9 @@
           }
         },
         "musicArtistsBTS": {
-          "heading": "Music Artists & BTS",
-          "subheading": "Your Sound, In Focus",
-          "description": "We team up with music artists to craft energetic behind-the-scenes visuals that spotlight your process, passion, and personality—putting your sound and story in full focus",
+          "name": "Music Artists & BTS",
+          "tagline": "Your Sound, In Focus",
+          "summary": "We team up with music artists to craft energetic behind-the-scenes visuals that spotlight your process, passion, and personality—putting your sound and story in full focus",
           "images": {
             "img1Description": "A candid collage capturing music artists enjoying a card game outside their garage",
             "img2Description": "A vibrant behind-the-scenes shot of music artists and their crew striking poses before filming their music video",
@@ -77,9 +77,9 @@
           }
         },
         "eventsCorporateCoverage": {
-          "heading": "Events & Corporate Coverage",
-          "subheading": "Capture the Energy",
-          "description": "From energetic parties to formal corporate galas, we capture your event's atmosphere and key moments with dynamic photography and video that brings the entire experience to life",
+          "name": "Events & Corporate Coverage",
+          "tagline": "Capture the Energy",
+          "summary": "From energetic parties to formal corporate galas, we capture your event's atmosphere and key moments with dynamic photography and video that brings the entire experience to life",
           "images": {
             "img1Description": "A DJ performing at a daytime DJ event",
             "img2Description": "An employee confidently holding her drink at a corporate event",
@@ -88,9 +88,9 @@
           }
         },
         "personalFashionPortraits": {
-          "heading": "Personal & Fashion Shoots",
-          "subheading": "Bold. Stylish. You.",
-          "description": "Whether it’s bold fashion or an intimate portrait, our shoots empower you to express your unique style and story through visually striking and emotionally rich imagery",
+          "name": "Personal & Fashion Shoots",
+          "tagline": "Bold. Stylish. You.",
+          "summary": "Whether it’s bold fashion or an intimate portrait, our shoots empower you to express your unique style and story through visually striking and emotionally rich imagery",
           "images": {
             "img1Description": "A woman enjoying an outdoor fashion photo shoot with her morning latte",
             "img2Description": "A woman strikes a confident pose in a wonderful woolen jacket at a fashion show",
@@ -99,9 +99,9 @@
           }
         },
         "brandStoryGastronomy": {
-          "heading": "Brand Story & Gastronomy",
-          "subheading": "Crafted to Connect",
-          "description": "We craft striking content that highlights your brand’s identity or culinary artistry—transforming products into icons and food into captivating, mouthwatering experiences",
+          "name": "Brand Story & Gastronomy",
+          "tagline": "Crafted to Connect",
+          "summary": "We craft striking content that highlights your brand’s identity or culinary artistry—transforming products into icons and food into captivating, mouthwatering experiences",
           "images": {
             "img1Description": "A golden lucky cat statue beside a vibrant sesame chicken dish, set against a scenic ocean view at a chic rooftop restaurant",
             "img2Description": "A refreshing orange cocktail with lemon slice, elegantly presented on a sleek table with a scenic backdrop",
@@ -110,9 +110,9 @@
           }
         },
         "childrenStudioPortraits": {
-          "heading": "Children & Studio Portraits",
-          "subheading": "Joy in Every Smile",
-          "description": "With warmth and creativity, we create timeless portraits—whether playful childhood moments or elegant studio shots—that showcase authentic personalities and lasting memories",
+          "name": "Children & Studio Portraits",
+          "tagline": "Joy in Every Smile",
+          "summary": "With warmth and creativity, we create timeless portraits—whether playful childhood moments or elegant studio shots—that showcase authentic personalities and lasting memories",
           "images": {
             "img1Description": "A 3-month-old sleeps serenely on her hand, wrapped in a little fairy outfit for a tranquil childhood portrait",
             "img2Description": "A portrait of a woman in a black top and jeans poses confidently with wavy hair and sunglasses against a clean backdrop",
@@ -122,6 +122,32 @@
         }
       },
       "exploreOurPortfolioBtn": "Explore Our Portfolio"
+    },
+    "ClientStoriesExperiences": {
+      "sectionTitle": "Moments That Matter - Stories from Our Clients",
+      "sectionIntro": "Don't just take our word for it. Discover the experiences of those who entrusted us with their most important moments. Their stories are the heart of what we do",
+      "clientStories": [
+        {
+          "imgDesc": "Joyful newlywed couple embracing, captured in a warm, candid moment",
+          "testimonial": "Every single moment was captured beautifully—from the quiet tears during our vows to the wild energy on the dance floor. Looking through our album feels like stepping back into the best day of our lives",
+          "clientInfo": "Maria & Juan | Newlyweds | Panama City | Wedding Ceremony"
+        },
+        {
+          "imgDesc": "Smiling quinceañera posing in her elegant gown with her parents at her celebration",
+          "testimonial": "They made me feel like a princess from start to finish. The way they captured my entrance, the traditions, and all those little moments with my family—it's everything I dreamed of and more",
+          "clientInfo": "Sofia Martinez | Quinceañera | San Miguelito | Quinceañera Celebration"
+        },
+        {
+          "imgDesc": "A stylish professional woman in festive attire, joyfully raising her glass at a lively corporate gathering",
+          "testimonial": "Pawis Crea elevated our company gala with professional, engaging coverage that showcased our brand's energy and our team's spirit. The final deliverables exceeded every expectation!",
+          "clientInfo": "Ana Rodriguez | Marketing Manager | Business District | Corporate Event Coverage"
+        },
+        {
+          "imgDesc": "Confident fashion model in dramatic studio lighting for high-fashion editorial shoot",
+          "testimonial": "Working with Pawis Crea was inspiring. They captured my unique style and personality, creating stunning, high-confidence images that are perfect for my portfolio",
+          "clientInfo": "Lucia Fernandez | Fashion Model | Studio Location | Fashion Portrait Session"
+        }
+      ]
     }
   },
   "AboutUs": {

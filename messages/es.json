@@ -50,14 +50,14 @@
       "exploreOurServicesBtn": "Explora Nuestros Servicios",
       "videoSRTxt": "Una muestra de nuestras mejores escenas de fotografía y videografía"
     },
-    "ServicesOverview": {
-      "sectionHeading": "Nuestros Servicios – Enmarcando Sueños en Realidad",
-      "sectionDescription": "Desde artistas y creadores musicales hasta parejas y equipos corporativos, capturamos cada historia con corazón, transformando tus momentos en arte visual duradero",
+    "ServicesShowcase": {
+      "sectionTitle": "Nuestros Servicios – Enmarcando Sueños en Realidad",
+      "sectionIntro": "Desde artistas y creadores musicales hasta parejas y equipos corporativos, capturamos cada historia con corazón, transformando tus momentos en arte visual duradero",
       "services": {
         "weddingsQuinceañeras": {
-          "heading": "Bodas y Quinceañeras",
-          "subheading": "Celebraciones Inolvidables",
-          "description": "Desde votos sinceros hasta vibrantes celebraciones de quinceañeras, capturamos el amor, el color y las emociones espontáneas de tu día inolvidable con un toque cinematográfico",
+          "name": "Bodas y Quinceañeras",
+          "tagline": "Celebraciones Inolvidables",
+          "summary": "Desde votos sinceros hasta vibrantes celebraciones de quinceañeras, capturamos el amor, el color y las emociones espontáneas de tu día inolvidable con un toque cinematográfico",
           "images": {
             "img1Description": "Una pareja de recién casados abrazándose en la pista de baile",
             "img2Description": "Una princesa de 15 años, coronada y radiante, sosteniendo su bebida en su celebración de quinceañera",
@@ -66,9 +66,9 @@
           }
         },
         "musicArtistsBTS": {
-          "heading": "Artistas Musicales y BTS",
-          "subheading": "Tu Sonido, en el Foco",
-          "description": "Colaboramos con artistas musicales para crear impactantes imágenes detrás de escena y visuales dinámicos que muestran tu proceso creativo, pasión y trayectoria artística",
+          "name": "Artistas Musicales y BTS",
+          "tagline": "Tu Sonido, en el Foco",
+          "summary": "Colaboramos con artistas musicales para crear impactantes imágenes detrás de escena y visuales dinámicos que muestran tu proceso creativo, pasión y trayectoria artística",
           "images": {
             "img1Description": "Un collage espontáneo capturando a artistas musicales disfrutando de un juego de cartas fuera de su garaje",
             "img2Description": "Una vibrante toma detrás de escena de artistas musicales y su equipo posando antes de filmar su video musical",
@@ -77,9 +77,9 @@
           }
         },
         "eventsCorporateCoverage": {
-          "heading": "Eventos y Cobertura Corporativa",
-          "subheading": "Captura la Energía",
-          "description": "Ya sea una gala corporativa o un set de DJ de alta energía, documentamos la emoción, energía y ambiente de tus eventos con narrativa visual dinámica",
+          "name": "Eventos y Cobertura Corporativa",
+          "tagline": "Captura la Energía",
+          "summary": "Ya sea una gala corporativa o un set de DJ de alta energía, documentamos la emoción, energía y ambiente de tus eventos con narrativa visual dinámica",
           "images": {
             "img1Description": "Un DJ actuando en un evento diurno de DJ",
             "img2Description": "Una empleada sosteniendo su bebida con confianza en un evento corporativo",
@@ -88,9 +88,9 @@
           }
         },
         "personalFashionPortraits": {
-          "heading": "Sesiones Personales y de Moda",
-          "subheading": "Audaz. Elegante. Tú.",
-          "description": "Posa y expresa tu esencia única a través de retratos personales íntimos y sesiones de moda audaces que celebran tu estilo individual y personalidad",
+          "name": "Sesiones Personales y de Moda",
+          "tagline": "Audaz. Elegante. Tú.",
+          "summary": "Posa y expresa tu esencia única a través de retratos personales íntimos y sesiones de moda audaces que celebran tu estilo individual y personalidad",
           "images": {
             "img1Description": "Una mujer disfrutando de una sesión de fotos de moda al aire libre con su café matutino",
             "img2Description": "Una mujer posando con confianza en una chaqueta de lana maravillosa en un desfile de moda",
@@ -99,9 +99,9 @@
           }
         },
         "brandStoryGastronomy": {
-          "heading": "Historia de Marca y Gastronomía",
-          "subheading": "Creado para Conectar",
-          "description": "Desde narrativas de marca convincentes hasta obras maestras culinarias, creamos visuales cautivadores que conectan con audiencias—transformando productos en íconos y platillos en puro deseo",
+          "name": "Historia de Marca y Gastronomía",
+          "tagline": "Creado para Conectar",
+          "summary": "Desde narrativas de marca convincentes hasta obras maestras culinarias, creamos visuales cautivadores que conectan con audiencias—transformando productos en íconos y platillos en puro deseo",
           "images": {
             "img1Description": "Una estatua de gato de la suerte dorada junto a un vibrante plato de pollo al sésamo, ambientado con una vista escénica al océano en un elegante restaurante en la azotea",
             "img2Description": "Un refrescante cóctel de naranja con una rodaja de limón, presentado elegantemente en una mesa elegante con un fondo escénico",
@@ -110,9 +110,9 @@
           }
         },
         "childrenStudioPortraits": {
-          "heading": "Retratos de Niños y de Estudio",
-          "subheading": "Alegría en Cada Sonrisa",
-          "description": "Desde la energía juguetona de la infancia hasta la elegancia atemporal de estudio, creamos retratos cálidos y profesionales que capturan hermosamente personalidades, momentos clave y recuerdos preciosos",
+          "name": "Retratos de Niños y de Estudio",
+          "tagline": "Alegría en Cada Sonrisa",
+          "summary": "Desde la energía juguetona de la infancia hasta la elegancia atemporal de estudio, creamos retratos cálidos y profesionales que capturan hermosamente personalidades, momentos clave y recuerdos preciosos",
           "images": {
             "img1Description": "Un bebé de 3 meses duerme serenamente sobre su mano, envuelto en un pequeño traje de hada para un retrato infantil tranquilo",
             "img2Description": "Un retrato de una mujer en una camiseta negra y jeans posa con confianza con cabello ondulado y gafas de sol contra un fondo limpio",
@@ -122,6 +122,32 @@
         }
       },
       "exploreOurPortfolioBtn": "Explora Nuestro Portafolio"
+    },
+    "ClientStoriesExperiences": {
+      "sectionTitle": "Momentos Que Importan - Historias de Nuestros Clientes",
+      "sectionIntro": "No solo confíes en nuestra palabra. Conoce las experiencias de quienes nos confiaron sus momentos más importantes. Sus historias son el corazón de lo que hacemos",
+      "clientStories": [
+        {
+          "imgDesc": "Pareja de recién casados abrazándose con alegría, capturados en un momento cálido y espontáneo",
+          "testimonial": "Capturaron cada momento de forma hermosa—desde las lágrimas durante nuestros votos hasta la energía increíble en la pista de baile. Ver nuestro álbum es como volver a vivir el mejor día de nuestras vidas",
+          "clientInfo": "Maria & Juan | Recién Casados | Ciudad de Panamá | Ceremonia de Boda"
+        },
+        {
+          "imgDesc": "Quinceañera sonriente posando en su elegante vestido junto a sus padres en su celebración",
+          "testimonial": "Me hicieron sentir como una princesa de principio a fin. La forma en que capturaron mi entrada, las tradiciones y todos esos momentitos con mi familia—es todo lo que soñé y más",
+          "clientInfo": "Sofia Martinez | Quinceañera | San Miguelito | Celebración de Quinceañera"
+        },
+        {
+          "imgDesc": "Profesional elegante en atuendo festivo, alzando su copa con alegría en una animada celebración corporativa",
+          "testimonial": "Pawis Crea elevó nuestra gala empresarial con una cobertura profesional y dinámica que resaltó la energía de nuestra marca y el espíritu de nuestro equipo. ¡Los resultados superaron todas nuestras expectativas!",
+          "clientInfo": "Ana Rodriguez | Gerente de Marketing | Distrito de Negocios | Cobertura de Evento Corporativo"
+        },
+        {
+          "imgDesc": "Modelo segura de sí misma con iluminación dramática de estudio para sesión editorial de alta moda",
+          "testimonial": "Trabajar con Pawis Crea fue inspirador. Capturaron mi estilo único y personalidad, creando imágenes impresionantes y llenas de confianza que son perfectas para mi portafolio",
+          "clientInfo": "Lucia Fernandez | Modelo de Moda | Locación de Estudio | Sesión de Retrato Fashion"
+        }
+      ]
     }
   },
   "AboutUs": {

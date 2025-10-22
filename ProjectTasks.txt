@@ -11,3 +11,4 @@
 - Improve Footer
 - Add Vercel Analytics
 - Add Page Loading Progress bar with website primary colors
+- Add Staggering Effect to ServicesShowcase carousels
