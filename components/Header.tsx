@@ -3,19 +3,20 @@
 import React, { FC, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
-
-// CSS
 import "@/styles/header.css";
-
-// Icons
-import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
-
-// Component
+import { List, X } from "@phosphor-icons/react";
 import CompanyLogo from "@/components/CompanyLogo";
 
 const Header: FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    if (!isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  };
 
   const t = useTranslations("Header.nav");
   const tLang = useTranslations("Header.lang");
@@ -36,6 +37,11 @@ const Header: FC = () => {
     router.push(pathname, { locale: newLocale });
   };
 
+  const handleMobileClick = () => {
+    setIsMobileMenuOpen(false);
+    document.body.style.overflow = "unset";
+  };
+
   return (
     <header className="header">
       <div className="header-container">
@@ -48,7 +54,7 @@ const Header: FC = () => {
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="nav-link">
-                  {t(item.key)}
+                  {t(item.key as Parameters<typeof t>[0])}
                 </Link>
               </li>
             ))}
@@ -62,6 +68,7 @@ const Header: FC = () => {
           >
             {tLang(`${otherLocale}_long`)}
           </button>
+
           <Link href="tel:+50768560871" className="book-a-session-header-btn">
             {t("book_a_session")}
           </Link>
@@ -72,45 +79,45 @@ const Header: FC = () => {
           >
             {tLang(`${otherLocale}_short`)}
           </button>
-          {isMobileMenuOpen ? (
-            <RiCloseFill
-              className="mobile-nav-toggle-btn"
-              onClick={toggleMobileMenu}
-            />
-          ) : (
-            <RiMenu3Fill
-              className="mobile-nav-toggle-btn"
-              onClick={toggleMobileMenu}
-            />
-          )}
+
+          <button className="mobile-nav-toggle-btn" onClick={toggleMobileMenu}>
+            {isMobileMenuOpen ? <X weight="bold" /> : <List weight="bold" />}
+          </button>
         </div>
 
-        {isMobileMenuOpen && (
-          <nav className="mobile-nav">
-            <hr className="mobile-nav-divider" />
+        <nav className={`mobile-nav ${isMobileMenuOpen ? "is-open" : ""}`}>
+          <div className="mobile-nav-content">
             <ul className="mobile-nav-links">
-              {navItems.map((item) => (
-                <li key={item.href}>
+              {navItems.map((item, index) => (
+                <li
+                  key={item.href}
+                  style={{ animationDelay: `${0.1 + index * 0.1}s` }}
+                  className="mobile-nav-item"
+                >
                   <Link
                     href={item.href}
                     className="mobile-nav-link"
-                    onClick={toggleMobileMenu}
+                    onClick={handleMobileClick}
                   >
-                    {t(item.key)}
+                    {t(item.key as Parameters<typeof t>[0])}
                   </Link>
                 </li>
               ))}
-              <li onClick={toggleMobileMenu}>
+              <li
+                className="mobile-nav-item"
+                style={{ animationDelay: "0.5s" }}
+              >
                 <Link
                   href="tel:+50768560871"
                   className="book-a-session-header-mobile-nav-btn"
+                  onClick={handleMobileClick}
                 >
                   {t("book_a_session")}
                 </Link>
               </li>
             </ul>
-          </nav>
-        )}
+          </div>
+        </nav>
       </div>
     </header>
   );

@@ -1,5 +1,9 @@
+@reference "tailwindcss";
+
+@reference "../globals.css";
+
 .contact-us-form {
-  @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
+  @apply bg-[url("/images/sections-bg/section-bg-11.svg")]
   bg-cover
   bg-center
   bg-no-repeat
@@ -7,8 +11,19 @@
 }
 
 .contact-us-form::before {
-  @apply overlay
-  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+  @apply content-[''] absolute inset-0 pointer-events-none;
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(24, 24, 27, 0.55) 0%,
+      rgba(24, 24, 27, 0.75) 55%,
+      rgba(9, 9, 11, 0.9) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(236, 72, 153, 0.12) 0%,
+      rgba(6, 182, 212, 0.08) 100%
+    );
 }
 
 .contact-us-form-container {
@@ -16,7 +31,11 @@
 }
 
 .contact-us-form-heading {
-  @apply section-heading;
+  @apply section-heading-2;
+}
+
+.contact-us-form-intro {
+  @apply section-intro-2;
 }
 
 .contact-us-form-content {
@@ -32,34 +51,63 @@
   flex-col
   items-center
   justify-center
-  bg-gradient-to-tl from-pink-200/15 to-pink-300/15
-  backdrop-blur-sm
-  rounded-lg
-  shadow-lg
+  card-2
   overflow-hidden
   p-5
   lg:p-6;
 }
 
 .company-intro-img {
-  @apply object-cover
-  sm:!max-w-80
-  lg:!max-w-[17rem]
-  rounded-full
-  border-2
-  border-pink-400
-  mb-4
-  lg:mb-5;
+  @apply relative object-cover rounded-full border-2 border-pink-400/50 mb-4 lg:mb-5 sm:!max-w-80 lg:!max-w-[17rem];
+  box-shadow: 0 0 30px rgba(236, 72, 153, 0.3);
+}
+
+.company-intro-img::before {
+  @apply content-[''] absolute inset-0 rounded-full;
+  box-shadow: 0 0 40px 10px rgba(6, 182, 212, 0.5);
+  animation: pulse-glow 2s ease-in-out infinite;
+  z-index: -1;
+}
+
+.company-intro-img::after {
+  @apply content-[''] absolute inset-0 rounded-full;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(6, 182, 212, 0.2),
+    transparent 70%
+  );
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 .company-intro-message {
   @apply text-center
+  font-accent
   text-sm
   lg:text-base
   tracking-widest
   italic
-  text-gray-100
-  font-[300];
+  text-zinc-50
+  font-[500];
+  text-shadow:
+    0 0 12px rgba(236, 72, 153, 0.8),
+    0 0 24px rgba(236, 72, 153, 0.6),
+    0 0 36px rgba(236, 72, 153, 0.4),
+    0 0 48px rgba(236, 72, 153, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form {
@@ -68,10 +116,7 @@
   md:grid-cols-2
   gap-0 
   md:gap-5
-  bg-neutral-100/15
-  backdrop-blur-sm
-  rounded-lg
-  shadow-lg
+card-1
   overflow-hidden
   p-5
   lg:p-6
@@ -104,14 +149,7 @@
 .contact-form-label-email-address,
 .contact-form-label-phone-number,
 .contact-form-label-message {
-  @apply text-center
-  lg:text-left
-  text-sm
-  lg:text-base
-  text-gray-50
-  font-[700]
-  uppercase
-  tracking-widest;
+  @apply text-center card-title-1;
 }
 
 .contact-form-input-full-name,
@@ -124,7 +162,7 @@
   text-sm
   lg:text-base
   font-[400]
-  font-primary
+  font-display
   px-2.5
   lg:px-3
   py-1.5
@@ -196,8 +234,8 @@
   @apply mt-1
   md:mt-0
   md:col-span-2
-  btn
   btn-primary
+  cursor-pointer
   w-min
   mx-auto;
 }
@@ -235,7 +273,7 @@
 
 .contact-form-msg-to-user {
   @apply text-center
-  font-primary
+  font-display
   text-sm
   lg:text-base
   text-red-600
@@ -244,8 +282,7 @@
 }
 
 .contact-form-msg-to-user-modal-close-btn {
-  @apply btn
-    btn-primary;
+  @apply btn-primary;
 }
 
 @media (max-width: 355px) {

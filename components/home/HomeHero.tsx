@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -57,20 +57,20 @@ const HomeHero: FC = () => {
           <h2 className="home-hero-subheadline">{subheadline}</h2>
           <div className="home-hero-cta">
             <Link
-              href="/#services-overview"
-              className="explore-our-services-btn"
-              aria-label={exploreOurServicesBtn}
-            >
-              {exploreOurServicesBtn}
-            </Link>
-
-            <Link
               href="/contact-us"
               className="book-a-session-btn"
               aria-label={bookASessionBtn}
               prefetch
             >
               {bookASessionBtn}
+            </Link>
+
+            <Link
+              href="/#services-showcase"
+              className="explore-our-services-btn"
+              aria-label={exploreOurServicesBtn}
+            >
+              {exploreOurServicesBtn}
             </Link>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -24,7 +24,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-1.webp",
           imgDesc: t_Section(
-            "services.weddingsQuinceañeras.images.img1Description"
+            "services.weddingsQuinceañeras.images.img1Description",
           ),
           imgPosition: {
             xs: "50% 32.5%",
@@ -42,7 +42,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-2.webp",
           imgDesc: t_Section(
-            "services.weddingsQuinceañeras.images.img2Description"
+            "services.weddingsQuinceañeras.images.img2Description",
           ),
           imgPosition: {
             xs: "50% 10%",
@@ -60,7 +60,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-3.webp",
           imgDesc: t_Section(
-            "services.weddingsQuinceañeras.images.img3Description"
+            "services.weddingsQuinceañeras.images.img3Description",
           ),
           imgPosition: {
             xs: "50% 15%",
@@ -78,7 +78,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/weddings-quinceaneras/weddings-quinceaneras-4.webp",
           imgDesc: t_Section(
-            "services.weddingsQuinceañeras.images.img4Description"
+            "services.weddingsQuinceañeras.images.img4Description",
           ),
           imgPosition: {
             xs: "50% 27.5%",
@@ -175,7 +175,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-1.webp",
           imgDesc: t_Section(
-            "services.eventsCorporateCoverage.images.img1Description"
+            "services.eventsCorporateCoverage.images.img1Description",
           ),
           imgPosition: {
             xs: "50% 10%",
@@ -193,7 +193,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-2.webp",
           imgDesc: t_Section(
-            "services.eventsCorporateCoverage.images.img2Description"
+            "services.eventsCorporateCoverage.images.img2Description",
           ),
           imgPosition: {
             xs: "50% 12.5%",
@@ -211,7 +211,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-3.webp",
           imgDesc: t_Section(
-            "services.eventsCorporateCoverage.images.img3Description"
+            "services.eventsCorporateCoverage.images.img3Description",
           ),
           imgPosition: {
             xs: "50% 70%",
@@ -229,7 +229,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/events-corporate-coverage/events-corporate-coverage-4.webp",
           imgDesc: t_Section(
-            "services.eventsCorporateCoverage.images.img4Description"
+            "services.eventsCorporateCoverage.images.img4Description",
           ),
           imgPosition: {
             xs: "25% 50%",
@@ -254,7 +254,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-1.webp",
           imgDesc: t_Section(
-            "services.personalFashionPortraits.images.img1Description"
+            "services.personalFashionPortraits.images.img1Description",
           ),
           imgPosition: {
             xs: "50% 40%",
@@ -272,7 +272,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-2.webp",
           imgDesc: t_Section(
-            "services.personalFashionPortraits.images.img2Description"
+            "services.personalFashionPortraits.images.img2Description",
           ),
           imgPosition: {
             xs: "50% 10%",
@@ -290,7 +290,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-3.webp",
           imgDesc: t_Section(
-            "services.personalFashionPortraits.images.img3Description"
+            "services.personalFashionPortraits.images.img3Description",
           ),
           imgPosition: {
             xs: "50% 45%",
@@ -308,7 +308,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/personal-fashion-portraits/personal-fashion-portraits-4.webp",
           imgDesc: t_Section(
-            "services.personalFashionPortraits.images.img4Description"
+            "services.personalFashionPortraits.images.img4Description",
           ),
           imgPosition: {
             xs: "50% 5%",
@@ -333,7 +333,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-1.webp",
           imgDesc: t_Section(
-            "services.brandStoryGastronomy.images.img1Description"
+            "services.brandStoryGastronomy.images.img1Description",
           ),
           imgPosition: {
             xs: "50% 95%",
@@ -351,7 +351,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-2.webp",
           imgDesc: t_Section(
-            "services.brandStoryGastronomy.images.img2Description"
+            "services.brandStoryGastronomy.images.img2Description",
           ),
           imgPosition: {
             xs: "50% 27.5%",
@@ -369,7 +369,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-3.webp",
           imgDesc: t_Section(
-            "services.brandStoryGastronomy.images.img3Description"
+            "services.brandStoryGastronomy.images.img3Description",
           ),
           imgPosition: {
             xs: "30% 50%",
@@ -387,7 +387,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/brand-story-gastronomy/brand-story-gastronomy-4.webp",
           imgDesc: t_Section(
-            "services.brandStoryGastronomy.images.img4Description"
+            "services.brandStoryGastronomy.images.img4Description",
           ),
           imgPosition: {
             xs: "50% 52.5%",
@@ -412,7 +412,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-1.webp",
           imgDesc: t_Section(
-            "services.childrenStudioPortraits.images.img1Description"
+            "services.childrenStudioPortraits.images.img1Description",
           ),
           imgPosition: {
             xs: "67.5% 50%",
@@ -430,7 +430,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-2.webp",
           imgDesc: t_Section(
-            "services.childrenStudioPortraits.images.img2Description"
+            "services.childrenStudioPortraits.images.img2Description",
           ),
           imgPosition: {
             xs: "50% 5%",
@@ -448,7 +448,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-3.webp",
           imgDesc: t_Section(
-            "services.childrenStudioPortraits.images.img3Description"
+            "services.childrenStudioPortraits.images.img3Description",
           ),
           imgPosition: {
             xs: "50% 35%",
@@ -466,7 +466,7 @@ const ServicesShowcase: FC = () => {
           imgSrc:
             "/images/sections-img/services-showcase/children-studio-portraits/children-studio-portraits-4.webp",
           imgDesc: t_Section(
-            "services.childrenStudioPortraits.images.img4Description"
+            "services.childrenStudioPortraits.images.img4Description",
           ),
           imgPosition: {
             xs: "50% 5%",
@@ -529,7 +529,7 @@ const ServicesShowcase: FC = () => {
             </div>
           ))}
         </div>
-        <div className="services-showcase__actions">
+        {/* <div className="services-showcase__actions">
           <Link
             href="/portfolio"
             className="services-showcase__actions--explore-portfolio-btn"
@@ -547,7 +547,7 @@ const ServicesShowcase: FC = () => {
           >
             {bookASessionBtn}
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

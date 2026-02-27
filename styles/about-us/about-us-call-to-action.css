@@ -1,0 +1,95 @@
+@reference "tailwindcss";
+@reference "../globals.css";
+
+.about-us-call-to-action {
+  @apply bg-[url("/images/sections-bg/section-bg-13.svg")]
+  bg-cover
+  bg-center
+  bg-no-repeat
+  relative;
+}
+
+.about-us-call-to-action::before {
+  @apply content-[''] absolute inset-0 pointer-events-none;
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(24, 24, 27, 0.55) 0%,
+      rgba(24, 24, 27, 0.75) 55%,
+      rgba(9, 9, 11, 0.9) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(236, 72, 153, 0.12) 0%,
+      rgba(6, 182, 212, 0.08) 100%
+    );
+}
+
+.about-us-call-to-action::after {
+  @apply content-[''] absolute inset-0 z-[1] pointer-events-none;
+  background: radial-gradient(
+    circle at 50% 50%,
+    transparent 0%,
+    rgba(9, 9, 11, 0.8) 70%,
+    rgba(9, 9, 11, 1) 100%
+  );
+}
+
+.about-us-call-to-action-container {
+  @apply section-container;
+}
+
+.about-us-call-to-action-content {
+  @apply relative z-10 flex flex-col items-center border border-pink-500/10 bg-zinc-900/40 backdrop-blur-md rounded-3xl p-8 lg:p-16;
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+.about-us-call-to-action-content::before {
+  @apply content-[''] absolute -top-[2px] -left-[2px] w-20 h-20 rounded-tl-3xl border-t-2 border-l-2 border-cyan-400/40;
+}
+
+.about-us-call-to-action-content::after {
+  @apply content-[''] absolute -bottom-[2px] -right-[2px] w-20 h-20 rounded-br-3xl border-b-2 border-r-2 border-pink-500/40;
+}
+
+.about-us-call-to-action-eyebrow {
+  @apply font-accent italic text-pink-400 max-[355px]:text-base text-lg lg:text-xl tracking-widest max-[355px]:mb-3 mb-4 lg:mb-6;
+  text-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+}
+
+.about-us-call-to-action-headline {
+  @apply font-display font-bold max-[355px]:text-2xl text-3xl lg:text-4xl text-zinc-50 text-center tracking-widest leading-tight max-[355px]:mb-5 mb-6 lg:mb-8;
+}
+
+.about-us-call-to-action-headline::after {
+  @apply content-[''] block w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto mt-6 rounded-full;
+}
+
+.about-us-call-to-action-body {
+  @apply font-body font-light text-zinc-400 max-[355px]:text-sm text-base lg:text-lg text-center tracking-wider leading-relaxed max-[355px]:mb-9 mb-10 lg:mb-12;
+}
+
+.about-us-call-to-action-buttons {
+  @apply flex flex-col sm:flex-row items-center gap-6 w-full justify-center;
+}
+
+.about-us-call-to-action-primary-btn {
+  @apply btn-primary;
+}
+
+.about-us-call-to-action-secondary-btn {
+  @apply btn-secondary;
+}
+
+@media (max-width: 355px) {
+  .about-us-call-to-action-container {
+    @apply p-6 rounded-2xl;
+  }
+
+  .about-us-call-to-action-container::before,
+  .about-us-call-to-action-container::after {
+    @apply w-10 h-10;
+  }
+}

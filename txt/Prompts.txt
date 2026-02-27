@@ -1,0 +1,285 @@
+Pawis Crea is a Professional and Creative Photography & Videography Studio, based in Panama City, Panama Country.
+
+We are building the website for this Studio.
+
+A. Website Pages:
+1. Home
+2. About Us
+3. Portfolio
+4. Contact Us
+5. Privacy Policy
+6. Terms of Use
+
+B. Pages Sections:
+1. Home Page
+1.1. Home Hero Section
+1.2. Services Showcase Section
+1.3. Client Stories & Experiences Section
+1.4. TBD
+1.5. Home Call to Action Section
+
+2. About Us Page
+2.1. About Us Hero Section
+2.2. Our Story Section
+2.3. Why Choose Pawis Crea Section
+2.4. TBD
+2.5. About Us Call to Action Section
+
+3. Portfolio Page
+3.1. Portfolio Hero Section
+3.2. Portfolio Categories Section
+3.3. Our Photography Collection Section
+3.4. Video Gallery Section
+3.5. Portfolio Call to Action Section
+
+4. Contact Us Page
+4.1. Contact Us Hero Section
+4.2. Contact Us Form Section
+4.3. Contact Info Section
+4.4. Social Media Links Section
+4.5. Map Location Section
+
+Right now we are working on the Why Choose Pawis Crea Section of About Us Page.
+ 
+This is the content for section.
+"WhyChoosePawisCrea": {
+      "sectionTitle": "Why Clients Choose Us - Our Promise to You",
+      "sectionIntro": "Pawis Crea captures the heart of your vision with artistry rooted in Panama’s vibrant spirit",
+      "reasonsForChoosing": {
+        "storyTellingMastery": {
+          "title": "Storytelling Mastery",
+          "tagline": "Real Moments. True Emotions.",
+          "description": "We capture the laughter, the stillness, and the in-between — those raw, genuine connections that define your story beyond the lens"
+        },
+        "tailoredForDreamers": {
+          "title": "Tailored for Dreamers",
+          "tagline": "Your Dreams. Our Priority.",
+          "description": "From music artists' BTS to corporate galas, we customize every shoot. Bold fashion and personal portraits shine"
+        },
+        "collaborativeExperience": {
+          "title": "Collaborative Experience",
+          "tagline": "Your Vision. Our Blueprint.",
+          "description": "We listen to your ideas, understand your goals, and blend them with our creative expertise to bring your vision to life—exactly as imagined, or even better"
+        },
+        "peaceOfMindCoverage": {
+          "title": "Peace of Mind Coverage",
+          "tagline": "Worry-Free Experience.",
+          "description": "We handle the logistics and technical details with professionalism so you can relax and truly enjoy your event or session"
+        },
+        "commitmentToQuality": {
+          "title": "Commitment to Quality",
+          "tagline": "Professional Grade. Guaranteed.",
+          "description": "We utilize high-end, professional-grade equipment and meticulous post-production techniques to deliver stunning photos and cinematic videos you'll treasure for decades"
+        },
+        "passionDrivenExcellence": {
+          "title": "Passion-Driven Excellence",
+          "tagline": "Fueled by Passion. Delivered with Heart.",
+          "description": "Photography and videography aren't just our job—they're our calling. Every project receives our full creative energy and meticulous attention to detail because your joy is our greatest reward"
+        }
+      },
+      "sectionOutro": "Trust us with your moment. You have our promise"
+    }
+  }
+ 
+This is the section component tsx in a Next.js Project.
+ 
+import React, { FC } from "react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+// CSS
+import "@/styles/about-us/why-choose-pawis-crea.css";
+interface Reason {
+  reasonTitle: string;
+  reasonTagline: string;
+  reasonDescription: string;
+}
+const REASON_KEYS = [
+  "storyTellingMastery",
+  "tailoredForDreamers",
+  "collaborativeExperience",
+  "peaceOfMindCoverage",
+  "commitmentToQuality",
+  "passionDrivenExcellence",
+] as const;
+const WhyChoosePawisCrea: FC = () => {
+  const t_Section = useTranslations("AboutUs.WhyChoosePawisCrea");
+  const t_Common = useTranslations("Common");
+  const sectionTitle = t_Section("sectionTitle");
+  const sectionIntro = t_Section("sectionIntro");
+  const reasonsForChoosing: Reason[] = REASON_KEYS.map((key) => ({
+    reasonTitle: t_Section(reasonsForChoosing.${key}.title),
+    reasonTagline: t_Section(reasonsForChoosing.${key}.tagline),
+    reasonDescription: t_Section(reasonsForChoosing.${key}.description),
+  }));
+  const sectionOutro = t_Section("sectionOutro");
+  return (
+    <section
+      id="why-choose-pawis-crea"
+      className="why-choose-pawis-crea"
+      aria-labelledby="why-choose-pawis-crea__title"
+    >
+      <div className="why-choose-pawis-crea__wrapper">
+        <h2
+          id="why-choose-pawis-crea__title"
+          className="why-choose-pawis-crea__title"
+        >
+          {sectionTitle}
+        </h2>
+        <p className="why-choose-pawis-crea__intro">{sectionIntro}</p>
+        <div className="why-choose-pawis-crea__reasons">
+          {reasonsForChoosing.map((reason, index) => (
+            <div key={index} className="why-choose-pawis-crea__reason">
+              <h3 className="why-choose-pawis-crea__reason-title">
+                {reason.reasonTitle}
+              </h3>
+              <p className="why-choose-pawis-crea__reason-tagline">
+                {reason.reasonTagline}
+              </p>
+              <p className="why-choose-pawis-crea__reason-description">
+                {reason.reasonDescription}
+              </p>
+            </div>
+          ))}
+        </div>
+        <p className="why-choose-pawis-crea__outro">{sectionOutro}</p>
+      </div>
+    </section>
+  );
+};
+export default WhyChoosePawisCrea;
+ 
+ 
+Now we are currently working on the styles of the section component in a separate why-choose-pawis-crea.css
+
+Since the main part of the content for this section is why-choose-pawis-crea__reasons, we are working on this part at first.
+
+These are our brainstormed ideas so far.
+
+Desktop: 3 columns × 2 rows
+Tablet: 2 columns × 3 rows
+Mobile: 1 column
+Each reason is a card with subtle hover lift + soft shadow
+Alternate background colors very lightly or use a very subtle diagonal overlay gradient
+Icon or hand-drawn squiggle/number above each title for extra personality
+Slight stagger in animation on scroll (cards fade in row by row with tiny delay)
+
+Use a lot of whitespace
+Have excellent typography contrast (big bold titles + taglines, lighter description)
+Add micro-animations (fade-up on scroll, hover lift)
+Include at least one subtle Panama cultural nod (color, pattern, or shape)
+
+Meaningful micro-animations:
+fade in
+zoom slightly
+soft shimmer on hover
+Micro-interaction conveys high-premium digital experience.
+
+Priority in visual size:
+Title
+↓
+Tagline
+↓
+Description
+
+Bold tagline (heart)
+Use tagline as emotional hook first, THEN description.
+
+Two rows of 3 cards
+Slight stagger in height (artistically uneven)
+Mini icons
+Soft fade hover reveal
+Cinematic black subtle gradient background
+
+Iconography: Place a unique, custom-designed icon (or a relevant image placeholder) at the top of each reason/card. This instantly conveys the theme (e.g., a speech bubble for "Storytelling Mastery," a magnifying glass for "Commitment to Quality").
+
+Icon (Prominent)
+reasonTitle (Bold, larger font, primary focus)
+reasonTagline (Smaller, italic, or colored text to act as a punchy subtitle)
+reasonDescription (Standard body text).
+
+Interaction: A subtle hover effect (e.g., lift shadow, slight background color change) can make the section feel interactive.
+
+Icon-Driven Design
+Custom icons for each reason
+Camera, heart, handshake, shield, diamond, flame metaphors
+
+Photography-First
+Background images behind each card
+Relevant photos for each reason (BTS shots, portraits, events)
+Overlay text with gradient/blur
+
+Bold Accent Cards
+Each card with different accent color edge/corner
+Panama vibrant spirit reflected
+Creates energy and distinction
+Brand color palette showcase
+
+TITLE (Storytelling Mastery) - Bold, larger
+Tagline (Real Moments. True Emotions.) - Italic, accent color, medium
+Description - Regular weight, comfortable reading size
+
+Tagline as decorative script/handwritten font (artistic touch)
+Title in all caps with letter-spacing
+Description in warm, readable serif
+
+Hover States
+Card lift/elevation increase
+Color shift or glow
+Expand to show more detail
+Icon animation
+Scroll Animations
+
+Stagger fade-in as user scrolls
+Cards slide in from alternating sides
+Number counters animate
+Parallax subtle movement
+
+3-column grid (responsive)
+Each card with subtle background gradient or texture
+Title in bold sans-serif
+Tagline in elegant italic (accent color - maybe warm gold/copper)
+Description in readable paragraph
+Subtle border or shadow for depth
+Hover: slight lift + glow effect
+Staggered fade-in on scroll
+
+Gentle hover animations (e.g., icon pulses, slight lift on card).
+
+Layout: Use a responsive 2-column grid (desktop) or single column (mobile) for the six reasons. Each "reason card" features a clean, minimalist design to avoid visual clutter.
+Hierarchy: Titles in bold, larger typography (e.g., 24px) for quick scanning; taglines in a secondary font style (italic/semibold) to add emphasis; descriptions in a smaller, readable font (16px) for detailed context.
+Visual Cues: Subtle icons (e.g., a film reel for "Storytelling Mastery," a paintbrush for "Tailored for Dreamers") placed above titles to reinforce concepts without overwhelming text. Icons should reflect Panama’s vibrant culture (e.g., tropical foliage, vibrant colors) to subtly tie to the brand’s roots.
+
+Grid Layout with Visual Icons/Illustrations
+Concept:
+Arrange the six reasons in a 2x3 grid (or 3x2 for mobile). Each reason is a card with:
+
+A custom icon or illustration representing the theme (e.g., a camera for "Commitment to Quality," a heart for "Passion-Driven Excellence").
+Bold title and tagline as a subtitle.
+Description in a clean, readable font.
+Why it works:
+
+Icons/illustrations add visual interest and help users quickly associate each reason with a concept.
+Grid layouts are familiar and easy to navigate.
+
+Arrange the six reasons in a 3x2 CSS Grid for desktop balance, with generous gutters (24-32px) to breathe life into the design.
+
+Staggered Cards: Alternate background fills (e.g., semi-transparent Panama-inspired gradients like teal-to-gold) and subtle borders; add icons above titles matching each theme (camera for Storytelling, custom blueprint for Collaborative).
+
+Masonry Style: Variable card heights based on content, with images or blurred photo backgrounds pulled from portfolio thumbnails to tie into Pawis Crea's visual identity.
+
+Carousel Variant: Horizontal swipeable slider with dots/indicators, ideal if space is tight; pause on hover to reveal full descriptions.
+
+Dynamic Grid with Iconography or Visual Motifs
+Structure: 2-column grid on desktop (3×2), 1-column on mobile.
+Differentiator: Each reason gets a custom-designed icon or minimalist illustration (e.g., a film reel for storytelling, a heart for passion, a gear for quality).
+Visual Style: Icons in a consistent stroke style with Pawis Crea’s brand colors (consider warm tones inspired by Panama—sunsets, ocean blues, tropical greens).
+Interaction: Gentle hover animations (e.g., icon pulses, slight lift on card).
+
+Icon-Centric Minimalism
+Focus on Icons: Lead with large, expressive icons (custom-designed or from a curated set) that encapsulate each reason’s essence. Pair with minimal text—titles in bold, taglines in smaller caps, descriptions in a neutral tone.
+Color Coding: Assign a unique accent color to each reason (e.g., coral for "Collaborative Experience," teal for "Peace of Mind") to create visual distinction while maintaining harmony.
+Micro-Interactions: Hover effects could reveal additional context (e.g., a brief quote or client testimonial) to deepen engagement without overcrowding the design.
+
+Responsiveness: Prioritize mobile-first design with flexible grids/cards that adapt to screen sizes without sacrificing readability.
+Brand Consistency: Use Panama-inspired colors, patterns, and textures to subtly reinforce the studio’s identity while keeping the design professional and approachable.
+User Experience: Balance visual interest with clarity—ensure the layout guides users naturally from title to tagline to description, with clear calls to action (e.g., "Contact Us" links) in the outro.

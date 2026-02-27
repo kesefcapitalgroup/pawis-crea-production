@@ -57,20 +57,20 @@ const AboutUsHero: FC = () => {
           <h2 className="about-us-hero-subheadline">{subheadline}</h2>
           <div className="about-us-hero-cta">
             <Link
-              href="/#our-story"
-              className="explore-our-story-btn"
-              aria-label={exploreOurStoryBtn}
-            >
-              {exploreOurStoryBtn}
-            </Link>
-
-            <Link
               href="/contact-us"
               className="book-a-session-btn"
               aria-label={bookASessionBtn}
               prefetch
             >
               {bookASessionBtn}
+            </Link>
+
+            <Link
+              href="/#our-story"
+              className="explore-our-story-btn"
+              aria-label={exploreOurStoryBtn}
+            >
+              {exploreOurStoryBtn}
             </Link>
           </div>
         </div>

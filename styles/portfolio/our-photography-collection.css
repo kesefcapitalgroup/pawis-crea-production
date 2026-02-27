@@ -1,3 +1,5 @@
+@reference "tailwindcss";
+@reference "../globals.css";
 .our-photography-collection {
   @apply bg-[url("/images/sections-bg/section-bg-9.svg")]
   bg-cover
@@ -5,42 +7,46 @@
   bg-no-repeat
   relative;
 }
-
 .our-photography-collection::before {
-  @apply overlay
-  !bg-gradient-to-br from-neutral-900/75 to-neutral-900/0;
+  @apply content-[''] absolute inset-0 pointer-events-none;
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(24, 24, 27, 0.55) 0%,
+      rgba(24, 24, 27, 0.75) 55%,
+      rgba(9, 9, 11, 0.9) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(236, 72, 153, 0.12) 0%,
+      rgba(6, 182, 212, 0.08) 100%
+    );
 }
-
 .our-photography-collection-container {
-  @apply section-container
-  relative;
+  @apply section-container;
 }
-
 .our-photography-collection-heading {
-  @apply section-heading;
+  @apply section-heading-1;
 }
-
+.our-photography-collection-intro {
+  @apply section-intro-1;
+}
 .our-photography-collection-filter-bar {
   @apply sticky
   top-0
-  z-40
-
+  z-100
   p-3
   lg:p-4
   mb-5
   lg:mb-6
   
-  bg-neutral-200/15
-  backdrop-blur-md
-  
-  rounded-lg
-  shadow-lg
+  card-1
   
   flex
   items-center
   justify-center;
+  overflow: clip;
 }
-
 .our-photography-collection-filter-categories {
   @apply flex
   flex-nowrap
@@ -48,47 +54,39 @@
   gap-2
   lg:gap-3
   items-center
-  justify-start;
-
+  justify-start
+  w-full
+  min-w-0;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .our-photography-collection-filter-categories::-webkit-scrollbar {
   @apply hidden;
 }
-
 .filter-category-btn {
-  @apply btn
-  btn-secondary;
+  @apply btn-secondary
+  cursor-pointer
+  shrink-0;
 }
-
 .active-filter-category {
-  @apply bg-gray-50
-  border-gray-50
-  text-gray-950;
+  @apply btn-primary;
 }
-
 .our-photography-collection-content {
 }
-
 .my-masonry-grid {
   @apply flex
   -ml-6
   lg:-ml-7
   w-auto;
-
   display: -webkit-box;
   display: -ms-flexbox;
 }
-
 .my-masonry-grid_column {
   @apply pl-6
   lg:pl-7
   bg-clip-padding;
 }
-
 .my-masonry-grid_column > a {
   @apply block
   mb-6
@@ -97,31 +95,54 @@
 }
 
 .our-photography-collection-img {
-  @apply block
-  w-full
-  relative
-  border-2
-  border-pink-400/25
-  hover:border-pink-400
-  transition
-  rounded-lg
-  shadow-lg
-  overflow-hidden;
+  @apply block w-full relative rounded-2xl overflow-hidden transition-all duration-600;
+  background: rgba(39, 39, 42, 0.35);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    inset 0 1px 0 0 rgba(236, 72, 153, 0.18),
+    inset 0 -1px 0 0 rgba(6, 182, 212, 0.14),
+    0 20px 50px -15px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(236, 72, 153, 0.22);
+}
+
+.our-photography-collection-img::after {
+  @apply absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-700;
+  content: "";
+  background: linear-gradient(
+    135deg,
+    rgba(236, 72, 153, 0.2) 0%,
+    rgba(6, 182, 212, 0.12) 100%
+  );
+}
+
+.our-photography-collection-img:hover {
+  @apply scale-[1.035] shadow-[0_30px_70px_-20px_rgba(0,0,0,0.7)];
+  border-color: rgba(236, 72, 153, 0.45);
+}
+
+.our-photography-collection-img:hover::after {
+  @apply opacity-100;
+}
+
+.our-photography-collection-img img {
+  @apply transition-transform duration-700 ease-out;
+}
+
+.our-photography-collection-img:hover img {
+  @apply scale-[1.065];
 }
 
 .lg-outer .lg-sub-html {
   @apply !hidden;
 }
-
 .lg-outer .lg-progress-bar .lg-progress {
   @apply bg-pink-400;
 }
-
 .lg-outer .lg-thumb-item.active,
 .lg-outer .lg-thumb-item:hover {
   @apply !border-pink-400;
 }
-
 .our-photography-collection-img-loading-skeleton {
   @apply bg-gray-700
   animate-pulse
@@ -132,42 +153,35 @@
   top-0
   left-0;
 }
-
 .our-photography-collection-img-thumbnail {
   @apply w-full
   h-auto
   block
   relative
+  z-20
   hover:scale-[1.05]
   transition;
 }
-
 .our-photography-collection-img-loading {
   @apply opacity-0;
 }
-
 .our-photography-collection-img-loaded {
   @apply opacity-100;
 }
-
 @media (max-width: 355px) {
   .our-photography-collection-filter-bar {
     @apply p-2.5
     mb-4;
   }
-
   .our-photography-collection-filter-categories {
     @apply gap-1.5;
   }
-
   .my-masonry-grid {
     @apply -ml-5;
   }
-
   .my-masonry-grid_column {
     @apply pl-5;
   }
-
   .my-masonry-grid_column > a {
     @apply mb-5;
   }

@@ -31,14 +31,15 @@ type UserCountryType = string;
 const ContactUsForm: FC = () => {
   const t_ContactUsForm_ContactUs = useTranslations("ContactUs.ContactUsForm");
   const t_Fields_Form_ContactUsForm_ContactUs = useTranslations(
-    "ContactUs.ContactUsForm.form.fields"
+    "ContactUs.ContactUsForm.form.fields",
   );
   const t_MsgToUser_Form_ContactUsForm_ContactUs = useTranslations(
-    "ContactUs.ContactUsForm.form.msgToUser"
+    "ContactUs.ContactUsForm.form.msgToUser",
   );
 
-  const { sectionHeading, submitBtn, companyIntroMessage } = {
+  const { sectionHeading, sectionIntro, submitBtn, companyIntroMessage } = {
     sectionHeading: t_ContactUsForm_ContactUs("sectionHeading"),
+    sectionIntro: t_ContactUsForm_ContactUs("sectionIntro"),
     submitBtn: t_ContactUsForm_ContactUs("submitBtn"),
     companyIntroMessage: t_ContactUsForm_ContactUs("companyIntroMessage"),
   };
@@ -70,13 +71,13 @@ const ContactUsForm: FC = () => {
       t_MsgToUser_Form_ContactUsForm_ContactUs("missingFullName"),
     missingMessage: t_MsgToUser_Form_ContactUsForm_ContactUs("missingMessage"),
     incorrectEmailFormat: t_MsgToUser_Form_ContactUsForm_ContactUs(
-      "incorrectEmailFormat"
+      "incorrectEmailFormat",
     ),
     incorrectPhoneNumberFormat: t_MsgToUser_Form_ContactUsForm_ContactUs(
-      "incorrectPhoneNumberFormat"
+      "incorrectPhoneNumberFormat",
     ),
     bothEmailAndPhoneMissing: t_MsgToUser_Form_ContactUsForm_ContactUs(
-      "bothEmailAndPhoneMissing"
+      "bothEmailAndPhoneMissing",
     ),
     formSubmitted: t_MsgToUser_Form_ContactUsForm_ContactUs("formSubmitted"),
   };
@@ -114,7 +115,7 @@ const ContactUsForm: FC = () => {
   }, []);
 
   const validateContactUsFormInput = (
-    contactUsFormData: ContactUsFormDataTypes
+    contactUsFormData: ContactUsFormDataTypes,
   ): ContactUsFormMsgToUserType => {
     if (!contactUsFormData.fullName) {
       return missingFullName;
@@ -135,7 +136,7 @@ const ContactUsForm: FC = () => {
   };
 
   const handleContactUsFormInputChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setContactUsFormData((prev) => ({ ...prev, [name]: value }));
@@ -189,6 +190,7 @@ const ContactUsForm: FC = () => {
         <h2 id="contact-us-form-heading" className="contact-us-form-heading">
           {sectionHeading}
         </h2>
+        <p className="contact-us-form-intro">{sectionIntro}</p>
 
         <div className="contact-us-form-content">
           <div className="company-intro">
@@ -204,6 +206,7 @@ const ContactUsForm: FC = () => {
               placeholder="blur"
               layout="responsive"
             />
+
             <p className="company-intro-message">{companyIntroMessage}</p>
           </div>
 

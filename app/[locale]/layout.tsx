@@ -13,7 +13,7 @@ import { routing } from "@/i18n/routing";
 import "@/styles/globals.css";
 
 // Fonts
-import { primaryFont, secondaryFont } from "@/public/fonts/fonts";
+import { fontDisplay, fontAccent, fontBody } from "@/public/fonts/fonts";
 
 // Layout
 import Layout from "@/components/Layout";
@@ -49,17 +49,19 @@ interface RootLayoutProps {
 
 const RootLayout: FC<RootLayoutProps> = async ({ children, params }) => {
   const { locale } = await params;
+
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
 
   setRequestLocale(locale);
-
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <body className={`${primaryFont.variable} ${secondaryFont.variable}`}>
+      <body
+        className={`${fontDisplay.variable} ${fontAccent.variable} ${fontBody.variable}`}
+      >
         <NextIntlClientProvider messages={messages}>
           <Layout>{children}</Layout>
         </NextIntlClientProvider>

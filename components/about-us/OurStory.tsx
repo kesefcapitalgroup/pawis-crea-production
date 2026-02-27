@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -16,8 +16,9 @@ const OurStory: FC = () => {
   const t_OurStory_AboutUs = useTranslations("AboutUs.OurStory");
   const t_Common = useTranslations("Common");
 
-  const { sectionHeading, description, imgAltText } = {
+  const { sectionHeading, sectionIntro, description, imgAltText } = {
     sectionHeading: t_OurStory_AboutUs("sectionHeading"),
+    sectionIntro: t_OurStory_AboutUs("sectionIntro"),
     imgAltText: t_OurStory_AboutUs("imgAltText"),
     description: t_OurStory_AboutUs("description"),
   };
@@ -33,7 +34,7 @@ const OurStory: FC = () => {
         <h2 id="our-story-heading" className="our-story-heading">
           {sectionHeading}
         </h2>
-
+        <p className="our-story-intro">{sectionIntro}</p>
         <div className="our-story-content">
           <div className="our-story-img-content">
             <Image
@@ -61,14 +62,14 @@ const OurStory: FC = () => {
 
             <p className="our-story-description">{description}</p>
 
-            <Link
+            {/* <Link
               href="/contact-us"
               className="our-story-book-a-session-btn"
               aria-label={bookASessionBtn}
               prefetch
             >
               {bookASessionBtn}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

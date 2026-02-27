@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
@@ -57,20 +57,20 @@ const PortfolioHero: FC = () => {
           <h2 className="portfolio-hero-subheadline">{subheadline}</h2>
           <div className="portfolio-hero-cta">
             <Link
-              href="/#portfolio-categories"
-              className="explore-our-works-btn"
-              aria-label={exploreOurWorksBtn}
-            >
-              {exploreOurWorksBtn}
-            </Link>
-
-            <Link
               href="/contact-us"
               className="book-a-session-btn"
               aria-label={bookASessionBtn}
               prefetch
             >
               {bookASessionBtn}
+            </Link>
+
+            <Link
+              href="/portfolio#our-photography-collection"
+              className="explore-our-works-btn"
+              aria-label={exploreOurWorksBtn}
+            >
+              {exploreOurWorksBtn}
             </Link>
           </div>
         </div>

@@ -1,3 +1,7 @@
+@reference "tailwindcss";
+
+@reference "../globals.css";
+
 .client-stories-experiences {
   @apply bg-[url("/images/sections-bg/section-bg-11.svg")]
   bg-cover
@@ -7,8 +11,19 @@
 }
 
 .client-stories-experiences::before {
-  @apply overlay
-  !bg-gradient-to-br from-neutral-900/50 to-neutral-900/0;
+  @apply content-[''] absolute inset-0 pointer-events-none;
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(24, 24, 27, 0.55) 0%,
+      rgba(24, 24, 27, 0.75) 55%,
+      rgba(9, 9, 11, 0.9) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(236, 72, 153, 0.12) 0%,
+      rgba(6, 182, 212, 0.08) 100%
+    );
 }
 
 .client-stories-experiences__wrapper {
@@ -16,90 +31,11 @@
 }
 
 .client-stories-experiences__title {
-  @apply text-2xl 
-  lg:text-3xl 
-  tracking-widest 
-  font-primary 
-  font-[900] 
-  text-center 
-  text-gray-50 
-  relative
-  p-3
-  lg:p-3.5 
-  mb-7 
-  lg:mb-9 
-  mx-auto 
-  max-w-[50rem]
-  lg:max-w-[64rem]
-  bg-[#171717b3] 
-  shadow-[0_10px_35px_rgba(0,0,0,0.4)]
-  rounded-lg 
-  backdrop-blur-lg;
-  text-shadow: 0 0 18px rgba(236, 72, 153, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-.client-stories-experiences__title::before {
-  content: "";
-  @apply absolute 
-  inset-0 
-  p-[1.5px]
-  lg:p-[2px]
-  rounded-lg;
-  background: linear-gradient(
-    45deg,
-    rgba(236, 72, 153, 0.8) 0%,
-    rgba(236, 72, 153, 0.2) 25%,
-    rgba(156, 163, 175, 0.1) 50%,
-    rgba(236, 72, 153, 0.2) 75%,
-    rgba(236, 72, 153, 0.8) 100%
-  );
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: subtract;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: destination-out;
+  @apply section-heading-2;
 }
 
 .client-stories-experiences__intro {
-  @apply text-sm
-  lg:text-base
-  text-center
-  tracking-widest
-  italic
-  font-[300]
-  text-gray-300
-  max-w-2xl
-  mx-auto
-  mb-9
-  lg:mb-11
-  py-2
-  lg:py-2.5
-  px-4
-  lg:px-5
-  relative;
-}
-
-.client-stories-experiences__intro::before {
-  content: "";
-  @apply absolute
-  top-0
-  left-1/2
-  w-full
-  lg:w-3/4
-  h-[1px]
-  bg-gradient-to-r from-transparent via-gray-400/20 to-transparent
-  -translate-x-1/2;
-}
-
-.client-stories-experiences__intro::after {
-  content: "";
-  @apply absolute
-  bottom-0
-  left-1/2
-  w-full
-  lg:w-3/4
-  h-[1px]
-  bg-gradient-to-r from-transparent via-pink-400/80 to-transparent
-  -translate-x-1/2;
+  @apply section-intro-2;
 }
 
 .client-stories-experiences-carousel {
@@ -130,13 +66,7 @@
   items-center
   max-w-5xl
   mx-auto
-  p-4 
-  lg:p-6  
-  backdrop-blur-xl
-  border 
-  border-[rgba(236,72,153,0.2)] 
-  shadow-[0_8px_32px_rgba(0,0,0,0.3)] 
-  bg-[linear-gradient(135deg,rgba(236,72,153,0.08)_0%,rgba(236,72,153,0.03)_30%,rgba(17,24,39,0.15)_70%,rgba(236,72,153,0.08)_100%)];
+  card-2;
 }
 
 .client-story__image {
@@ -221,81 +151,11 @@
 }
 
 .client-story__testimonial {
-  @apply text-base 
-  lg:text-lg
-  text-gray-50
-  font-[300]
-  italic
-  leading-relaxed
-  tracking-wider
-  text-center
-  lg:text-left
-  mb-6
-  lg:mb-8
-  max-w-2xl
-  lg:max-w-3xl
-  mx-auto
-  relative
-  py-2
-  lg:py-3;
-  text-shadow: 0 0 12px rgba(236, 72, 153, 0.8),
-    0 0 24px rgba(236, 72, 153, 0.6), 0 0 36px rgba(236, 72, 153, 0.4),
-    0 0 48px rgba(236, 72, 153, 0.2), 0 2px 4px rgba(0, 0, 0, 0.4),
-    0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-.client-story__testimonial::before {
-  content: "";
-  @apply absolute
-  top-0
-  left-1/2
-  lg:left-[4rem]
-  w-24 
-  lg:w-32
-  h-px
-  bg-gradient-to-r from-transparent via-pink-400/70 to-transparent
-  -translate-x-1/2;
-}
-
-.client-story__testimonial::after {
-  content: "";
-  @apply absolute
-  bottom-0
-  left-1/2
-  lg:left-[3.75rem]
-  w-24 
-  lg:w-32
-  h-px
-  bg-gradient-to-r from-transparent via-pink-400/70 to-transparent
-  -translate-x-1/2;
+  @apply card-title-2;
 }
 
 .client-story__client-info {
-  @apply mt-4 
-  lg:mt-5 
-  mb-3
-  lg:mb-0
-  block 
-  text-xs 
-  lg:text-sm
-  text-center
-  lg:text-left 
-  tracking-[0.25em] 
-  text-gray-300 
-  relative;
-}
-
-.client-story__client-info::after {
-  content: "";
-  @apply absolute   
-  -bottom-2 
-  left-1/2
-  lg:left-5
-  w-12
-  lg:w-14 
-  h-px 
-  -translate-x-1/2
-  bg-gradient-to-r from-transparent via-pink-500 to-transparent;
+  @apply card-summary-2;
 }
 
 .client-stories-experiences-carousel__controls {
@@ -333,7 +193,8 @@
   transition
   pointer-events-auto
   relative
-  overflow-hidden;
+  overflow-hidden
+  cursor-pointer;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -341,7 +202,9 @@
   > .carousel__arrow-btn:hover:not(:disabled) {
   @apply bg-pink-400/20 
   border-pink-400/90;
-  box-shadow: 0 0 30px rgba(236, 72, 153, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 30px rgba(236, 72, 153, 0.8),
+    0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .client-stories-experiences-carousel__arrow-btns
@@ -365,7 +228,7 @@
   lg:w-6
   h-5
   lg:h-6
-  text-gray-50
+  text-zinc-50
   relative
   z-10;
   filter: drop-shadow(0 0 6px rgba(236, 72, 153, 0.8));
@@ -400,7 +263,7 @@
   lg:w-3.5
   h-3
   lg:h-3.5
-  bg-gray-600/80
+  bg-zinc-600/80
   cursor-pointer
   transition;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -419,29 +282,8 @@
 }
 
 @media (max-width: 355px) {
-  .client-stories-experiences__title {
-    @apply text-xl
-    p-2.5
-    mb-6;
-  }
-
-  .client-stories-experiences__title::before {
-    @apply p-[1px];
-  }
-
-  .client-stories-experiences__intro {
-    @apply text-xs
-    mb-7
-    py-1.5
-    px-3;
-  }
-
   .client-stories-experiences-carousel {
     @apply mb-10;
-  }
-
-  .client-story__content {
-    @apply p-3;
   }
 
   .client-story__image {
@@ -456,30 +298,6 @@
 
   .client-story__details {
     @apply mt-6;
-  }
-
-  .client-story__testimonial {
-    @apply text-sm
-    mb-4
-    py-1;
-  }
-
-  .client-story__testimonial::before {
-    @apply w-20;
-  }
-
-  .client-story__testimonial::after {
-    @apply w-20;
-  }
-
-  .client-story__client-info {
-    @apply mt-3
-    mb-2
-    text-[0.65rem];
-  }
-
-  .client-story__client-info::after {
-    @apply w-10;
   }
 
   .client-stories-experiences-carousel__arrow-btns > .carousel__arrow-btn {

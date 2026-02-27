@@ -148,6 +148,13 @@
           "clientInfo": "Lucia Fernandez | Modelo de Moda | Locación de Estudio | Sesión de Retrato Fashion"
         }
       ]
+    },
+    "CallToAction": {
+      "eyebrow": "¿Listo para Comenzar?",
+      "headline": "Contemos Tu Historia Juntos",
+      "body": "Cada gran recuerdo comienza con un solo clic. Hagamos el tuyo inolvidable",
+      "primaryBtn": "Reserva una Sesión",
+      "secondaryBtn": "Ver Portafolio"
     }
   },
   "AboutUs": {
@@ -159,8 +166,53 @@
     },
     "OurStory": {
       "sectionHeading": "Nuestra Historia - A Través de Nuestro Lente",
+      "sectionIntro": "Cada clic del obturador comienza con un sueño",
       "imgAltText": "El fundador de Pawis Crea capturando un momento con su cámara",
       "description": "En Pawis Crea, creamos historias a través de la fotografía y la videografía, convirtiendo momentos fugaces en tesoros eternos. Nuestro apasionado equipo colabora con clientes—artistas, parejas, empresas—para dar vida a sus visiones con retratos expresivos, cobertura dinámica de eventos y visuales de marca impactantes. Capturamos la belleza y la emoción de cada momento, creando recuerdos que resuenan mucho después de que se dispara el obturador"
+    },
+    "WhyChoosePawisCrea": {
+      "sectionTitle": "Por Qué los Clientes Nos Eligen - Nuestra Promesa para Ti",
+      "sectionIntro": "Pawis Crea captura el corazón de tu visión con un arte arraigado en el vibrante espíritu de Panamá",
+      "reasonsForChoosing": {
+        "storyTellingMastery": {
+          "title": "Maestría en Narración",
+          "tagline": "Momentos Reales. Emociones Verdaderas.",
+          "description": "Capturamos la risa, la quietud y los momentos intermedios — esas conexiones genuinas y auténticas que definen tu historia más allá del lente"
+        },
+        "tailoredForDreamers": {
+          "title": "Diseñado para Soñadores",
+          "tagline": "Tus Sueños. Nuestra Prioridad.",
+          "description": "Desde el detrás de cámaras de artistas musicales hasta galas corporativas, personalizamos cada sesión. La moda audaz y los retratos personales brillan"
+        },
+        "collaborativeExperience": {
+          "title": "Experiencia Colaborativa",
+          "tagline": "Tu Visión. Nuestro Plano.",
+          "description": "Escuchamos tus ideas, comprendemos tus objetivos y las combinamos con nuestra experiencia creativa para dar vida a tu visión, exactamente como la imaginaste o incluso mejor"
+        },
+        "peaceOfMindCoverage": {
+          "title": "Cobertura con Tranquilidad",
+          "tagline": "Experiencia sin Preocupaciones.",
+          "description": "Nos encargamos de la logística y los detalles técnicos con profesionalismo para que puedas relajarte y disfrutar verdaderamente de tu evento o sesión"
+        },
+        "commitmentToQuality": {
+          "title": "Compromiso con la Calidad",
+          "tagline": "Nivel Profesional. Garantizado.",
+          "description": "Utilizamos equipos de alta gama de nivel profesional y técnicas meticulosas de postproducción para ofrecer fotos impresionantes y videos cinematográficos que atesorarás por décadas"
+        },
+        "passionDrivenExcellence": {
+          "title": "Excelencia Impulsada por la Pasión",
+          "tagline": "Impulsado por la Pasión. Entregado con el Corazón.",
+          "description": "La fotografía y la videografía no son solo nuestro trabajo, son nuestra vocación. Cada proyecto recibe toda nuestra energía creativa y atención meticulosa al detalle porque tu alegría es nuestra mayor recompensa"
+        }
+      },
+      "sectionOutro": "Confía en nosotros tu momento. Tienes nuestra promesa"
+    },
+    "CallToAction": {
+      "eyebrow": "Nos Encantaría Trabajar Contigo",
+      "headline": "Tu Visión, Nuestra Pasión",
+      "body": "Ahora que nos conoces, creemos algo significativo juntos",
+      "primaryBtn": "Reserva una Sesión",
+      "secondaryBtn": "Ver Portafolio"
     }
   },
   "Portfolio": {
@@ -172,7 +224,15 @@
     },
     "OurPhotographyCollection": {
       "sectionHeading": "Nuestra Colección de Fotografía - Momentos en Foco",
+      "sectionIntro": "Una galería de sueños capturados, celebraciones congeladas y almas auténticas reveladas",
       "photographyCollectionNotLoaded": "¡No hay imágenes disponibles en este momento! Por favor, vuelve a revisar más tarde"
+    },
+    "CallToAction": {
+      "eyebrow": "¿Inspirado por lo que Ves?",
+      "headline": "Tu Historia Podría Ser la Próxima",
+      "body": "Estos momentos alguna vez fueron solo sueños. Convirtamos los tuyos en una obra maestra visual",
+      "primaryBtn": "Reserva una Sesión",
+      "secondaryBtn": "Ver Portafolio"
     }
   },
   "ContactUs": {
@@ -185,6 +245,7 @@
     },
     "ContactUsForm": {
       "sectionHeading": "Contáctanos - Conecta con Nosotros",
+      "sectionIntro": "¿Listo para capturar tu historia? Comparte tu visión con nosotros y convirtamos tus sueños en realidad",
       "companyIntroMessage": "En Pawis Crea, convertimos tus sueños en historias atemporales. ¡Hagamos que tus sueños sean inolvidables, contáctanos hoy!",
       "form": {
         "fields": {

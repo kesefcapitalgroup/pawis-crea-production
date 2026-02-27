@@ -57,7 +57,7 @@ const BREAKPOINT_COLS = {
 const getFilteredCategoryImages = (
   filterCategory: string,
   photoCollectionCategories: string[],
-  images: Image[]
+  images: Image[],
 ): Image[] => {
   if (filterCategory === "all") return images;
   if (filterCategory === "featured") {
@@ -65,7 +65,7 @@ const getFilteredCategoryImages = (
       .map((photoCollectionCategory) =>
         images
           .filter((img) => img.category === photoCollectionCategory)
-          .slice(0, 3)
+          .slice(0, 3),
       )
       .flat();
   }
@@ -91,7 +91,7 @@ const FilterBtn: FC<FilterBtnProps> = memo(
     >
       {btnLabel}
     </button>
-  )
+  ),
 );
 
 FilterBtn.displayName = "FilterBtn";
@@ -148,14 +148,15 @@ const OurPhotographyCollectionImage: FC<OurPhotographyCollectionImageProps> =
 
 const OurPhotographyCollection: FC = () => {
   const t_OurPhotographyCollection_Portfolio = useTranslations(
-    "Portfolio.OurPhotographyCollection"
+    "Portfolio.OurPhotographyCollection",
   );
   const t_Common = useTranslations("Common");
 
-  const { sectionHeading, photographyCollectionNotLoaded } = {
+  const { sectionHeading, sectionIntro, photographyCollectionNotLoaded } = {
     sectionHeading: t_OurPhotographyCollection_Portfolio("sectionHeading"),
+    sectionIntro: t_OurPhotographyCollection_Portfolio("sectionIntro"),
     photographyCollectionNotLoaded: t_OurPhotographyCollection_Portfolio(
-      "photographyCollectionNotLoaded"
+      "photographyCollectionNotLoaded",
     ),
   };
 
@@ -185,9 +186,9 @@ const OurPhotographyCollection: FC = () => {
       getFilteredCategoryImages(
         activeFilterCategory,
         photoCollectionCategoriesKeys,
-        portfolioImgData
+        portfolioImgData,
       ),
-    [activeFilterCategory, photoCollectionCategoriesKeys]
+    [activeFilterCategory, photoCollectionCategoriesKeys],
   );
 
   const handleImageLoad = useCallback((src: string) => {
@@ -208,9 +209,14 @@ const OurPhotographyCollection: FC = () => {
   }
 
   return (
-    <section className="our-photography-collection">
+    <section
+      className="our-photography-collection"
+      id="our-photography-collection"
+      aria-labelledby="our-photography-collection-heading"
+    >
       <div className="our-photography-collection-container">
         <h3 className="our-photography-collection-heading">{sectionHeading}</h3>
+        <p className="our-photography-collection-intro">{sectionIntro}</p>
 
         <div className="our-photography-collection-filter-bar">
           <div className="our-photography-collection-filter-categories">
@@ -225,7 +231,7 @@ const OurPhotographyCollection: FC = () => {
                 key={photoCollectionCategoryKey}
                 filterCategory={photoCollectionCategoryKey}
                 btnLabel={t_Common(
-                  `portfolioCategories.${photoCollectionCategoryKey}`
+                  `portfolioCategories.${photoCollectionCategoryKey}`,
                 )}
                 isActive={activeFilterCategory === photoCollectionCategoryKey}
                 handleFilterByCategory={handleFilterByCategory}

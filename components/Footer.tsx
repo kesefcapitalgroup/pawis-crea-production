@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC } from "react";
+import { FC } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, useRouter, usePathname } from "@/i18n/navigation";
 
@@ -8,7 +8,7 @@ import { Link, useRouter, usePathname } from "@/i18n/navigation";
 import "@/styles/footer.css";
 
 // Icons
-import { RiPhoneFill, RiMailFill, RiMapPinFill } from "react-icons/ri";
+import { EnvelopeIcon, PhoneIcon, MapPinIcon } from "@phosphor-icons/react";
 
 // Component
 import CompanyLogo from "@/components/CompanyLogo";
@@ -29,9 +29,8 @@ const Footer: FC = () => {
 
   const socialLinks = [
     { key: "instagram", href: "https://instagram.com/pawiscrea" },
-    { key: "facebook", href: "https://facebook.com/pawiscrea" },
-    { key: "vimeo", href: "https://vimeo.com/pawiscrea" },
     { key: "youtube", href: "https://youtube.com/pawiscrea" },
+    { key: "facebook", href: "https://facebook.com/pawiscrea" },
   ];
 
   const otherLocale = currentLocale === "en" ? "es" : "en";
@@ -59,7 +58,7 @@ const Footer: FC = () => {
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="footer-nav-link">
-                    {t(`nav.${item.key}`)}
+                    {t(`nav.${item.key}` as Parameters<typeof t>[0])}
                   </Link>
                 </li>
               ))}
@@ -75,7 +74,10 @@ const Footer: FC = () => {
                   className="footer-contact-email-link"
                   href="mailto:pawiscrea@gmail.com"
                 >
-                  <RiMailFill className="footer-contact-email-icon" />
+                  <EnvelopeIcon
+                    size={30}
+                    className="footer-contact-email-icon"
+                  />
 
                   <span className="footer-contact-email-address">
                     pawiscrea@gmail.com
@@ -88,28 +90,13 @@ const Footer: FC = () => {
                   className="footer-contact-phone-link"
                   href="tel:+50768560871"
                 >
-                  <RiPhoneFill className="footer-contact-phone-icon" />
+                  <PhoneIcon size={30} className="footer-contact-phone-icon" />
 
                   <span className="footer-contact-phone-number">
                     +507 6856-0871
                   </span>
                 </a>
               </p>
-
-              {/* <p className="footer-contact-address-ny">
-                <a
-                  className="footer-contact-address-ny-link"
-                  href="https://www.google.com/maps/search/?api=1&query=15th+floor,+800+Third+Ave,+New+York,+NY+10022,+USA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <RiMapPinFill className="footer-contact-address-icon" />
-
-                  <span className="footer-contact-address-ny-details">
-                    15th floor, 800 Third Ave, New York, NY 10022, USA
-                  </span>
-                </a>
-              </p> */}
 
               <p className="footer-contact-address-panama">
                 <a
@@ -118,7 +105,10 @@ const Footer: FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RiMapPinFill className="footer-contact-address-icon" />
+                  <MapPinIcon
+                    size={30}
+                    className="footer-contact-address-icon"
+                  />
 
                   <span className="footer-contact-address-panama-details">
                     Panama City, Panama
@@ -140,7 +130,7 @@ const Footer: FC = () => {
                     rel="noopener noreferrer"
                     className="footer-social-link"
                   >
-                    {t(`social.${link.key}`)}
+                    {t(`social.${link.key}` as Parameters<typeof t>[0])}
                   </a>
                 </li>
               ))}

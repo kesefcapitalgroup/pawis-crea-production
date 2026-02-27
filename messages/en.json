@@ -148,6 +148,13 @@
           "clientInfo": "Lucia Fernandez | Fashion Model | Studio Location | Fashion Portrait Session"
         }
       ]
+    },
+    "CallToAction": {
+      "eyebrow": "Ready to Begin?",
+      "headline": "Let's Tell Your Story Together",
+      "body": "Every great memory starts with a single click. Let's make yours unforgettable",
+      "primaryBtn": "Book a Session",
+      "secondaryBtn": "View Portfolio"
     }
   },
   "AboutUs": {
@@ -159,8 +166,52 @@
     },
     "OurStory": {
       "sectionHeading": "Our Story - Through Our Lens",
+      "sectionIntro": "Every click of the shutter begins with a dream",
       "imgAltText": "The founder of Pawis Crea capturing a moment with their camera",
       "description": "At Pawis Crea, we craft stories through photography and videography, turning fleeting moments into timeless treasures. Our passionate team collaborates with clients—artists, couples, businesses—to bring their visions to life with expressive portraits, dynamic event coverage, and impactful brand visuals. We capture the beauty and emotion of each moment, creating memories that resonate long after the shutter clicks"
+    },
+    "WhyChoosePawisCrea": {
+      "sectionTitle": "Why Clients Choose Us - Our Promise to You",
+      "sectionIntro": "Pawis Crea captures the heart of your vision with artistry rooted in Panama’s vibrant spirit",
+      "reasonsForChoosing": {
+        "storyTellingMastery": {
+          "title": "Storytelling Mastery",
+          "tagline": "Real Moments. True Emotions.",
+          "description": "We capture the laughter, the stillness, and the in-between — those raw, genuine connections that define your story beyond the lens"
+        },
+        "tailoredForDreamers": {
+          "title": "Tailored for Dreamers",
+          "tagline": "Your Dreams. Our Priority.",
+          "description": "From music artists' BTS to corporate galas, we customize every shoot. Bold fashion and personal portraits shine"
+        },
+        "collaborativeExperience": {
+          "title": "Collaborative Experience",
+          "tagline": "Your Vision. Our Blueprint.",
+          "description": "We listen to your ideas, understand your goals, and blend them with our creative expertise to bring your vision to life—exactly as imagined, or even better"
+        },
+        "peaceOfMindCoverage": {
+          "title": "Peace of Mind Coverage",
+          "tagline": "Worry-Free Experience.",
+          "description": "We handle the logistics and technical details with professionalism so you can relax and truly enjoy your event or session"
+        },
+        "commitmentToQuality": {
+          "title": "Commitment to Quality",
+          "tagline": "Professional Grade. Guaranteed.",
+          "description": "We utilize high-end, professional-grade equipment and meticulous post-production techniques to deliver stunning photos and cinematic videos you'll treasure for decades"
+        },
+        "passionDrivenExcellence": {
+          "title": "Passion-Driven Excellence",
+          "tagline": "Fueled by Passion. Delivered with Heart.",
+          "description": "Photography and videography aren't just our job—they're our calling. Every project receives our full creative energy and meticulous attention to detail because your joy is our greatest reward"
+        }
+      }
+    },
+    "CallToAction": {
+      "eyebrow": "We'd Love to Work With You",
+      "headline": "Your Vision, Our Passion",
+      "body": "Now that you know who we are, let's create something meaningful together",
+      "primaryBtn": "Book a Session",
+      "secondaryBtn": "View Portfolio"
     }
   },
   "Portfolio": {
@@ -172,7 +223,15 @@
     },
     "OurPhotographyCollection": {
       "sectionHeading": "Our Photography Collection - Moments in Focus",
+      "sectionIntro": "A gallery of dreams captured, celebrations frozen, and authentic souls revealed",
       "photographyCollectionNotLoaded": "No images are available at the moment! Please check back later"
+    },
+    "CallToAction": {
+      "eyebrow": "Inspired by What You See?",
+      "headline": "Your Story Could Be Next",
+      "body": "These moments were once just dreams. Let's turn yours into a visual masterpiece.",
+      "primaryBtn": "Book a Session",
+      "secondaryBtn": "View Portfolio"
     }
   },
   "ContactUs": {
@@ -185,6 +244,7 @@
     },
     "ContactUsForm": {
       "sectionHeading": "Reach Out - Connect with Us",
+      "sectionIntro": "Ready to capture your story? Share your vision with us and let’s frame your dreams into reality",
       "companyIntroMessage": "At Pawis Crea, we turn your dreams into timeless stories. Let's make your dreams unforgettable—reach out today!",
       "form": {
         "fields": {

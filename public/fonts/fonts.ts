@@ -1,13 +1,23 @@
-import { Playfair_Display, Raleway } from "next/font/google";
+import { Crimson_Pro, Cormorant_Garamond, Karla } from "next/font/google";
 
-export const primaryFont = Playfair_Display({
-  variable: "--font-primary",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+export const fontDisplay = Crimson_Pro({
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
 });
 
-export const secondaryFont = Raleway({
-  variable: "--font-secondary",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+export const fontAccent = Cormorant_Garamond({
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-accent",
+  display: "swap",
+});
+
+export const fontBody = Karla({
+  subsets: ["latin", "latin-ext"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-body",
+  display: "swap",
 });

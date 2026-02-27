@@ -1,0 +1,10 @@
+1. Updated all dependencies to the latest versions
+2. Changed tsconfig.json
+  a. target - es2017 to es2022
+  b. lib - esnext to es2022
+  c  Added "**/*.d.ts" to include
+  d. Added "dist/**" to exclude
+3. 
+
+
+GROK 4

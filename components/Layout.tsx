@@ -1,8 +1,8 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC, ReactNode } from "react";
 
 // Components
-import Header from './Header';
-import Footer from './Footer';
+import Header from "./Header";
+import Footer from "./Footer";
 
 interface LayoutProps {
   children: ReactNode;

@@ -30,7 +30,7 @@ const CompanyLogo: FC<CompanyLogoProps> = memo(({ position = "header" }) => {
       prefetch
     >
       <Image
-        src="/logo/pawis-crea-logo.svg"
+        src="/logo/pawis-crea-logo-pink-500.svg"
         alt={companyLogoAltText}
         width={300}
         height={90}

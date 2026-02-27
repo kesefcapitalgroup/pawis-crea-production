@@ -1,7 +1,11 @@
+@reference "tailwindcss";
+
+@reference "./globals.css";
+
 .company-logo {
   @apply tracking-widest
   uppercase
-  font-primary;
+  font-display;
 }
 
 .pawis-crea-logo__header {
